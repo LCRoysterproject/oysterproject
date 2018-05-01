@@ -17,3 +17,9 @@ sea level conditions
 You can read more about the project here : 
 [project page](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
+## Interactive Project Sensor Map 
+
+Data collected in 9 sites located around Lone Cabbage Reef, are available for viewing here [interactive site map](http://rpubs.com/oysterproject/projectmap). 
+
+
+
