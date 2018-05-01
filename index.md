@@ -19,7 +19,7 @@ Continous data are collected in nine sites with Star-Oddi and Diver sensors. The
 
 <img src="pic/lc_wq_map.jpg" width="60%">.
 
-The locations data links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
+The location data links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 9](http://rpubs.com/oysterproject/site9measurements)
   
 [Site 5](http://rpubs.com/oysterproject/site5measurements), [Site 2](http://rpubs.com/oysterproject/site2measurements), [Site 7](http://rpubs.com/oysterproject/site7measurements) 
