@@ -15,5 +15,5 @@ sea level conditions
 ![marsh](http://www.wec.ufl.edu/oysterproject/i/oyster_bar_salt_marsh.jpg)
 
 You can read more about the project here : 
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+[project page](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
