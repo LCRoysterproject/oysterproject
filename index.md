@@ -30,8 +30,7 @@ The locations data links are arranged in the order they lay near the Lone Cabbag
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
-Data collected are also represented visually with [Leaflet](https://github.com/Leaflet/Leaflet).
-[Map](http://rpubs.com/oysterproject/projectmap)
+Data collected are also represented visually here: [Leaftlet Map](http://rpubs.com/oysterproject/projectmap)
   
     
 ![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png) ![WEC](http://www.wec.ufl.edu/awards/leadershipaward/_style/images/logo_wec.jpg)
