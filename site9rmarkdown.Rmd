@@ -71,7 +71,7 @@ colnames(winddatatable18) <- c("Date", "Lat", "Lon", "Direction", "Wind_Speed")
 
 winddatatable17$Date <- as.POSIXct(as.Date(winddatatable17$Date,origin= "1899-12-30"))
 winddatatable18$Date <- as.POSIXct(as.Date(winddatatable18$Date,origin= "1899-12-30"))
-
+#test
 windcomb<- rbind(winddatatable17,winddatatable18) 
 ```
 
