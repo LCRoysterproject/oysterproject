@@ -1,7 +1,7 @@
 ---
 output: 
   md_document:
-    variant: markdown
+    variant: markdown_github
 ---
 
 #Oyster Restoration Project
