@@ -24,7 +24,7 @@ Only Sites 1-6 have discrete measurements.
 
 
 ```{r dataresults, include=FALSE, eval=TRUE}
-
+#
 labresults <- read.csv("data/2017_lakewatch_labresults.csv", header= T)
 ```
 
@@ -125,7 +125,7 @@ plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c
 axis(4, at=pretty(c(0,40000)), col='black') 
 #the `plot` commands requires x and y-axis variables which are dates and phosphorus respectively, `pch` changes the shape of the point, `ylab` is the y-axis label, `xlab` is the x-axis label, `main` will specify the main plot title, `ylim` will create a min and max for the main y-axis, `format` will convert the date into a numeric format to be mm-yy, `las` rotates the x-axis ticks and labels to be vertical, `cex` changes the size of the points
 par(new=TRUE) #this adds a secondary y-axis to the plot
-plot(site6$newDate, site6$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 6 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2) #this new plot adds the river discharge with no axes to the already existing plot, the `xlim` is regulated by date, since the river discharge data starts in the 1960s until 2017, `type=l` makes the data plotted in a line, the `col` makes a blue transparent line which is in transparency 20% 
+plot(site6$newDate, site6$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 6 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2) #this new plot adds the river discharge with no axes to the already existing plot, the `xlim` is regulated by date, since the river discharge data starts in the 1960s until 2017, `type=l` makes the data plotted in a line, the `col` makes a blue transparent line which is in transparency 20% 
 #polygon(xx,yy,col="cornflowerblue", border=NA) #the `polygon` function recalls the `xx` and `yy` that was created #this is the secondary axis which has a different limit than the primary axis, normally it is around 35,000 but can range up to 55,000 in previous years
 mtext("River Discharge ( cfs)", side = 4,cex=0.6) #the code adds text for the secondary y-axis 
 
@@ -133,7 +133,7 @@ mtext("River Discharge ( cfs)", side = 4,cex=0.6) #the code adds text for the se
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$newDate, site1$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 1", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site1$newDate, site1$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 1", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge (cfs)", side = 4,cex=0.6)
 
@@ -142,28 +142,28 @@ plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c
 c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site5$newDate, site5$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 5", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site5$newDate, site5$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 5", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site2$newDate, site2$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 2 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site2$newDate, site2$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 2 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site4$newDate, site4$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 4 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site4$newDate, site4$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 4 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site3$newDate, site3$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 3 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site3$newDate, site3$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Site 3 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
@@ -177,7 +177,7 @@ par(mfrow=c(3,2))
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site6$newDate, site6$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 6", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site6$newDate, site6$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 6", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
@@ -185,35 +185,35 @@ mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$newDate, site1$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 1", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site1$newDate, site1$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 1", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site5$newDate, site5$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 5", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site5$newDate, site5$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 5", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site2$newDate, site2$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 2", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site2$newDate, site2$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 2", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site4$newDate, site4$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 4", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site4$newDate, site4$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 4", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site3$newDate, site3$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 3", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site3$newDate, site3$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Site 3", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 ```
@@ -225,42 +225,42 @@ plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site6$newDate, site6$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 6 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site6$newDate, site6$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 6 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$newDate, site1$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 1 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site1$newDate, site1$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 1 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site5$newDate, site5$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 5 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site5$newDate, site5$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 5 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site2$newDate, site2$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 2 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site2$newDate, site2$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 2 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site4$newDate, site4$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 4 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site4$newDate, site4$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 4 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site3$newDate, site3$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 3 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site3$newDate, site3$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Site 3 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 ```
