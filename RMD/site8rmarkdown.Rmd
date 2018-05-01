@@ -35,7 +35,7 @@ This figure is available for zoomability.
 ```{r r_site8, include= FALSE}
 #####Site 8 Analysis with Star Oddi
 LC_WQ8 <- read.csv("data/LC_WQ8_All_Days_R.csv", header= T)
-
+#
 #Naming columns, using the Star Oddi software, records different measurements than the Star Oddi, date, temperature, salinity, conducitivity, sound/velocity
 colnames(LC_WQ8) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
 head(LC_WQ8)
