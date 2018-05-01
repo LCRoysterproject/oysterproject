@@ -15,7 +15,7 @@ You can read more about the project here :
 
 ## Project Data
 
-Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites.  
+Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites.  
 
 The locations data links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 9](http://rpubs.com/oysterproject/site9measurements)
@@ -26,7 +26,7 @@ The locations data links are arranged in the order they lay near the Lone Cabbag
 
 [Salinities and temperature plots](http://rpubs.com/melimore86/allsalplots) are available for all nine site locations.
 
-[Discrete lab results](http://rpubs.com/melimore86/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6 for the year 2017.
+[Discrete lab results](http://rpubs.com/melimore86/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
