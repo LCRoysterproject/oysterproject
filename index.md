@@ -15,7 +15,7 @@ You can read more about the project here :
 
 ## Interactive Project Sensor Map 
 
-Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Cooperators such as FWC and FDACS also collected discrete measurements around Lone Cabbage.
+Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Cooperators such as FWC and FDACS collected discrete measurements in random locations at Lone Cabbage.
 
 The locations data links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 9](http://rpubs.com/oysterproject/site9measurements)
@@ -24,9 +24,9 @@ The locations data links are arranged in the order they lay near the Lone Cabbag
   
 [Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)     
 
-The [salinities](http://rpubs.com/melimore86/allsalplots) for all nine sites are available.
+[Salinities and temperature plots](http://rpubs.com/melimore86/allsalplots) are available for all nine site locations.
 
-[Discrete Lab Results- Sites 1-6 ](http://rpubs.com/melimore86/alllabresults)  
+[Discrete lab results](http://rpubs.com/melimore86/alllabresults) are available for Sites 1 through 6, and are processed by Lakewatch UF.
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
