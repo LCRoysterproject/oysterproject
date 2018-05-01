@@ -19,7 +19,9 @@ You can read more about the project here :
 
 ## Interactive Project Sensor Map 
 
-Data collected in 9 sites located around Lone Cabbage Reef, are available for viewing here [interactive site map](http://rpubs.com/oysterproject/projectmap). 
+Continous data are collected in 9 sites, located around the Lone Cabbage Reef. Discete measurements are also collected at these sites. 
+
+[interactive site map](http://rpubs.com/oysterproject/projectmap). 
 
 
 
