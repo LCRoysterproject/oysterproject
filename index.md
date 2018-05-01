@@ -15,14 +15,14 @@ sea level conditions.
 ![marsh](http://www.wec.ufl.edu/oysterproject/i/header_oysters.jpg)
 
 You can read more about the project here : 
-[project page](http://www.wec.ufl.edu/oysterproject/restoration.php)
+[R.E.E.F](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
 ## Interactive Project Sensor Map 
 
 Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Cooperators such as FWC and FDACS also collected discrete measurements around Lone Cabbage.
 
 Data collected can be found in our interactive project map.
-[interactive site map](http://rpubs.com/oysterproject/projectmap). 
+[Map](http://rpubs.com/oysterproject/projectmap). 
 
 
 
