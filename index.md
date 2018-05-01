@@ -15,7 +15,7 @@ You can read more about the project here :
 
 ## Interactive Project Sensor Map 
 
-Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Cooperators such as FWC and FDACS collected discrete measurements in random locations at Lone Cabbage.
+Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites.  
 
 The locations data links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 9](http://rpubs.com/oysterproject/site9measurements)
