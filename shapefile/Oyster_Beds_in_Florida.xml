@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<title>Oyster Beds in Florida</title>
+<geoform>vector digital data</geoform>
+<onlink>http://atoll.floridamarine.org/arcgis/rest/services/FWC_GIS/OpenData_MarineEco/MapServer/5</onlink>
+</citeinfo>
+</citation>
+<descript>
+<abstract>For full FGDC metadata record, please click here. &#13;
+&#13;
+This GIS data set represents oyster coverage for available study areas in the state of Florida. Not all areas have been mapped, but this dataset represents the oyster data available to FWRI as of November 2011. Source dates vary and many studies are much older than the compilation date. See the Source Information section for more details. </abstract>
+<purpose>Oyster Beds in Florida</purpose>
+<supplinf>Prior to July 1, 2004, the Fish and Wildlife Research Institute (FWRI) was known as the Florida Marine Research Institute (FMRI). The institute name has not been changed in historical data sets or references to work completed by the Florida Marine Research Institute. The institute name has been changed in references to ongoing research, new research, and contact information.</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>19920101</begdate>
+<enddate>20110101</enddate>
+</rngdates>
+</timeinfo>
+<current>ground condition</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>None planned</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-85.235088</westbc>
+<eastbc>-79.911628</eastbc>
+<northbc>30.121868</northbc>
+<southbc>26.597011</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115 Topic Category</themekt>
+<themekey>biota</themekey>
+</theme>
+<theme>
+<themekt>FWC Theme</themekt>
+<themekey>GIS</themekey>
+<themekey>benthic</themekey>
+<themekey>coastal</themekey>
+<themekey>mapping</themekey>
+</theme>
+<place>
+<placekt>FWC Place</placekt>
+<placekey>Florida</placekey>
+</place>
+<place>
+<placekt>FWC Regions</placekt>
+<placekey>Northwest</placekey>
+<placekey>South</placekey>
+<placekey>Southwest</placekey>
+<placekey>North Central</placekey>
+<placekey>Northeast</placekey>
+</place>
+<place>
+<placekt>Water Management Districts</placekt>
+<placekey>Southwest Florida</placekey>
+<placekey>Suwannee River</placekey>
+<placekey>South Florida</placekey>
+<placekey>Northwest Florida</placekey>
+<placekey>St. Johns River</placekey>
+</place>
+<place>
+<placekt>Florida Counties</placekt>
+<placekey>Dixie</placekey>
+<placekey>Hernando</placekey>
+<placekey>Gulf</placekey>
+<placekey>Brevard</placekey>
+<placekey>Jefferson</placekey>
+<placekey>Franklin</placekey>
+<placekey>Wakulla</placekey>
+<placekey>Citrus</placekey>
+<placekey>Hillsborough</placekey>
+<placekey>Pinellas</placekey>
+<placekey>Palm Beach</placekey>
+<placekey>Taylor</placekey>
+<placekey>Indian River</placekey>
+<placekey>Levy</placekey>
+<placekey>Manatee</placekey>
+<placekey>Martin</placekey>
+<placekey>Pasco</placekey>
+<placekey>St. Lucie</placekey>
+</place>
+</keywords>
+<accconst>None</accconst>
+<useconst>Access_Constraints:  
+
+
+Available without restriction. All data must be verified by Principal 
+Investigator or Group Database Analyst prior to release.  It is strongly
+ recommended that this data is directly acquired from FWC and not 
+indirectly through other sources which may have changed the data in some
+ way. FWC makes no claims as to the datas suitability for other 
+purposes.
+
+Use_Constraints:  
+
+
+Acknowledgement of the FWC-FWRI (Florida Fish and Wildlife Conservation 
+Commission-Fish and Wildlife Research Institute) as the data source 
+would be appreciated in any products developed from these data, and such
+ acknowledgment as is standard for citation and legal practices for data
+ source is expected by users of this data.  Please cite the original 
+metadata when using portions of the record to create a similar record of
+ slightly altered data, such as reprojection. If any data are modified 
+or adjusted, please share the edited information with FWC. Users should 
+be aware that comparison with other data sets for the same area from 
+other time periods may be inaccurate due to inconsistencies resulting 
+from changes in mapping conventions, data collection, and computer 
+processes over time. FWC shall not be liable for improper or incorrect 
+use of this data. These data are not legal documents and are not to be 
+used as such.  This is not a survey data set and should not be utilized 
+as such. These data are not to be used for navigation.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)</cntorg>
+<cntper>GISLibrarian</cntper>
+</cntorgp>
+<cntpos>GIS Data Librarian</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>100 Eighth Avenue Southeast</address>
+<address>Fish and Wildlife Research Institute</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>727-896-8626</cntvoice>
+<cntfax>727-893-1679</cntfax>
+<cntemail>GISLibrarian@MyFWC.com</cntemail>
+<hours>8:00 a.m.-5:00 p.m. Eastern time</hours>
+</cntinfo>
+</ptcontac>
+<datacred>Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute</datacred>
+<secinfo>
+<secsys>FWRI-DC</secsys>
+<sechandl>Available without restriction</sechandl>
+</secinfo>
+<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.3.0.1745</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Attributes are accurate. All polygons have been reclassified as simply "oyster" - see source data sets for the original classification.</attraccr>
+</attracc>
+<logic>These data are logically consistent. Polygon topology is present and a topology was run with the "must not overlap" rule applied. All overlaps were dissolved. The only overlaps present were within a source data set, not between data sets.</logic>
+<complete>This data set is not complete for the state of Florida. It only represents oysters in areas where they have been mapped. If you know of another oyster mapping study to add to this compilation, please contact GISLibrarian@myfwc.com.</complete>
+<posacc>
+<horizpa>
+<horizpar>Positional accuracy has not been tested for the compilation. See Source information for the accuracy of the source data sets.</horizpar>
+</horizpa>
+</posacc>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20110501</pubdate>
+<title>Oysters Mosquito Lagoon, Florida</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20090101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>Oysters Mosquito Lagoon, Florida</srccitea>
+<srccontr>Live, Dead, and Restored oyster reef polygons.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>19920101</pubdate>
+<title>oysters_nw_fl_1992</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>19920101</begdate>
+<enddate>19930101</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_nw_fl_1992</srccitea>
+<srccontr>This data set gives oyster polygons in the Panhandle and Big Bend areas, interpreted from 1:24,000 natural color aerial photography. It is not an exhaustive mapping effort of oysters, as oysters were only mapped in areas where seagrass was also mapped. There are local areas where more recent mapping efforts have been completed. This data set was used only in areas where no more recent data were available.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20081217</pubdate>
+<title>seagrass_springscoast_2007</title>
+</citeinfo>
+</srccite>
+<srcscale>12000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20070401</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>seagrass_springscoast_2007</srccitea>
+<srccontr>FLUCCS code 6540 "Oyster Bars/Shoals - Greater than 1 acre" polygons were reselected from this data set. All oyster polygons from this source were used as this is the most recent source for the area.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20060101</pubdate>
+<title>oysters_naples_poly</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20060101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>publication date</srccurr>
+</srctime>
+<srccitea>oysters_naples_poly</srccitea>
+<srccontr>"Oyster Reef" and "Low Density Oyster Clumping" were categorized as "Oyster". All polygons from this data source were used. This data set was a compilation of multiple sources by City of Naples Natural Resources Department. In ares where two of the sources provided were overlapping, the more recent source was used. Additional oyster polygons digitized by City of Naples Natural Resources Department were also included.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20080429</pubdate>
+<title>Benthic Habitats Intracoastal Waterway Palm Beach County Florida 2007</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20070101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>Benthic Habitats Intracoastal Waterway Palm Beach County Florida 2007</srccitea>
+<srccontr>Polygons with FLUCCS code 6540 (oyster bars/reef) were selected and classified as "oyster". These data were ERASEd with the extent of the 2011 USACE data, so that in areas of overlap, the more recent data were used.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<title>oysters_tampabay</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<mdattim>
+<sngdate>
+<caldate>20040101</caldate>
+</sngdate>
+<sngdate>
+<caldate>20050101</caldate>
+</sngdate>
+</mdattim>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_tampabay</srccitea>
+<srccontr>This data set includes Tampa Bay area oysters. Oysters visible on low tide imagery and DOQQs were mapped. There were two small polygons within the source data set that overlapped large polygons. These were DISSOLVEd to remove the overlap.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20010503</pubdate>
+<title>seagrass_esterobay_1999_H</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<mdattim>
+<sngdate>
+<caldate>19991209</caldate>
+</sngdate>
+<sngdate>
+<caldate>19991226</caldate>
+</sngdate>
+</mdattim>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>seagrass_esterobay_1999_H</srccitea>
+<srccontr>Oysters were mapped, in addition to seagrass for the study area Pine Island Sound, Matlacha Pass, San Carlos Bay, the lower Caloosahatchee River, and Estero Bay, in 1999. Polygons with oyster code 6540 (oysters) were used from this data set. In areas of overlap with 2011 SFWMD data, the more recent data were used.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20110801</pubdate>
+<title>benthic_SFestuaries_USACE_2011</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>20100101</begdate>
+<enddate>20110101</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>benthic_SFestuaries_USACE_2011</srccitea>
+<srccontr>Data classified as "oyster" were used from this data set. All oyster polygons were included in the compilation.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<title>oysters_sebastian_2006_poly</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>20051115</begdate>
+<enddate>20060329</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_sebastian_2006_poly</srccitea>
+<srccontr>This data set includes the location and coverage area of most major oyster reefs within the Sebastian River. Each oyster reef was mapped using Real-Time Kinematic GPS (RTK GPS). Transect surveys were conducted at 1-m intervals across the face of the reef, perpendicular to the long-axis of the reef and extending from border to border. The latitude, longitude and height (elevation) data for each 1-m interval were collected using the RTK GPS rover unit. No data points were taken outside the perimeter of the reef. There were several small polygons that were DISSOLVEd by FWRI to remove overlap. Percent live/dead was recorded in the source data. A polygon is classified as a live bed if any live oysters were found within it.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<title>oysters_Loxahatchee_Rv_2004</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20040101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_Loxahatchee_Rv_2004</srccitea>
+<srccontr>This data set provided oyster beds in the Loxahatchee River estuary. Scientists from WildPine Lab mapped the location and spatial extent of the existing oyster beds. At each of the observed beds, the outer perimeter was marked and a polygon was traced using a hand-held global Positioning System (GPS) unit. The GPS unit was differentially corrected for sub-meter accuracy. There were several small polygons that were DISSOLVEd by FWRI staff to remove overlap. In areas of overlap with 2011 SFWMD data, the more recent data were used.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20051202</pubdate>
+<title>benthic_SRWMD_2001</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<mdattim>
+<sngdate>
+<caldate>20011119</caldate>
+</sngdate>
+<sngdate>
+<caldate>20011121</caldate>
+</sngdate>
+</mdattim>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>benthic_SRWMD_2001</srccitea>
+<srccontr>Oyster polygons coded 6540 were selected from this data set. The data were interpreted from 1:24,000 aerial photography. This data set only mapped oyster bars, oyster beds and oyster hash that make up the Waccasassa Reefs and Corrigan Reef. Other oyster bars within seagrass beds or tidal flats were not included.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20060101</pubdate>
+<title>Benthic Habitats Parts of Rookery Bay Florida National Estuarine Research Reserve 2003 to 2006</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<rngdates>
+<begdate>20030101</begdate>
+<enddate>20060101</enddate>
+</rngdates>
+</timeinfo>
+<srccurr>publication date</srccurr>
+</srctime>
+<srccitea>Benthic Habitats Parts of Rookery Bay Florida National Estuarine Research Reserve 2003 to 2006</srccitea>
+<srccontr>Oyster polygons</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20080714</pubdate>
+<title>seagrass_sjrwmd_2007_poly</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20070101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>seagrass_sjrwmd_2007_poly</srccitea>
+<srccontr>Selected code 6540 (oysters). These data used as-is.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20050101</pubdate>
+<title>seagrass_santarosa_2003</title>
+</citeinfo>
+</srccite>
+<srcscale>12000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20030101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>seagrass_santarosa_2003</srccitea>
+<srccontr>Selected out the MOL category (oysters). Oysters were only mapped where verified by ground-truthing. These data used as-is.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20040101</pubdate>
+<title>oysters_StLucieEstuary_2003</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20040101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_StLucieEstuary_2003</srccitea>
+<srccontr>This is a polygon file containing data for an oyster survey conducted in fall 2003 in the St. Lucie Estuary, Florida. Oyster bed perimeter was mapped using GPS. No oysters were mapped in channel areas greater than 8 feet deep since initial grid-based surveys did not find evidence of oysters at that depth. LIVE_BED attribute indicated whether a bed was live or not and this was translated into the OYSTER attribute. In areas of overlap with 2011 SFWMD data, the more recent data were used.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20020927</pubdate>
+<title>oysters_big_bend</title>
+</citeinfo>
+</srccite>
+<srcscale>24000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20011101</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>oysters_big_bend</srccitea>
+<srccontr>Polygons oyster codes 6540 (oysters) and 6541 (oysters patchy) were reclassified as live oysters and 6542 (oysters remnant) was reclassified as dead. All polygons were used from this data set.</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20070101</pubdate>
+<title>oysters_apalachbay_2006_poly</title>
+</citeinfo>
+</srccite>
+<srcscale>30000</srcscale>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<mdattim>
+<sngdate>
+<caldate>20060101</caldate>
+</sngdate>
+<sngdate>
+<caldate>20070101</caldate>
+</sngdate>
+</mdattim>
+</timeinfo>
+<srccurr>publication date</srccurr>
+</srctime>
+<srccitea>oysters_apalachbay_2006_poly</srccitea>
+<srccontr>We used all "dredge/oyster" and "oyster" from this data set. The interpretation is based on the sidescan sonar imagery, the bathymetry, available sediment sample information, and seafloor observations.</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>Oyster polygons were selected from the source data sets. Each file was given new attributes to classify based on its source data set and the date of the source data, as well as a generic DESCRIPT attribute to indicate that each polygon represents "Oyster". In areas where source files overlapped, the newest data was used. The "oysters_apalachbay_2006", "benthic_srwmd_2001", and "oysters_big_bend" data sets overlapped the "oysters_nw_fl_1992" data set so their extent was ERASEd from the 1992 dataset. Extent footprints for "benthic_srwmd_2001" and "oysters_big_bend" were estimated based on the description of the study area given by Suwannee River Water Management District since these files only represented oysters, not the full bounding box of the project. Along the northern and southern edges of the study areas, polygons from the "oysters_nw_fl_1992" were preserved if it was unclear whether or not the area had been included in the SRWMD studies. The following data sets contained some small overlaps within the source files: "oysters_tampabay", "oysters_Loxahatchee_Rv_2004", and "oysters_sebastian_2006_poly". These overlaps were eliminated by a DISSOLVE of the full data set. The data set was loaded into ArcSDE.</procdesc>
+<procdate>20080701</procdate>
+<proccont>
+<cntinfo>
+<cntperp>
+<cntper>GISLibrarian</cntper>
+</cntperp>
+<cntpos>GISLibrarian</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>Fish and Wildlife Research Institute</address>
+<address>100 Eighth Avenue Southeast</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>727-896-8626</cntvoice>
+<cntfax>727-893-1679</cntfax>
+<cntemail>GISLibrarian@MyFWC.com</cntemail>
+<hours>8:00 a.m.-5:00 p.m. Eastern time</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Oysters for Estero Bay area were added to the compilation.</procdesc>
+<procdate>20080901</procdate>
+</procstep>
+<procstep>
+<procdesc>Oysters from 2003 Pensacola Bay and Santa Rosa Sound, and 2007 SJRWMD were added to the compilation.</procdesc>
+<procdate>20090330</procdate>
+</procstep>
+<procstep>
+<procdesc>Oysters for Springs Coast were added to the compilation</procdesc>
+<procdate>20090601</procdate>
+</procstep>
+<procstep>
+<procdesc>Oysters from the Rookery Bay dataset were added to the compilation. Additional polygons are present in the source data, labeled "Sparse SAV or Oyster". These were not included in the compilation.</procdesc>
+<procdate>20100401</procdate>
+</procstep>
+<procstep>
+<procdesc>Oysters from the Mosquito Lagoon 2009 data set were added to the compilation. An additional attribute OYSTER was added to indicate whether a bed is live, dead, or restored. This fields is only populated if the information is present in the source data.</procdesc>
+<procdate>20111114</procdate>
+</procstep>
+<procstep>
+<procdesc>Oysters from Palm Beach County 2007, Naples 2006, and USACE 2011 were added to the compilation.</procdesc>
+<procdate>20150401</procdate>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>GT-polygon composed of chains</sdtstype>
+<ptvctcnt>8988</ptvctcnt>
+</sdtsterm>
+<sdtsterm>
+<ptvctcnt>0</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>oysters_fl_poly</enttypl>
+<enttypd>This data set represents mapped oysters in Florida.</enttypd>
+<enttypds>Producer defined.</enttypds>
+</enttyp>
+<attr>
+<attrlabl>DESCRIPT</attrlabl>
+<attrdef>Description of polygon features.</attrdef>
+<attrdefs>Producer defined.</attrdefs>
+<attrdomv>
+					<udom>"Oyster"</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>FID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape_area</attrlabl>
+<attrdef>Area of feature in internal units squared.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+					<udom>Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>METADATA</attrlabl>
+<attrdef>Source metadata title.</attrdef>
+<attrdefs>Producer defined.</attrdefs>
+<attrdomv>
+					<udom>Metadata title.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>OYSTER</attrlabl>
+<attrdef>Indicates whether a reef contains live, dead, or restored oysters. This field is only populated if this information was present in the source data.</attrdef>
+<attrdefs>FWRI</attrdefs>
+<attrdomv>
+					<edom>
+						<edomv>Dead</edomv>
+						<edomvd>Dead, remnant oyster reef</edomvd>
+						<edomvds>FWRI</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SOURCEDATE</attrlabl>
+<attrdef>Date of source.</attrdef>
+<attrdefs>Producer defined.</attrdefs>
+<attrdomv>
+					<udom>Date of source.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+</detailed>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)</cntorg>
+<cntper>GISLibrarian</cntper>
+</cntorgp>
+<cntpos>GIS Data Librarian</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>100 Eighth Avenue Southeast</address>
+<address>Fish and Wildlife Research Institute</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>727-896-8626</cntvoice>
+<cntfax>727-893-1679</cntfax>
+<cntemail>GISLibrarian@MyFWC.com</cntemail>
+<hours>8:00 a.m.-5:00 p.m. Eastern time</hours>
+</cntinfo>
+</distrib>
+<distliab>See access and use constraints information.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<formname>SHP</formname>
+<transize>0.033</transize>
+</digtinfo>
+<digtopt>
+<onlinopt>
+<computer>
+<networka>
+<networkr>http://research.myfwc.com/</networkr>
+</networka>
+</computer>
+</onlinopt>
+</digtopt>
+</digform>
+<fees>None. However, persons or organizations requesting information must provide transfer media if FTP is not available and must pay express shipping costs if express shipping is required.</fees>
+<ordering>Contact GIS Librarian by e-mail, telephone, or letter explaining which products are needed and providing a brief description of how the products will be used. Also, provide name and address of the person or organization requesting the products.</ordering>
+<turnarnd>Usually within 10 business days, although, complex requests may take longer</turnarnd>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20150428</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>FWC-FWRI (Florida Fish and Wildlife Conservation Commission-Fish and Wildlife Research Institute)</cntorg>
+<cntper>GISLibrarian</cntper>
+</cntorgp>
+<cntpos>GIS Data Librarian</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>Fish and Wildlife Research Institute</address>
+<address>100 Eighth Avenue Southeast</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>727-896-8626</cntvoice>
+<cntfax>727-893-1679</cntfax>
+<cntemail>GISLibrarian@MyFWC.com</cntemail>
+<hours>8:00 a.m.-5:00 p.m. Eastern time</hours>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+<metac>No restrictions on metadata</metac>
+<metuc>Metadata must be distributed with the data set.</metuc>
+<metsi>
+<metscs>FWRI-MC</metscs>
+<metshd>Metadata must be distributed with the data set.</metshd>
+</metsi>
+</metainfo>
+</metadata>

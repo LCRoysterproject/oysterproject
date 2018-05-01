@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin>Ellen A. Raabe</origin>
+<origin>Amy E. Streck</origin>
+<origin>Richard P. Stumpf</origin>
+<origin>Andrew D. Gleim</origin>
+<pubdate>2012</pubdate>
+<title>Historic Coastal Features of Florida's Big Bend Coast</title>
+<geoform>vector digital data</geoform>
+<serinfo>
+<sername>Open-File Report</sername>
+<issue>02-211</issue>
+</serinfo>
+<pubinfo>
+<pubplace>St. Petersburg, FL</pubplace>
+<publish>U.S. Geological Survey</publish>
+</pubinfo>
+<onlink>http://pubs.usgs.gov/of/2002/of02-211/</onlink>
+<lworkcit>
+<citeinfo>
+<origin>Ellen Raabe</origin>
+<origin>Amy E. Streck</origin>
+<origin>Richard P. Stumpf</origin>
+<pubdate>2004</pubdate>
+<title>Historic Topographic Sheets to Satellite Imagery: A Methodology for Evaluating Coastal Change in Florida's Big Bend Tidal Marsh</title>
+<serinfo>
+<sername>Open-File Report</sername>
+<issue>02-211</issue>
+</serinfo>
+<pubinfo>
+<pubplace>St. Petersburg, Florida</pubplace>
+<publish>U.S. Geological Survey</publish>
+</pubinfo>
+<onlink>http://pubs.usgs.gov/of/2002/of02-211/</onlink>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>Historic geographic data for Florida's Big Bend tidal wetlands (BB_StudyArea.jpg) was derived from 19th century topographic charts (T-sheets). The United States (U.S.) Coast and Geodetic Survey (CGS) originally surveyed U.S. coastlines during the 19th century for navigation purposes. The Big Bend coast was surveyed by CGS between 1852 and 1886. Scanned images of 19 original historic T-sheets were acquired by the U.S. Geological Survey (USGS) in St. Petersburg, Florida. The USGS geo-rectified the T-sheets and combined them in a mosaic of the coast. Two data sets were prepared from the original surveys: 1. an image mosaic of 19 T-sheets from Wakulla to Pasco County at 5 meter resolution, and 2. a vector shapefile of coastal features as digitized from the original T-sheets. The raster image and vector data document historic conditions along the Big Bend marsh coast, depicting the coastal landscape as it appeared in the mid-1800s. Users of the data should be aware that the charts reflect survey methods and perspectives from the 19th century. The shoreline and other features may have changed in the intervening years. This release does not include new or newly-interpreted data. USGS Open-File Report 02-211 (Raabe and others, 2004) was revised in 2012 with the addition of newly re-formatted raster and vector data depicting the 19th century coast (&lt;http://pubs.usgs.gov/of/2002/of02-211/&gt;).</abstract>
+<purpose>Historic survey data were converted to modern digital map formats to visualize the historic landscape and facilitate comparison between historic and present day conditions. The USGS Gulf of Mexico Tidal Wetlands Project evaluated and quantified long-term change (greater than 100 years) using four generalized categories from the digitized historic coastal features. Historic to modern assessments incorporate data from different sources and time periods to understand landscape change and the impact of natural processes and human activities on coastal ecosystems. Recovery of historic data to a digital setting responds to the need for data integration through time, bridging technical gaps and differences.</purpose>
+<supplinf>
+Individual T-sheets for the Big Bend coast were originally surveyed by CGS at 1:20,000. The T-sheets were geo-rectified with a map accuracy of 8 meters or less in a 5 m resolution grid. The image mosaic from Wakulla to Pasco County (bb_historic_tsheets.tif) is a 1.6 gb GeoTIFF file (Geostationary Earth Orbit Tagged File Format). An index map to the original T-sheets (BB_TsheetIndex.jpg) is included in this release. The nineteen T-sheets in the mosaic are, from north to south (T-sheet#, name, year): T820 St. Marks West 1860; T819 St. Marks East 1860; T1424a Aucilla 1875; T1424b Fenholloway 1875; T1425a Keaton Beach 1875; T1425b Steinhatchee 1875; T1426a Horseshoe 1876; T1426b Suwannee 1877; T422 Atsena Otie 1852; T423ab Cedar Key 1854; T572 Waccasassa North 1856; T699 Waccasassa South 1858; T780 Withlacoochee* 1859; T705 Crystal River* 1858; T779 Ozello* 1859; T781 Homosassa* 1860; T782 Chassahowitzka* 1859; T1700 Bayport 1886; T1699 Port Richie 1886. An asterisk (*) represents charts in the archipelago region, where only outlying islands and river entrances were surveyed due to the complex coastal configuration. More information can be found in OFR 02-211.
+Coastal features, originally digitized in raster format, were converted to vector format (BB_Historic_Features.shp). Original coastal categories were: Water, Low Water Line, Sand Bars, Boat Channels, Salt Water Ponds, Sand above Low Water, Reefs, Oyster Bars, Oyster Reefs, Oyster Rock, Rocks, Marsh, Mangrove, Sedge, Sedge Hammock, Upland Hammock, Uplands, Roads/Development, Freshwater Ponds, and Freshwater Marsh. The 20 historic categories were generalized in four main categories, submerged marine, intertidal, terrestrial, and freshwater wetlands to implement a crosswalk between historic and modern features.
+</supplinf>
+</descript>
+<timeperd>
+<timeinfo>
+<rngdates>
+<begdate>1852</begdate>
+<enddate>1886</enddate>
+</rngdates>
+</timeinfo>
+<current>ground condition</current>
+</timeperd>
+<status>
+<progress>complete</progress>
+<update>none planned</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-84.442521</westbc>
+<eastbc>-82.598736</eastbc>
+<northbc>30.177493</northbc>
+<southbc>28.165779</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115: Topic Categories</themekt>
+<themekt>Oregon Metadata Keyword Thesaurus (GEO)</themekt>
+<themekey>oceans</themekey>
+<themekey>biota</themekey>
+<themekey>shoreline</themekey>
+<themekey>wetland</themekey>
+<themekey>navigation survey</themekey>
+</theme>
+<place>
+<placekt>none</placekt>
+<placekey>Florida Gulf Coast</placekey>
+<placekey>Nature Coast</placekey>
+<placekey>Spring Coast</placekey>
+<placekey>Gulf of Mexico</placekey>
+</place>
+<stratum>
+<stratkt>Oregon Metadata Keyword Thesaurus (GEO)</stratkt>
+<stratkey>intertidal</stratkey>
+</stratum>
+<temporal>
+<tempkt>Oregon Metadata Keyword Thesaurus (GEO)</tempkt>
+<tempkey>pre-settlement</tempkey>
+<tempkey>19th century</tempkey>
+<tempkey>historic</tempkey>
+</temporal>
+</keywords>
+<accconst>Any use of these data signifies a user's agreement to comprehension and compliance of the USGS Standard Disclaimer. Ensure all portions of metadata are read and clearly understood before using these data in order to protect both user and USGS interests.</accconst>
+<useconst>Public data. No constraints. Read Distribution Liability.</useconst>
+<browse>
+<browsen>BB_StudyArea.jpg</browsen>
+<browsed>Map showing Florida's West Coast Big Bend region.</browsed>
+<browset>.jpg</browset>
+</browse>
+<native>ESRI ArcMap 10.0, Microsoft Windows 7, polygon shapefile, BB_Historic_Features.shp, 42,107 kb.</native>
+</idinfo>
+<dataqual>
+<logic>Vector data based on 19th century historic surveys. Guidelines for consistent interpretation of historic maps available on page 10 of OFR 02-211 (Raabe and others, 2004; &lt;http://pubs.usgs.gov/of/2002/of02-211/&gt;).</logic>
+<complete>There is a discrepancy between the interior edge of the T-sheets and the true upland boundary along portions of the coast. Early surveyors mapped only the islands and river entrances from Withlacoochee to Chassahowitztka River due to survey time constraints and the complex nature of this coast.</complete>
+<lineage>
+<procstep>
+<procdesc>2nd polygon feature clipped with a 15km buffer from shoreline</procdesc>
+<srcused>2nd polygon feature</srcused>
+<procdate>2011-10-20</procdate>
+<srcprod>Final BB_Historic_Features</srcprod>
+</procstep>
+<procstep>
+<procdesc>Join polygons at seam, merge polygons, calculate area in square meters</procdesc>
+<srcused>1st polygon feature</srcused>
+<procdate>2011-10-11</procdate>
+<srcprod>2nd polygon feature</srcprod>
+</procstep>
+<procstep>
+<procdesc>Conversion from raster to polygon features and reprojection from UTM Zone 17 N GCS WGS 1984 to NAD 1983 HARN Florida GDL Albers. Original information for 4 merged and 20 original categories were preserved when converted to vector format. See BB_Hist_Feat_table.pdf</procdesc>
+<srcused>raster image layer (bbmos_tsheets.pix)</srcused>
+<procdate>2011-10-10</procdate>
+<srcprod>1st polygon feature</srcprod>
+</procstep>
+<procstep>
+<procdesc>Features on scanned and georectified historic T-sheets were digitized on screen with heads-up digitizing in raster format (PCI EASI PACE 6.3). 20 original categories were identified, digitized, and merged in four generalized coastal categories for change analysis (see BB_Hist_Feat_table.pdf).</procdesc>
+<srcused>Individual tsheet raster file with utm suffix.</srcused>
+<procdate>1998</procdate>
+<srcprod>Saved as layer in source raster file (tsheet_utm.pix)</srcprod>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>GT-polygon composed of chains</sdtstype>
+<ptvctcnt>20</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<spref>
+<horizsys>
+<planar>
+<mapproj>
+<mapprojn>NAD 1983 HARN Florida GDL Albers</mapprojn>
+<albers>
+<stdparll>24.0</stdparll>
+<stdparll>31.5</stdparll>
+<longcm>-84.0</longcm>
+<latprjo>24.0</latprjo>
+<feast>400000.0</feast>
+<fnorth>0.0</fnorth>
+</albers>
+</mapproj>
+<planci>
+<plance>coordinate pair</plance>
+<coordrep>
+<absres>0.000000004429812072714868</absres>
+<ordres>0.000000004429812072714868</ordres>
+</coordrep>
+<plandu>Meter</plandu>
+</planci>
+</planar>
+<geodetic>
+<horizdn>D North American 1983 HARN</horizdn>
+<ellips>GRS 1980</ellips>
+<semiaxis>6378137.0</semiaxis>
+<denflat>298.257222101</denflat>
+</geodetic>
+</horizsys>
+</spref>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>BB_Historic_Features</enttypl>
+<enttypd>Attribute Table</enttypd>
+<enttypds>user defined</enttypds>
+</enttyp>
+<attr>
+<attrlabl>FID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Coordinates defining the features.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Area</attrlabl>
+<attrdef>Geometric calculation of the area in square meters for each of 20 categories</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>47425</rdommin>
+<rdommax>12,612,583,772.7</rdommax>
+<attrunit>square meters</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>GRIDCOD</attrlabl>
+<attrdef>This is the original raster value for each land cover category. See BB_Hist_Feat_table.pdf.</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<edom>
+<edomv>5, 10, 20, 30,40, 70,80, 82,84,86, 90,100, 110, 150, 155, 160, 170, 180, 190, 195</edomv>
+<edomvd>Values 5-40 Submerged Marine, 70-110 Intertidal, 150-180 Terrestrial/Uplands, 190-195 Freshwater wetlands</edomvd>
+<edomvds>USGS</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Reclass_Va</attrlabl>
+<attrdef>Short integers 1-20 to represent 20 coastal categories.</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<edom>
+<edomv>Integers 1-20</edomv>
+<edomvd>1 Water, 2 Low Water Line, 3 Sand Bars, 4 Boat Channels, 5 Salt Water Ponds, 6 Sand above Low Water, 7 Reefs, 8 Oyster Bars, 9 Oyster Reefs, 10 Oyster Rock, 11 Rock, 12 Marsh, 13 Mangrove, 14 Sedge, 15 Sedge Hammock, 16 Upland Hammock, 17 Uplands, 18 Roads/Development, 19 Freshwater Ponds, and 20 Freshwater Marsh</edomvd>
+<edomvds>USGS</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Category</attrlabl>
+<attrdef>Name or type of coastal category derived from notes and symbols on 19th century T-sheets and represented by 20 numeric categories in Reclass_Va. While most categories are self-explanatory, authors provide these additional comments: Sedge is considered to be the historic equivalent to modern transition zone between uplands and marsh: a low elevation zone supporting tidal marsh, salt scrub, and scattered upland trees, both dead and alive. A hammock is an elevated upland tree stand (island) separated from the mainland forest by tidal marsh. Salt water ponds were ponds within the tidal marsh and the conservative interpretation was marine influence. However they may have been historic freshwater seeps, given the propensity for groundwater flow at the coast through the underlying karst formation.</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<udom>Water, Low Water Line, Sand Bars, Boat Channels, Salt Water Ponds, Sand above Low Water, Reefs, Oyster Bars, Oyster Reefs, Oyster Rock, Rocks, Marsh, Mangrove, Sedge, Sedge Hammock, Upland Hammock, Uplands, Roads/Development, Freshwater Ponds, and Freshwater Marsh</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Gen Value</attrlabl>
+<attrdef>Short integer representing four general coastal categories.</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<edom>
+<edomv>5, 10, 15, 20</edomv>
+<edomvd>5 Submerged Marine, 10 Intertidal, 15 Terrestrial, 20 Freshwater Wetlands</edomvd>
+<edomvds>USGS</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Gen Name</attrlabl>
+<attrdef>Names of four general coastal categories.</attrdef>
+<attrdefs>USGS</attrdefs>
+<attrdomv>
+<udom>Submerged Marine, Intertidal, Terrestrial, Freshwater Wetlands</udom>
+</attrdomv>
+</attr>
+</detailed>
+<overview>
+<eaover>In-depth presentation of methods used to geo-rectify and digitize the historic T-sheets can be found in USGS OFR 02-211. Full reference below.</eaover>
+<eadetcit>Raabe, E.A., A.E. Streck, and R.P. Stumpf, 2004, Historic Topographic Sheets to Satellite Imagery: A Methodology for Evaluating Coastal Change in Florida's Big Bend Tidal Marsh, U.S. Geological Survey Open-File Report 02-211 (as revised in 2012); http://pubs.usgs.gov/of/2002/of02-211/</eadetcit>
+</overview>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>U.S. Geological Survey</cntorg>
+<cntper>Ellen Raabe</cntper>
+</cntorgp>
+<cntpos>Physical Scientist</cntpos>
+<cntaddr>
+<addrtype>Phsyical and mailing</addrtype>
+<address>600 4th Street South</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>727-803-8747 ext. 3039</cntvoice>
+<cntemail>eraabe@usgs.gov</cntemail>
+</cntinfo>
+</distrib>
+<resdesc>Downloadable Data</resdesc>
+<distliab>This publication was prepared by an agency of the United States Government. Although these data have been processed successfully on a computer system at the U.S. Geological Survey, no warranty expressed or implied is made regarding the display or utility of the data on any other system, or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. The U.S. Geological Survey shall not be held liable for improper or incorrect use of the data described and/or contained herein. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. Neither the U.S. Government, the Department of the Interior, nor the USGS, nor any of their employees, contractors, or subcontractors, make any warranty, express or implied, nor assume any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, nor represent that its use would not infringe on privately owned rights.</distliab>
+</distinfo>
+<metainfo>
+<metd>20120604</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>U.S. Geological Survey</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>Physical and mailing</addrtype>
+<address>600 4th Street South</address>
+<city>St. Petersburg</city>
+<state>Florida</state>
+<postal>33701</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>727-803-8747</cntvoice>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+</metainfo>
+</metadata>
