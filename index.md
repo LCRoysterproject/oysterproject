@@ -11,6 +11,6 @@ sea level conditions.
 
 
 You can read more about the project here :   
-[project page] (#http://www.wec.ufl.edu/oysterproject/restoration.php)
+[project page] (http://www.wec.ufl.edu/oysterproject/restoration.php)
 
 
