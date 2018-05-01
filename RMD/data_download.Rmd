@@ -1,0 +1,185 @@
+---
+title: "Sensor Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+###Tips:  
+In Microsoft Excel, select the following options:  
+Wizard Step 1:  
+-Delimited  
+-My Data has headers  
+Wizard Step 2:  
+-Semicolon  
+Wizard Step 3:  
+-General  
+The sensor data might have commas instead of periods, but the data will be correct for each column. Coversion to decimal can be done in Excel or R.  
+  
+    
+###Data
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ1/CSV")
+LC_WQ1 <- read.csv("LC_WQ1_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ1, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 1 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ2/CSV")
+LC_WQ2 <- read.csv("LC_WQ2_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ2, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 2 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ3/CSV")
+LC_WQ3 <- read.csv("LC_WQ3_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ3, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 3 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ4/CSV")
+LC_WQ4 <- read.csv("LC_WQ4_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ4, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 4 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ5/CSV")
+LC_WQ5 <- read.csv("LC_WQ5_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ5, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 5 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ6/CSV")
+LC_WQ6 <- read.csv("LC_WQ6_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ6, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 6 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ7/CSV")
+LC_WQ7 <- read.csv("LC_WQ7_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ7, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 7 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ8/CSV")
+LC_WQ8 <- read.csv("LC_WQ8_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ8, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 8 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop/Deployment/Lone Cabbage WQ Data/LC_WQ9/CSV")
+LC_WQ9 <- read.csv("LC_WQ9_All_Days_R.csv", header= T)
+
+write.csv2(LC_WQ9, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Sensor 9 Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+
+
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+setwd("C:/Users/melimore86/Desktop")
+labresults <- read.csv("cedarkeylabresults.csv", header= T)
+
+
+write.csv2(labresults, "./file.csv")
+
+library(magrittr)
+readLines("./file.csv") %>% 
+  paste0(collapse="\n") %>% 
+  openssl::base64_encode() -> encoded
+```
+
+[Download Lakewatch  Measurements](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
