@@ -40,7 +40,7 @@ This figure is available for zoomability.
 #####Site 7 Analysis with Star Oddi
 
 LC_WQ7 <- read.csv("data/LC_WQ7_All_Days_R.csv", header= T)
-
+#test
 #Naming columns, using the Star Oddi software, records different measurements than the Star Oddi, date, temperature, salinity, conducitivity, sound/velocity
 colnames(LC_WQ7) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
 head(LC_WQ7)
