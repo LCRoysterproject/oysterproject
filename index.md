@@ -17,9 +17,6 @@ You can read more about the project here :
 
 Continous data are collected in nine sites, located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Cooperators such as FWC and FDACS also collected discrete measurements around Lone Cabbage.
 
-Data collected can be found in our interactive project map.
-[Map](http://rpubs.com/oysterproject/projectmap)
-
 
 [Site 6](http://rpubs.com/oysterproject/site6measurements) [Site 1](http://rpubs.com/oysterproject/site1measurements) [Site 9](http://rpubs.com/oysterproject/site9measurements)
   
@@ -30,8 +27,10 @@ Data collected can be found in our interactive project map.
 [Salinity Figures - Sites 1-9](http://rpubs.com/melimore86/allsalplots)  
 [Discrete Lab Results- Sites 1-6 ](http://rpubs.com/melimore86/alllabresults)  
 
-Data can also be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
-  
+Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
+ 
+Data collected can also be visually seen in the interactive project map.
+[Map](http://rpubs.com/oysterproject/projectmap)
   
     
 ![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png)
