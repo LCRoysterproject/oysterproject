@@ -33,7 +33,7 @@ Data collected can also be visually seen in the interactive project map.
 [Map](http://rpubs.com/oysterproject/projectmap)
   
     
-![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png)
+![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png) ![WEC](http://blogs.ifas.ufl.edu/wecdept/files/2015/01/ccondon_avatar_1421439208.jpg)
 
 
 
