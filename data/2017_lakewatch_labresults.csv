@@ -1,0 +1,73 @@
+County,Name,Date,Month,Day,Year,Station,TP (µg/L),TN (µg/L),CHL (µg/L),SECCHI (ft),SECCHI 2,Color (Pt-Co Units),Specific conductance (µS/cm @ 25° C),Specific conductance (mS/cm @ 25° C)
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,1,77,1070,5,2,Bottom (2.0),16,,1368
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,2,51,670,10,2.3,,9,28,
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,3,77,910,15,1.8,,8,23,
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,4,101,880,14,1.5,,8,32,
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,5,39,500,14,3,,8,30,
+Levy,Cedar Key-Lone Cabbage,1/2/2017,1,2,2017,6,93,1110,3,1.5,,22,,3187
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,1,110,1250,50,4,Bottom (4.0),91,14,
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,2,66,830,4,4,,99,10,
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,3,50,550,3,2.5,,69,7,
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,4,55,710,7,2,,66,13,
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,5,58,840,9,4,,92,12,
+Levy,Cedar Key-Lone Cabbage,2/5/2017,2,5,2017,6,60,670,9,2,,64,12,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,1,29,410,3,3.5,,18,38,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,2,27,400,5,3.3,,15,33,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,3,30,390,2,2.8,,15,35,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,4,25,400,5,3.5,,14,31,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,5,18,310,2,4,,12,27,
+Levy,Cedar Key-Lone Cabbage,3/6/2017,3,6,2017,6,25,390,1,2.3,,14,33,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,1,37,690,5,2.8,,18,9,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,2,43,940,7,2,,27,13,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,3,44,830,8,0.8,,20,11,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,4,38,800,7,2,,20,11,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,5,42,1010,12,1.5,,28,14,
+Levy,Cedar Key-Lone Cabbage,4/2/2017,4,2,2017,6,33,590,4,1.5,,17,9,
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,1,49,770,4,2,,11,,21
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,2,38,470,3,2.8,,10,,22
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,3,53,610,16,3,,12,,48
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,4,33,490,13,2,,14,,17
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,5,35,530,9,4.3,,14,,16
+Levy,Cedar Key-Lone Cabbage,5/1/2017,5,1,2017,6,34,480,4,4.5,,11,,5
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,1,38,640,10,4,Weeds (4.0),9,,14
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,2,38,470,19,4.5,Weeds (4.5),9,,15
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,3,49,550,30,2.5,Weeds (2.5),10,,19
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,4,46,510,28,4,Weeds (4.0),9,,22
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,5,34,380,20,4.5,Weeds (4.5),6,,18
+Levy,Cedar Key-Lone Cabbage,6/3/2017,6,3,2017,6,33,470,13,3.3,Weeds (3.3),8,,14
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,1,78,920,7,2,,65,,5
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,2,92,680,23,2,,39,,11
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,3,79,740,62,2,,20,,21
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,4,64,710,48,2,,26,,20
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,5,96,860,59,2,,31,,20
+Levy,Cedar Key-Lone Cabbage,7/5/2017,7,5,2017,6,89,690,20,2.3,,40,,11
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,1,73,730,7,2,,22,12,
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,2,76,670,7,1.5,,26,15,
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,3,75,740,5,2,,29,13,
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,4,69,700,6,2,,28,17,
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,5,60,590,6,2.8,,22,14,
+Levy,Cedar Key-Lone Cabbage,7/31/2017,7,31,2017,6,67,730,3,2.5,,28,18,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,1,83,670,4,1.5,,76,8,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,2,77,630,15,3,,49,18,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,3,66,600,9,3.3,,41,20,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,4,79,630,17,2.5,Bottom (2.5),43,21,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,5,72,610,9,2.8,,46,18,
+Levy,Cedar Key-Lone Cabbage,8/27/2017,8,27,2017,6,81,720,2,1.8,,85,8,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,1,88,690,18,2.5,,83,27,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,2,71,590,6,2,,76,25,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,3,73,610,12,3,,94,29,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,4,56,590,15,3,,81,27,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,5,71,650,15,2.3,,86,28,
+Levy,Cedar Key-Lone Cabbage,9/29/2017,9,29,2017,6,61,610,16,2,,77,26,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,1,64,730,7,1.8,,92,7,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,2,80,930,18,2.8,,105,15,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,3,87,930,25,2.8,,95,17,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,4,82,940,18,1,,85,14,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,5,64,790,12,1,,83,12,
+Levy,Cedar Key-Lone Cabbage,10/26/2017,10,26,2017,6,56,720,4,2,,83,7,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,1,47,710,19,4,Bottom (4.0),21,20,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,2,44,520,29,4.3,,14,31,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,3,41,450,12,4.5,,13,34,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,4,43,500,30,2.5,,14,30,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,5,40,500,44,4,,15,28,
+Levy,Cedar Key-Lone Cabbage,12/1/2017,12,1,2017,6,35,650,30,3.5,,25,14,
