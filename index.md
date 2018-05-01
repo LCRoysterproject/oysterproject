@@ -1,8 +1,7 @@
 ---
-output:
-  html_document:
-    fig_width: 10
-    fig_height: 8
+output: 
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r r_packages, include=FALSE}
