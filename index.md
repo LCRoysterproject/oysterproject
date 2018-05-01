@@ -26,11 +26,11 @@ The locations data links are arranged in the order they lay near the Lone Cabbag
 
 [Salinities and temperature plots](http://rpubs.com/melimore86/allsalplots) are available for all nine site locations.
 
-[Discrete lab results](http://rpubs.com/melimore86/alllabresults) are available for Sites 1 through 6, and are processed by Lakewatch UF.
+[Discrete lab results](http://rpubs.com/melimore86/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6.
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
-Data collected can also be visually seen in the interactive project map.
+Data collected are also represented visually with [Leaflet](https://github.com/Leaflet/Leaflet).
 [Map](http://rpubs.com/oysterproject/projectmap)
   
     
