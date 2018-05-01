@@ -37,6 +37,7 @@ This figure is available for zoomability.
 
 ```{r r_site8, include= FALSE}
 ##### Site 1 Analysis with Diver sensor
+#test
 
 LC_WQ1 <- read.csv("data/LC_WQ1_All_Days_R.csv", header= T)
 
@@ -146,7 +147,7 @@ dis$Date <- as.POSIXct(as.Date(dis$oldDate,origin= "1899-12-30"))
 phos1 <-
   ggplot(data= site1, aes(x= Date)) +
   ggtitle("Phosphorus") +
-  labs(x= "Date", y= "Phosphorus (µg/L)& Discharge/160") +
+  labs(x= "Date", y= "Phosphorus (Âµg/L)& Discharge/160") +
   geom_line(data= dis, aes(y=Discharge/160), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Phosphorus),color= "black", size=3) +
   scale_y_continuous(limits=c(0,125)) +
@@ -164,7 +165,7 @@ phos1 <-
 nitro1 <-
   ggplot(data= site1, aes(x= Date)) +
   ggtitle("Nitrogen") +
-  labs(x= "Date", y= "Nitrogen (µg/L)& Discharge/13") +
+  labs(x= "Date", y= "Nitrogen (Âµg/L)& Discharge/13") +
   geom_line(data= dis, aes(y=Discharge/13), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Nitrogen),color= "black", size=3) +
   scale_y_continuous(limits=c(0,1500)) +
@@ -182,7 +183,7 @@ nitro1 <-
 chloro1 <-
 ggplot(data= site1, aes(x= Date)) +
   ggtitle("Chlorophyll") +
-  labs(x= "Date", y= "Chlorophyll (µg/L)& Discharge/250") +
+  labs(x= "Date", y= "Chlorophyll (Âµg/L)& Discharge/250") +
   geom_line(data= dis, aes(y=Discharge/250), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Chlorophyll),color= "black", size=3) +
   scale_y_continuous(limits=c(0,80)) +
@@ -297,14 +298,14 @@ par(mfrow=c(3,2))
 plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$Date, site1$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Phosphorus", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
+plot(site1$Date, site1$Phosphorus, pch=19, ylab="Phosphorus (Âµg/L)", xlab="Date", main="Phosphorus", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$Date, site1$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Nitrogen", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
+plot(site1$Date, site1$Nitrogen, pch=19, ylab="Nitrogen (Âµg/L)", xlab="Date", main="Nitrogen", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
@@ -312,7 +313,7 @@ plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c
 #polygon(xx,yy,col="cornflowerblue", border=NA)
 axis(4, at=pretty(c(0,40000)), col='black')
 par(new=TRUE)
-plot(site1$Date, site1$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Chlorophyll ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
+plot(site1$Date, site1$Chlorophyll, pch=19, ylab="Chlorophyll (Âµg/L)", xlab="Date", main="Chlorophyll ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
 mtext("River Discharge ( cfs)", side = 4,cex=0.6)
 
 plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
