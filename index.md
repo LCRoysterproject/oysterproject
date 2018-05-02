@@ -45,7 +45,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 
 ### Oyster Sampling 
 
-Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys is currently being analysized. 
+Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys is currently being analyzed. 
 
 <img src="pic/IMG_2381.jpg" width="40%"> <img src="pic/IMG_2462.jpg" width="40%">  
 
