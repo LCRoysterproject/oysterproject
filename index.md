@@ -32,7 +32,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
-Data collected are also represented visually here: [Leaftlet Map](http://rpubs.com/oysterproject/projectmap)
+Data collected are also represented visually here: [Leaftlet Map](http://rpubs.com/oysterproject/map)
   
     
 ![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png) ![WEC](http://www.wec.ufl.edu/awards/leadershipaward/_style/images/logo_wec.jpg)
