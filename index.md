@@ -26,13 +26,13 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
   
 [Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)     
 
-<img src="pic/lc_wq_map.jpg" width="60%" align="center" >
+<img src="pic/lc_wq_map.jpg" width="60%" >
 
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.
 
-<img src="pic/varall.png" width="90%">
+<img src="pic/varall.png" width="100%">
 
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
@@ -42,6 +42,8 @@ Data collected are also represented visually here: [Leaftlet Map](http://rpubs.c
 <img src="pic/20180417_sensor_algae.jpg" width="50%">
 
 ### Oyster Sampling 
+
+Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys is currently being analysized. 
 
 <img src="pic/IMG_2381.jpg" width="50%"> <img src="pic/IMG_2462.jpg" width="50%">
 
