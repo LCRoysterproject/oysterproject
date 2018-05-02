@@ -38,7 +38,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
  
 Data collected are also represented visually here: [Leaftlet Map](http://rpubs.com/oysterproject/map)
 
-<img src="pic/20180417_sensor_algae.jpg" width="50%">
+<img src="pic/20180417_sensor_algae.jpg" width="40%">
 
 ### Oyster Sampling 
 
