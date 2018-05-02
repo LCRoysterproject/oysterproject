@@ -13,9 +13,11 @@ sea level conditions.
 You can read more about the project here : 
 [R.E.E.F](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
-## Data
+## Data Collection
 
-Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites.  
+### Water Quality Monitoring
+
+Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.   
 
 <img align="center" src="pic/lc_wq_map.jpg" width="60%">.
 
