@@ -32,9 +32,9 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.
 
-<p align="center">
+<align="center">
 <img src="pic/varall.png" width="100%">
-</p>
+</>
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
  
