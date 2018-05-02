@@ -20,7 +20,7 @@ You can read more about the project here :
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.   
 
 
-<src="pic/lc_wq_map.jpg" width="60%" align="center">
+<src="pic/lc_wq_map.jpg" width="60%">
 
 Sensor data site links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)
