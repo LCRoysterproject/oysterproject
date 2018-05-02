@@ -34,7 +34,7 @@ Data collected are also represented visually here: [Leaftlet Map](http://rpubs.c
 
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
 
-<img src="pic/varall.png" width="90%">
+<img src="pic/varall.png" width="100%">
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
 
