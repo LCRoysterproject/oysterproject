@@ -26,7 +26,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
   
 [Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)     
 
-<img src="pic/lc_wq_map.jpg" width="40%" >
+<img src="pic/lc_wq_map.jpg" width="55%" >
 
 Data collected are also represented visually here: [Leaftlet Map](http://rpubs.com/oysterproject/map)
 
