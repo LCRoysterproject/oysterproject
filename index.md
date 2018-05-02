@@ -32,11 +32,12 @@ Data collected are also represented visually here: [Leaftlet Map](http://rpubs.c
 
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
+Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
+
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
 
 <img src="pic/varall.png" width="100%">
 
-Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
 
 <img src="pic/20180417_sensor_algae.jpg" width="40%">  
 [Image above is Steve B, collecting a sensor from Lone Cabbage, covered in ocean plants]  
