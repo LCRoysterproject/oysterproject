@@ -34,9 +34,6 @@ The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](htt
 
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
 
-<img src="pic/varall.png" width="100%">
-
-
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).
 
 
