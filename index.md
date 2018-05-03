@@ -5,7 +5,7 @@ output:
 ---
 ![marsh](http://www.wec.ufl.edu/oysterproject/i/header_oysters.jpg)
 
-## Project
+# Project
 
 The goal - keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of reefs in a way that is resilient both to sea level rise, and to continued low flows from the river. By so doing, we predict healthy reefs will buffer the estuaries from fluctuations in salinity, and from coastal erosion. The effects of this buffering should cascade to the fish, shellfish, birds and plant communities that humans care about, under a variety of future climate and 
 sea level conditions.
@@ -13,9 +13,9 @@ sea level conditions.
 You can read more about the project here : 
 [R.E.E.F](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
-## Data Collection
+# Data Collection
 
-### Water Quality Monitoring
+## Water Quality Monitoring
 
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
 These data are provisional raw downloads from instruments and subject to revision following QA/QC procedures.  
@@ -39,7 +39,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 <img src="pic/20180417_sensor_algae.jpg" width="40%">  
 [Image above is Steve B, collecting a sensor from Lone Cabbage, covered in ocean plants]  
 
-#### Proposed Reef
+### Proposed Reef
 
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
 
@@ -47,7 +47,7 @@ The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](htt
 
 [Images above are 3D renderings of proposed oyster reef]
 
-### Oyster Sampling 
+## Oyster Sampling 
 
 Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
 
