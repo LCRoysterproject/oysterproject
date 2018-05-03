@@ -32,7 +32,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
 
-<img src="pic/lc_pads_3d_2nd.jpg" width="40%" > <img src="pic/lc_pads_3d.jpg" width="40%" >
+<img src="pic/lc_pads_3d_2nd.JPG" width="40%" > <img src="pic/lc_pads_3d.JPG" width="40%" >
 
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
