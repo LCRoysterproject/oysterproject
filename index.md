@@ -37,7 +37,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
 <img src="pic/20180417_sensor_algae.jpg" width="40%"> <img src="pic/20180417_collector_deploy2.jpg" width="40%">   
-[Image above is Steve B, collecting a sensor from Lone Cabbage, covered in ocean plants]  
+[(left) Steve B, Research Coordinator, retrieving a sensor covered in red algae, (right) spat collector being attached to a sensor deployment canister]  
 
 ## Oyster Bed Surveys and Proposed Reef
 
