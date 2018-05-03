@@ -44,7 +44,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
 
 <img src="pic/lc_ pads_3d_2nd.JPG" width="40%" > <img src="pic/lc_pads_3d.JPG" width="40%" >
-
+[Images above are 3D renderings of proposed oyster reef]
 
 ### Oyster Sampling 
 
