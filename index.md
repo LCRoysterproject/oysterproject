@@ -39,7 +39,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 <img src="pic/20180417_sensor_algae.jpg" width="40%">  
 [Image above is Steve B, collecting a sensor from Lone Cabbage, covered in ocean plants]  
 
-### Proposed Reef
+## Proposed Reef
 
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
 
