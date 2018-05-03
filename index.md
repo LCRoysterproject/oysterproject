@@ -47,7 +47,7 @@ The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](htt
 
 [Images above are 3D renderings of proposed oyster reef]
 
-## Oyster Sampling 
+## Oyster Sampling Efforts
 
 Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
 
