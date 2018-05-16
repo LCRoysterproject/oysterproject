@@ -30,14 +30,6 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 <img src="pic/lc_wq_map.jpg" width="55%" >
 
-<p>Here’s a basic example:</p>
-<pre class="r"><code>library(leaflet)
-
-m &lt;- leaflet() %&gt;%
-  addTiles() %&gt;%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup=&quot;The birthplace of R&quot;)
-
-
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 [Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
