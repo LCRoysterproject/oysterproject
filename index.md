@@ -83,7 +83,7 @@ Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are co
   <style>
   body { margin:0; padding:0; }
   #map { position: absolute; top:0; bottom:0; right:0; left:0; }
-  #map-title { position: relative; margin-top: 10px; margin-left: 10px; float: top; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 30px; z-index: 800; }
+  #map-title { position: relative; margin-top: 10px; margin-left: 10px; float: top; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 6px; font-family: Helvetica; font-weight: bold; font-size: 30px; z-index: 200; }
   </style>
 </head>
 <body>
