@@ -2,3 +2,6 @@ theme: jekyll-theme-slate
 use_directory_urls: https://lcroysterproject.github.io/oysterproject/
 title: Oyster Restoration Project
 
+map {
+  height: 200px;
+}
