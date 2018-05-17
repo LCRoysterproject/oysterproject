@@ -3,6 +3,7 @@ output:
   md_document:
     variant: markdown
 ---
+
 ![marsh](http://www.wec.ufl.edu/oysterproject/i/header_oysters.jpg)
 
 # Project
@@ -82,13 +83,7 @@ Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are co
   <!-- Position the map and title with Cascading Style Sheet (.css) -->
   <style>
   body { margin:0; padding:0; }
-  #map { top: 1;
-    bottom:1; 
-    right:1; 
-    left:1;
-    right: 1;
-    width: 200px;
-    height: 100px; }
+  #map { top: 1; bottom:1; right:1;  width: 200px; height: 100px; }
   #map-title { position: absolute; margin-top: 10px; margin-left: 10px; float: bottom; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 6px; font-family: Helvetica; font-weight: bold; font-size: 30px; z-index: 200; }
   </style>
 </head>
