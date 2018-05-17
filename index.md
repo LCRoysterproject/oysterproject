@@ -118,7 +118,7 @@ Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are co
   // controlLayers.addBaseLayer(terrain, 'Stamen Terrain basemap');
   /* Display a blue point marker with pop-up text */
   L.marker([29.266459979116917, -83.115749973803759]).addTo(map) // EDIT latitude, longitude to re-position marker
-  .bindPopup("Site 1, Serial # V5602"); // EDIT pop-up text message
+  .bindPopup("").bindLabel('Site 1, Serial # V5602'); // EDIT pop-up text message
   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
   // var customLayer = L.geoJson(null, {
   //  onEachFeature: function(feature, layer) {
