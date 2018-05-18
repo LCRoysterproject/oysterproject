@@ -41,17 +41,24 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
 ## Oyster Bed Surveys and Proposed Reef
 
-The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
+Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).  
+
+Click the video below to view the Lone Cabbage Proposed Proposed Oyster Reef Animation.  
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=FFgyLVYWrg
 " target="_blank"><img src="http://img.youtube.com/vi/FFgyLVYWrg/0.jpg" 
-alt="Lone Cabbage Proposed Reef Animation" width="240" height="180" border="10" /></a>
+alt="Lone Cabbage Proposed Reef Animation" width="500" height="300" border="10" /></a>
+
+## Benthic Sampling
+
+<img align="center" src="pic/benthic.jpg" width="45%"><img align="center" src="pic/benthic2.jpg" width="45%">  
+[(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,] 
 
 ## Oyster Sampling Efforts
 
 Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
 
-<img align="center" src="pic/IMG_2381.jpg" width="40%"> <img align="center" src="pic/IMG_2462.jpg" width="40%">  
+<img align="center" src="pic/IMG_2381.jpg" width="45%"> <img align="center" src="pic/IMG_2462.jpg" width="45%">  
 
 
 
