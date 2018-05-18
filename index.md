@@ -7,7 +7,7 @@ output:
 <br /> 
   
   
-<img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="150" height="150" src="pic/wec.jpg"> <br />  
+<img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="125" height="100" src="pic/wec.jpg"> <br />  
 <br /> 
 <br /> 
 # **Project**
