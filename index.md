@@ -51,10 +51,10 @@ Temperature and salinity (estimated from conductivity measures) are recorded hou
 Please click on the right map icon to select oyster beds surveyed for select years. The proposed oyster reef layer is also available for viewing.Oyster beds displayed are part of a Lone Cabbage sampling effort, and not representative of all oyster beds in Cedar Key, FL. Click on each sensor to view its continous and/or discrete water quality data.  
 
 <iframe seamless src="html/intermap.html" width="100%" 
-height="750"></iframe>
+height="700"></iframe>
 
 <iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
-height="400"></iframe>
+height="500"></iframe>
 
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
