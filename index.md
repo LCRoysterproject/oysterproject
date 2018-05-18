@@ -30,6 +30,14 @@ Oyster sampling is conducted randomly near and around Lone Cabbage Reef. Surveys
 <img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
 
+## **Oyster Bed Surveys and Proposed Reef**
+
+Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [**Leaftlet Map**](http://rpubs.com/oysterproject/map).  
+
+Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation.  
+
+<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
+
 ## **Water Quality Monitoring**
 
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
@@ -53,13 +61,6 @@ Site data can be compared in the [**Shiny App**](https://oysterprojectck.shinyap
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF]  
-## **Oyster Bed Surveys and Proposed Reef**
-
-Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [**Leaftlet Map**](http://rpubs.com/oysterproject/map).  
-
-Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation.  
-
-<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="600" height="400" controls preload></video>
 
 ## **Benthic Sampling**
 
