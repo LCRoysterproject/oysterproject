@@ -49,7 +49,7 @@ These data are provisional raw downloads from instruments and subject to revisio
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at sites 2 and 4-9, and CTD sensors at sites 1 and 3.  
 
 <iframe seamless src="html/intermap.html" width="100%" 
-height="500"></iframe>
+height="600"></iframe>
 
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
