@@ -48,6 +48,10 @@ Continous data are collected in nine sites with Star-Oddi and Diver sensors. The
 These data are provisional raw downloads from instruments and subject to revision following QA/QC procedures.  
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at sites 2 and 4-9, and CTD sensors at sites 1 and 3.  
 
+<iframe seamless src="html/intermap.html" width="100%" 
+height="500"></iframe>
+
+
 Sensor data site links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
 [Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)
   
