@@ -10,7 +10,7 @@ The goal - keeping estuaries resilient in the face of global change. The primary
 sea level conditions.
 
 You can read more about the project here : 
-[R.E.E.F](http://www.wec.ufl.edu/oysterproject/restoration.php)
+[**R.E.E.F**](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
 # **Data Collection**
 
