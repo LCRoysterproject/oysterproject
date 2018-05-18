@@ -18,7 +18,7 @@ You can read more about the project here :
 
 Oyster samples are collected randomly near and around Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and live/dead oyster counts. Data for these surveys are currently being analyzed (May 2018). Below is a map of the sample areas.
 
-<div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="70%" ></div>
+<div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="90%" ></div>
 
 ### **Transect Sampling**
 
@@ -51,7 +51,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
   
 [Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)   
 
-<div style="text-align:center"><img align="center" src="pic/Rplot.png" width="85%" ></div>
+<div style="text-align:center"><img align="center" src="pic/Rplot.png" width="90%" ></div>
 
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
