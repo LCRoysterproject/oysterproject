@@ -4,7 +4,7 @@ output:
     variant: markdown
 ---
 ##### Table of Contents  
-[Headers](##headers)  
+[Oyster Sampling Efforts](##Oyster Sampling Efforts)  
 [Emphasis](###emphasis)  
 <a name="headers"/>
 
@@ -25,7 +25,8 @@ You can read more about the project here :
 
 # **Data Collection**
 
-## **Oyster Sampling Efforts**
+
+<a name="## **Oyster Sampling Efforts**"/>
 
 Oyster samples are collected randomly near and around Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and live/dead oyster counts. Data for these surveys are currently being analyzed (May 2018). Below is a map of the sample areas.
 
