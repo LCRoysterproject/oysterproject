@@ -26,7 +26,7 @@ Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are co
 ### Quadrats
 
 <img align="center" src="pic/20180130_103905_LT24_QUAD.jpg" width="45%"><img align="center" src="pic/20180130_092538_BT42_QUAD.jpg" width="45%">   
-[Random quadrat sampling (Jan 2018),] 
+[Random quadrat sampling (Jan 2018)] 
 
 ## Water Quality Monitoring
 
@@ -50,7 +50,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
-[(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF,]  
+[(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF]  
 ## Oyster Bed Surveys and Proposed Reef
 
 Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).  
@@ -68,7 +68,7 @@ alt="Lone Cabbage Proposed Reef Animation" width="500" height="300" border="10" 
 Benthic samples are collected at the 9 water quality sites, and are currently being processed (May 2018).     
 
 <img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%">   
-[(left) Undergraduate Technician Steve L processing samples,(right) microscope view of benthic sample,] 
+[(left) Undergraduate Technician Steve L processing samples,(right) microscope view of benthic sample] 
 
 
 
