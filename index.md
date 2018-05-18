@@ -3,7 +3,7 @@ output:
   md_document:
     variant: markdown
 ---
-<img align="left" width="800" height="200" src="pic/ifas.png"><img align="right" width="300" height="200" src="wec.jpg">  
+<img align="left" width="400" height="150" src="pic/ifas.png"><img align="right" width="200" height="150" src="pic/wec.jpg">  
 # **Project**
 
 The goal - keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of reefs in a way that is resilient both to sea level rise, and to continued low flows from the river. By so doing, we predict healthy reefs will buffer the estuaries from fluctuations in salinity, and from coastal erosion. The effects of this buffering should cascade to the fish, shellfish, birds and plant communities that humans care about, under a variety of future climate and 
