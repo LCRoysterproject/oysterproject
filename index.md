@@ -58,11 +58,9 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 
 Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).  
 
-Click the video below to view the Lone Cabbage Proposed Oyster Reef Animation.  
+Click below to start the video for the animation of the Proposed Lone Cabbage Oyster Reef.  
 
-[![Lone Cabbage Proposed Reef Animation](https://img.youtube.com/vi/_FFgyLVYWrg/0.jpg)](https://www.youtube.com/watch?v=_FFgyLVYWrg)
-
-<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="500" height="300" controls preload></video>
+<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="600" height="400" controls preload></video>
 
 ## Benthic Sampling
 
