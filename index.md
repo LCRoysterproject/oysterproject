@@ -37,7 +37,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
-<img align="center" src="pic/20180511_6.jpg" width="45%">                 <img align="center" src="pic/20180430_14.jpg" width="45%">   
+<div style="text-align:center"><img align="center" src="pic/20180511_6.jpg" width="45%"></div>    <div style="text-align:center"><img align="center" src="pic/20180430_14.jpg" width="45%"></div>   
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
 ## Oyster Bed Surveys and Proposed Reef
 
