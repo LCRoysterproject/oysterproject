@@ -47,6 +47,8 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
 These data are provisional raw downloads from instruments and subject to revision following QA/QC procedures.  
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at sites 2 and 4-9, and CTD sensors at sites 1 and 3.  
+Please click on the right map icon to select oyster beds surveyed for select years. The proposed oyster reef layer is also available for viewing.    
+Oyster beds displayed are part of a Lone Cabbage sampling effort, and not representative of all oyster beds in Cedar Key, FL.  
 
 <iframe seamless src="html/intermap.html" width="100%" 
 height="600"></iframe>
