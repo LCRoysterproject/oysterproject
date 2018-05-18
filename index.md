@@ -40,7 +40,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 <img src="pic/20180417_sensor_algae.jpg" width="40%"> <img src="pic/20180417_collector_deploy2.jpg" width="40%">   
 [(left) Steve B, Research Coordinator, retrieving a sensor covered in red algae, (right) spat collector being attached to a sensor deployment canister]  
 
-<img src="pic/20180430_14.jpg" width="45%">  <img src="pic/20180511_6.jpg" width="40%">  
+<img src="pic/20180430_14.jpg" width="40%">  <img src="pic/20180511_6.jpg" width="40%">  
 ## Oyster Bed Surveys and Proposed Reef
 
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
