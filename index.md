@@ -23,11 +23,11 @@ These data are provisional raw downloads from instruments and subject to revisio
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at stations 2 and 4-9, and CTD sensors at stations 1 and 3.  
 
 Sensor data site links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
-[Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)
+<p style="text-align: center;">[Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)</p>
   
-[Site 5](http://rpubs.com/oysterproject/site5measurements), [Site 2](http://rpubs.com/oysterproject/site2measurements), [Site 8](http://rpubs.com/oysterproject/site8measurements) 
+<p style="text-align: center;">[Site 5](http://rpubs.com/oysterproject/site5measurements), [Site 2](http://rpubs.com/oysterproject/site2measurements), [Site 8](http://rpubs.com/oysterproject/site8measurements)</p> 
   
-[Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)     
+<p style="text-align: center;">[Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)</p>     
 
 <div style="text-align:center"><img align="center" src="pic/lc_wq_map.jpg" width="70%" ></div>
 
