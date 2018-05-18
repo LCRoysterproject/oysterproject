@@ -4,10 +4,10 @@ output:
     variant: markdown
 ---
 ##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+[Oyster Sampling Efforts](##Oyster Sampling Efforts)  
+[Quality Monitoring](##Water Quality Monitoring)  
+[Benthic Sampling](##Benthic Sampling)  
+
 
 <br /> 
  
