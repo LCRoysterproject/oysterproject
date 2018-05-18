@@ -29,7 +29,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
   
 <p style="text-align: center;">[Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)</p>     
 
-<div style="text-align:center"><img align="center" src="pic/lc_wq_map.jpg" width="70%" ></div>
+<img align="center" src="pic/lc_wq_map.jpg" width="70%" >
 
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
@@ -37,7 +37,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
-<div style="text-align:center"><img align="center" src="pic/20180511_6.jpg" width="45%"></div>    <div style="text-align:center"><img align="center" src="pic/20180430_14.jpg" width="45%"></div>   
+<img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
 ## Oyster Bed Surveys and Proposed Reef
 
