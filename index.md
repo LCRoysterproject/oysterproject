@@ -52,8 +52,8 @@ Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet
 
 Click the video below to view the Lone Cabbage Proposed Proposed Oyster Reef Animation.  
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=FFgyLVYWrg
-" target="_blank"><img src="http://img.youtube.com/vi/FFgyLVYWrg/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=https://youtu.be/_FFgyLVYWrg
+" target="_blank"><img src="http://img.youtube.com/vi/https://youtu.be/_FFgyLVYWrg/0.jpg" 
 alt="Lone Cabbage Proposed Reef Animation" width="500" height="300" border="10" /></a>
 
 ## Benthic Sampling
