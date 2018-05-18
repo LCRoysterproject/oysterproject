@@ -40,7 +40,7 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 <img src="pic/20180417_sensor_algae.jpg" width="40%"> <img src="pic/20180417_collector_deploy2.jpg" width="40%">   
 [(left) Steve B, Research Coordinator, retrieving a sensor covered in red algae, (right) spat collector being attached to a sensor deployment canister]  
 
-<img src="pic/20180511_6.jpg" width="40%">  <img src="pic/20180430_14.jpg" width="40%"> 
+<img src="pic/20180511_6.jpg" width="40%">                 <img src="pic/20180430_14.jpg" width="40%">   
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
 ## Oyster Bed Surveys and Proposed Reef
 
