@@ -71,7 +71,7 @@ Site data can be compared in the [**Shiny App**](https://oysterprojectck.shinyap
 Benthic samples are collected at the nine water quality sites, and are currently being processed (May 2018).     
 
 <img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%">   
-[(left) Undergraduate Technician Steve L processing samples,(right) microscope view of benthic sample] 
+[(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample] 
 
 
 
