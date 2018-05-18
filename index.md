@@ -53,9 +53,6 @@ Please click on the right map icon to select oyster beds surveyed for select yea
 <iframe seamless src="html/intermap.html" width="100%" 
 height="675"></iframe>
 
-<iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
-height="500"></iframe>
-
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 [**Salinity and temperature figures**](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
