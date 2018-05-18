@@ -3,7 +3,13 @@ output:
   md_document:
     variant: markdown
 ---
-
+<br /> 
+<br /> 
+  
+  
+<img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="150" height="150" src="pic/wec.jpg"> <br />  
+<br /> 
+<br /> 
 # **Project**
 
 The goal - keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of reefs in a way that is resilient both to sea level rise, and to continued low flows from the river. By so doing, we predict healthy reefs will buffer the estuaries from fluctuations in salinity, and from coastal erosion. The effects of this buffering should cascade to the fish, shellfish, birds and plant communities that humans care about, under a variety of future climate and 
@@ -72,12 +78,6 @@ Benthic samples are collected at the nine water quality sites, and are currently
 
 <img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
-<br /> 
-<br /> 
-  
-  
-<img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="150" height="150" src="pic/wec.jpg"> <br />  
-<br /> 
-<br /> 
+
   
 
