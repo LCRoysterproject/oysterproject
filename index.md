@@ -16,10 +16,15 @@ You can read more about the project here :
 
 ## Oyster Sampling Efforts
 
-Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
+Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed (May 2018). 
 
-<img align="center" src="pic/IMG_2381.jpg" width="45%"> <img align="center" src="pic/IMG_2462.jpg" width="45%">  
+### Transects
 
+
+### Quadrats
+
+<img align="center" src="pic/20180130_103905_LT24_QUAD.jpg" width="45%"><img align="center" src="pic/20180130_092538_BT42_QUAD.jpg" width="45%">   
+[Quadrat sampling (Jan 2018),] 
 
 ## Water Quality Monitoring
 
@@ -43,7 +48,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
-[(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
+[(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF,]  
 ## Oyster Bed Surveys and Proposed Reef
 
 Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).  
