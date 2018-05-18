@@ -60,12 +60,10 @@ alt="Lone Cabbage Proposed Reef Animation" width="500" height="300" border="10" 
 
 Benthic samples are collected at the 9 water quality sites, and are currently being processed (May 2018).     
 
-<img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/sidesteven.jpg" width="45%">  
-[Undergraduate Technician Steve L working up benthic samples,] 
+<img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%"> 
+[(left) Undergraduate Technician Steve L working up benthic samples,(right) Benthic samples, microscope view),] 
 
 
-<img align="center" src="pic/benthic.jpg" width="45%"><img align="center" src="pic/benthic2.jpg" width="45%">    
-[Benthic samples, microscope view (left), benthic sample unprocessed view (right),] 
 
 
 
