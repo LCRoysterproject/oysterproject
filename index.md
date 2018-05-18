@@ -27,7 +27,7 @@ Oyster sampling is conducted randomly near and around Lone Cabbage Reef. Surveys
 
 ### **Quadrat Sampling**
 
-<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="55%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="55%">   
+<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
 
 ## **Water Quality Monitoring**
