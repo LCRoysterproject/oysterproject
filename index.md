@@ -62,8 +62,8 @@ Site data can be compared in the [**Shiny App**](https://oysterprojectck.shinyap
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF]  
 
-<div style="text-align:center"><img align="center" src="pic/20180511_11.jpg" width="45%"></div>
-[Lab Technician Mel M retrieving sensor data at water quality sites]  
+<div style="text-align:center"><img align="center" src="pic/20180511_11.jpg" width="55%"></div>
+<div style="text-align:center">[Lab Technician Mel M retrieving sensor data at water quality sites] </div>
 
 
 ## **Benthic Sampling**
