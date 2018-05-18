@@ -58,12 +58,6 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 <div style="text-align:center"><img align="center" src="pic/Rplot.png" width="97%" ></div>
 
 
-<img src="intermap.html"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-
-
-
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 [**Salinity and temperature figures**](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
