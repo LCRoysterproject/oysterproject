@@ -59,7 +59,7 @@ Click the video below to view the Lone Cabbage Proposed Oyster Reef Animation.
 
 [![Lone Cabbage Proposed Reef Animation](https://img.youtube.com/vi/_FFgyLVYWrg/0.jpg)](https://www.youtube.com/watch?v=_FFgyLVYWrg)
 
-<video src="pic/My Movie.wmv" poster="pic/lc_ pads_3d_2nd.JPG" width="320" height="200" controls preload></video>
+<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="500" height="300" controls preload></video>
 
 ## Benthic Sampling
 
