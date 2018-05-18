@@ -16,6 +16,13 @@ You can read more about the project here :
 
 # Data Collection
 
+## Oyster Sampling Efforts
+
+Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
+
+<img align="center" src="pic/IMG_2381.jpg" width="45%"> <img align="center" src="pic/IMG_2462.jpg" width="45%">  
+
+
 ## Water Quality Monitoring
 
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
@@ -51,14 +58,13 @@ alt="Lone Cabbage Proposed Reef Animation" width="500" height="300" border="10" 
 
 ## Benthic Sampling
 
-<img align="center" src="pic/benthic.jpg" width="45%"><img align="center" src="pic/benthic2.jpg" width="45%">  
+Benthic samples are collects at the 9 water quality sites.   
+
+<img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/surprised steve.jpg" width="45%">   
+
+
+<img align="center" src="pic/benthic.jpg" width="45%"><img align="center" src="pic/benthic2.jpg" width="45%">    
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,] 
-
-## Oyster Sampling Efforts
-
-Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
-
-<img align="center" src="pic/IMG_2381.jpg" width="45%"> <img align="center" src="pic/IMG_2462.jpg" width="45%">  
 
 
 
