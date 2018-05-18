@@ -20,7 +20,7 @@ Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are co
 
 ### Transects
 
-<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="45%"><img align="center" src="pic/20171107_oyster_lcor32.jpg" width="45%"> 
+<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="40%"><img align="center" src="pic/20171107_oyster_lcor32.JPG" width="45%">   
 [Transect sampling (Nov 2017), (right) Peter Fredrick, project advisor ] 
 
 ### Quadrats
