@@ -4,8 +4,7 @@ output:
     variant: markdown
 ---
 
-<!--ts-->
-<!--te-->
+$ ./gh-md-toc --insert README.test.md
 
 <br /> 
  
