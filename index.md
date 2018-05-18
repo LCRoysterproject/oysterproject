@@ -3,8 +3,11 @@ output:
   md_document:
     variant: markdown
 ---
-
-$ ./gh-md-toc --insert README.test.md
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
 
 <br /> 
  
