@@ -29,7 +29,7 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
   
 [Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)     
 
-<div style="text-align:center"><img align="center" src="pic/lc_wq_map.jpg" width="55%" ></div>
+<div style="text-align:center"><img align="center" src="pic/lc_wq_map.jpg" width="70%" ></div>
 
 [Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
@@ -37,10 +37,10 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
-<img src="pic/20180417_sensor_algae.jpg" width="40%"> <img src="pic/20180417_collector_deploy2.jpg" width="40%">   
+<img align="center" src="pic/20180417_sensor_algae.jpg" width="40%"> <img align="center" src="pic/20180417_collector_deploy2.jpg" width="40%">   
 [(left) Steve B, Research Coordinator, retrieving a sensor covered in red algae, (right) spat collector being attached to a sensor deployment canister]  
 
-<img src="pic/20180511_6.jpg" width="40%">                 <img src="pic/20180430_14.jpg" width="40%">   
+<img align="center" src="pic/20180511_6.jpg" width="40%">                 <img align="center" src="pic/20180430_14.jpg" width="40%">   
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples,]  
 ## Oyster Bed Surveys and Proposed Reef
 
@@ -54,7 +54,7 @@ The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](htt
 
 Oyster sampling is all surveyed near and along Lone Cabbage Reef. Surveys are conducted using quadrats, transects, and counts. Data for these surveys are currently being analyzed. 
 
-<img src="pic/IMG_2381.jpg" width="40%"> <img src="pic/IMG_2462.jpg" width="40%">  
+<img align="center" src="pic/IMG_2381.jpg" width="40%"> <img align="center" src="pic/IMG_2462.jpg" width="40%">  
 
 
 
