@@ -20,7 +20,7 @@ Oyster sampling is conducted randomly near and around Lone Cabbage Reef. Surveys
 
 ### Transect Sampling
 
-<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="35%"><img align="center" src="pic/20171107_oyster_lcor32.JPG" width="45%">   
+<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="32%"><img align="center" src="pic/20171107_oyster_lcor32.JPG" width="45%">   
 [Transect sampling (Nov 2017), (right) Peter Fredrick, project advisor ] 
 
 ### Quadrat Sampling
