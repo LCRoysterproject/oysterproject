@@ -48,8 +48,7 @@ Continous data are collected in nine sites with Star-Oddi and Diver sensors. The
 These data are provisional raw downloads from instruments and subject to revision following QA/QC procedures.  
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at sites 2 and 4-9, and CTD sensors at sites 1 and 3.  
 <br />
-Please click on the right map icon to select oyster beds surveyed for select years. The proposed oyster reef layer is also available for viewing.      
-Oyster beds displayed are part of a Lone Cabbage sampling effort, and not representative of all oyster beds in Cedar Key, FL.  
+Please click on the right map icon to select oyster beds surveyed for select years. The proposed oyster reef layer is also available for viewing.Oyster beds displayed are part of a Lone Cabbage sampling effort, and not representative of all oyster beds in Cedar Key, FL. Click on each sensor to view its continous and/or discrete water quality data.  
 
 <iframe seamless src="html/intermap.html" width="100%" 
 height="750"></iframe>
