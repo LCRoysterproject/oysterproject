@@ -5,10 +5,10 @@ output:
 ---
 ##### Table of Contents  
 [Headers](##headers)  
-[Emphasis](#emphasis)  
+[Emphasis](###emphasis)  
 ...snip...    
 <a name="headers"/>
-## Headers
+
 
 
 <br /> 
