@@ -23,7 +23,7 @@ These data are provisional raw downloads from instruments and subject to revisio
 Temperature and salinity (estimated from conductivity measures) are recorded hourly using CT sensors at stations 2 and 4-9, and CTD sensors at stations 1 and 3.  
 
 Sensor data site links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
-<p style="text-align: center;">[Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)</p>
+[Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)
   
 [Site 5](http://rpubs.com/oysterproject/site5measurements), [Site 2](http://rpubs.com/oysterproject/site2measurements), [Site 8](http://rpubs.com/oysterproject/site8measurements)
   
