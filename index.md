@@ -51,17 +51,6 @@ Temperature and salinity (estimated from conductivity measures) are recorded hou
 <iframe seamless src="html/intermap.html" width="100%" 
 height="500"></iframe>
 
-
-Sensor data site links are arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.  
-[Site 6](http://rpubs.com/oysterproject/site6measurements),    [Site 1](http://rpubs.com/oysterproject/site1measurements),    [Site 7](http://rpubs.com/oysterproject/site7measurements)
-  
-[Site 5](http://rpubs.com/oysterproject/site5measurements), [Site 2](http://rpubs.com/oysterproject/site2measurements), [Site 8](http://rpubs.com/oysterproject/site8measurements)
-  
-[Site 4](http://rpubs.com/oysterproject/site4measurements),  [Site 3](http://rpubs.com/oysterproject/site3measurements), [Site 9](http://rpubs.com/oysterproject/site9measurements)   
-
-<div style="text-align:center"><img align="center" src="pic/Rplot.png" width="97%" ></div>
-
-
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
 [**Salinity and temperature figures**](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
