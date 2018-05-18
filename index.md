@@ -43,9 +43,9 @@ Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.i
 
 The proposed reef and oyster bed surveys can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).
 
-<img src="pic/lc_ pads_3d_2nd.JPG" width="40%" > <img src="pic/lc_pads_3d.JPG" width="40%" >  
-
-[Images above are 3D renderings of proposed oyster reef]
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=FFgyLVYWrg
+" target="_blank"><img src="http://img.youtube.com/vi/FFgyLVYWrg/0.jpg" 
+alt="Lone Cabbage Proposed Reef Animation" width="240" height="180" border="10" /></a>
 
 ## Oyster Sampling Efforts
 
