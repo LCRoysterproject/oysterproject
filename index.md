@@ -43,17 +43,17 @@ Sensor data site links are arranged in the order they lay near the Lone Cabbage 
 
 <div style="text-align:center"><img align="center" src="pic/lc_wq_map.jpg" width="70%" ></div>
 
-[Discrete lab results](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
+[**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
-[Salinity and temperature figures](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
+[**Salinity and temperature figures**](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
 
-Site data can be compared in the [Shiny App](https://oysterprojectck.shinyapps.io/mels-shiny/).  
+Site data can be compared in the [**Shiny App**](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off the inside of the sensor containers, (right) Steve B, processing water quality samples for Lakewatch UF]  
 ## **Oyster Bed Surveys and Proposed Reef**
 
-Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [Leaftlet Map](http://rpubs.com/oysterproject/map).  
+Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [**Leaftlet Map**](http://rpubs.com/oysterproject/map).  
 
 Click below to start the video for the animation of the Proposed Lone Cabbage Oyster Reef.  
 
