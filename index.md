@@ -72,6 +72,8 @@ Benthic samples are collected at the nine water quality sites, and are currently
 
 <img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
+<br /> 
+<br /> 
   
   
 <img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="150" height="150" src="pic/wec.jpg"> <br />  
