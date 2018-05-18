@@ -4,9 +4,12 @@ output:
     variant: markdown
 ---
 ##### Table of Contents  
-[Oyster Sampling Efforts](##Oyster Sampling Efforts)  
-[Quality Monitoring](##Water Quality Monitoring)  
-[Benthic Sampling](##Benthic Sampling)  
+[Oyster Sampling Efforts](##Oyster Sampling Efforts)
+<a name="Oyster Sampling Efforts"/>
+[Quality Monitoring](##Water Quality Monitoring)
+<a name="Water Quality Monitoring"/>
+[Benthic Sampling](##Benthic Sampling)
+<a name="Benthic Sampling"/>
 
 
 <br /> 
