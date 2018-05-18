@@ -53,7 +53,7 @@ Please click on the right map icon to select oyster beds surveyed for select yea
 Oyster beds displayed are part of a Lone Cabbage sampling effort, and not representative of all oyster beds in Cedar Key, FL.  
 
 <iframe seamless src="html/intermap.html" width="100%" 
-height="600"></iframe>
+height="750"></iframe>
 
 [**Discrete lab results**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for Sites 1 through 6, for 2017.
 
