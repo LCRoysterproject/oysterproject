@@ -79,6 +79,7 @@ Benthic samples are collected at the nine water quality sites, and are currently
 
   
     
-<div style="text-align:center">![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png) ![WEC](http://www.wec.ufl.edu/awards/leadershipaward/_style/images/logo_wec.jpg)</div>
+<div style="text-align:center">![UF](http://branding.ifas.ufl.edu/media/brandingifasufledu/IFASWeb20132-300x99.png)</div>
+<div style="text-align:center">![WEC](http://www.wec.ufl.edu/awards/leadershipaward/_style/images/logo_wec.jpg)</div>
 
 
