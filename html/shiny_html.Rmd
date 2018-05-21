@@ -1,0 +1,399 @@
+---
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(shiny)
+library(tidyverse)
+library(lubridate)
+library(gridExtra)
+library(shinythemes)
+library(ggplot2)
+library(scales)
+#library(leaflet)
+#library(rsconnect)
+library("shinydashboard")
+library(leaflet)
+library("rsconnect")
+library(lubridate)
+library(dplyr)
+library(zoo)
+library("waterData")
+library(marelac)
+
+
+
+```
+
+```{r include=FALSE}
+LC_WQ1 <- read.csv("data/LC_WQ1_All_Days_R.csv", header= T)
+LC_WQ2 <- read.csv("data/LC_WQ2_All_Days_R.csv", header= T)
+LC_WQ3 <- read.csv("data/LC_WQ3_All_Days_R.csv", header= T)
+LC_WQ4 <- read.csv("data/LC_WQ4_All_Days_R.csv", header= T)
+LC_WQ5 <- read.csv("data/LC_WQ5_All_Days_R.csv", header= T)
+LC_WQ6 <- read.csv("data/LC_WQ6_All_Days_R.csv", header= T)
+LC_WQ7 <- read.csv("data/LC_WQ7_All_Days_R.csv", header= T)
+LC_WQ8 <- read.csv("data/LC_WQ8_All_Days_R.csv", header= T)
+LC_WQ9 <- read.csv("data/LC_WQ9_All_Days_R.csv", header= T)
+
+colnames(LC_WQ1) <- c("Date", "Sound/Pressure", "Temperature", "Conductivity")
+colnames(LC_WQ3) <- c("Date", "Sound/Pressure", "Temperature", "Conductivity")
+colnames(LC_WQ2) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ4) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ5) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ6) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ7) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ8) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+colnames(LC_WQ9) <- c("Date", "Temperature", "Salinity", "Conductivity", "Sound/Pressure")
+
+LC_WQ1$Date <- as.POSIXct(as.Date(LC_WQ1$Date,origin= "1899-12-30"))
+LC_WQ2$Date <- as.POSIXct(as.Date(LC_WQ2$Date,origin= "1899-12-30"))
+LC_WQ3$Date <- as.POSIXct(as.Date(LC_WQ3$Date,origin= "1899-12-30"))
+LC_WQ4$Date <- as.POSIXct(as.Date(LC_WQ4$Date,origin= "1899-12-30"))
+LC_WQ5$Date <- as.POSIXct(as.Date(LC_WQ5$Date,origin= "1899-12-30"))
+LC_WQ6$Date <- as.POSIXct(as.Date(LC_WQ6$Date,origin= "1899-12-30"))
+LC_WQ7$Date <- as.POSIXct(as.Date(LC_WQ7$Date,origin= "1899-12-30"))
+LC_WQ8$Date <- as.POSIXct(as.Date(LC_WQ8$Date,origin= "1899-12-30"))
+LC_WQ9$Date <- as.POSIXct(as.Date(LC_WQ9$Date,origin= "1899-12-30"))
+
+standard= 42.914
+
+LC_WQ1$Salinity <- convert_RtoS(LC_WQ1$Conductivity/standard, 
+                                t= LC_WQ1$Temperature, p= 0)
+LC_WQ2$Salinity <- convert_RtoS(LC_WQ2$Conductivity/standard, 
+                                t= LC_WQ2$Temperature, p=0)
+LC_WQ3$Salinity <- convert_RtoS(LC_WQ3$Conductivity/standard, 
+                                t= LC_WQ3$Temperature, p= 0)
+LC_WQ4$Salinity <- convert_RtoS(LC_WQ4$Conductivity/standard, 
+                                t= LC_WQ4$Temperature, p=0)
+LC_WQ5$Salinity <- convert_RtoS(LC_WQ5$Conductivity/standard, 
+                                t= LC_WQ5$Temperature, p=0)
+LC_WQ6$Salinity <- convert_RtoS(LC_WQ6$Conductivity/standard, 
+                                t= LC_WQ6$Temperature, p=0)
+LC_WQ7$Salinity <- convert_RtoS(LC_WQ7$Conductivity/standard, 
+                                t= LC_WQ7$Temperature, p=0)
+LC_WQ8$Salinity <- convert_RtoS(LC_WQ8$Conductivity/standard, 
+                                t= LC_WQ8$Temperature, p=0)
+LC_WQ9$Salinity <- convert_RtoS(LC_WQ9$Conductivity/standard, 
+                                t= LC_WQ9$Temperature, p=0)
+
+LC_WQ1$Site<-(LC_WQ1$Site="1")
+LC_WQ2$Site<-(LC_WQ2$Site="2")
+LC_WQ3$Site<-(LC_WQ3$Site="3")
+LC_WQ4$Site<-(LC_WQ4$Site="4")
+LC_WQ5$Site<-(LC_WQ5$Site="5")
+LC_WQ6$Site<-(LC_WQ6$Site="6")
+LC_WQ7$Site<-(LC_WQ7$Site="7")
+LC_WQ8$Site<-(LC_WQ8$Site="8")
+LC_WQ9$Site<-(LC_WQ9$Site="9")
+
+sensor<- rbind (LC_WQ1, LC_WQ2, LC_WQ3, LC_WQ4, LC_WQ5, LC_WQ6, LC_WQ7, LC_WQ8, LC_WQ9)
+
+
+###Lakewatch Data
+lab <- read.csv("data/discrete_measurement.csv", header= T)
+
+colnames(lab) <- c("Site", "Date", "Time", "Sun_code", "Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Color", "DO", "Temperature","Conductivity", "Salinity", "Depth", "Sensor_Type")
+
+#lab$Date<- paste(lab$oldDate, lab$Time)
+#lab$Date <- with(lab, as.POSIXct(paste(lab$oldDate, lab$Time), format="%Y-%m-%d %H:%M"))
+#lab$Date <- as.POSIXct(paste(lab$Date, lab$Time), format="%Y-%m-%d %H:%M")
+
+lab$Secchi<- paste(lab$Depth,lab$Secchi)
+
+lab$Secchi<-as.numeric(gsub('NA','',lab$Secchi))
+
+lab$Date <- as.POSIXct(as.Date(lab$Date,origin= "1899-12-30"))
+
+#lab$Date <- as.Date(lab$Date,format="%Y-%m-%d %H:%M")
+#lab$Date <- as.Date(lab$Date, "%m/%d/%Y")
+#lab$allconduct<-NA
+#lab$allconduct<-paste(lab$SpecificConductancemilli,lab$SpecificConductancemicro)
+#lab$allconduct<-as.numeric(gsub('NA','',lab$allconduct))
+
+lab$Secchi<- (lab$Secchi/ 3.28)
+
+
+#### River Discharge Data
+station = '02323500'   
+
+stinfo  = siteInfo(station)
+dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1950-01-01") 
+dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
+dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
+
+colnames(dis) <- c("StaID", "Discharge", "Date", "QualCode", "Year", "Month")
+
+dis$Date <- as.POSIXct(as.Date(dis$Date))
+
+dis$Month <- month(dis$Date, label=TRUE)
+dis$Month2 <- month(dis$Date, label=FALSE)
+
+
+#dis_mean_year<-  aggregate( Discharge ~ Year, dis, mean )
+#dis_mean_month<-  aggregate( Discharge ~ Month, dis, mean )
+
+
+####Joining 
+
+##Need to convert the site into numeric for both data.frames
+sensor$Site<- as.numeric(sensor$Site)
+lab$Site<- as.numeric(lab$Site)
+
+dat <- full_join(sensor, lab, by = c("Site", "Date","Conductivity", "Salinity", "Temperature"))
+
+dat$Date <- as.POSIXct(as.Date(dat$Date,origin= "1899-12-30"))
+```
+
+
+```{r pressure, echo= FALSE}
+ui <- fluidPage(theme = shinytheme("yeti"),
+  
+  #titlePanel("University of Florida Oyster Restoration Project"),
+  
+  #leafletOutput("mymap"),
+
+
+  #titlePanel("Cedar Key, FL Data"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      
+      
+      #h2("Hydrology"),
+      
+      
+      #selectInput("year1","Year", 
+                  #choices = unique(dis$Year)), 
+      
+      #selectInput("year2", "Comparison Year", 
+                  #choices = c("None" = 0, unique(dis$Year))),
+      
+      #checkboxGroupInput("selection",
+                         #label = h4("Figure Selection"),
+                         #choices = list("Linear" = "linear",
+                                        #"Boxplot"= "box",
+                                       # "Histogram" = "hist"),
+                                       # selected = c("box")),
+
+      
+      h2("Water Quality"),
+    
+      selectInput("site", label= h4("Site"), 
+                  choices=unique(dat$Site)),
+      
+      selectInput("site2", label=h4("Comparison"), 
+                  choices=c("None" = 0,unique(dat$Site))),
+      
+      dateRangeInput("date",
+                     label =h4('Water Quality Sensor Date range'),
+                     start = "2017-01-01" , end = Sys.Date() + 7),
+
+      
+      checkboxGroupInput("variable",
+                         label = h4("Observations"),
+                         choices = list("Salinity (ppt)" = "Salinity",
+                                        "Conductivity (mS/cm)"= "Conductivity",
+                                        "Temperature (C)" = "Temperature",
+                                        "Phosphorus (ug/L)" = "Phosphorus",
+                                        "Nitrogen (ug/L)" = "Nitrogen",
+                                        "Color (Pt-Co Units)" = "Color",
+                                        "Secchi (m)" = "Secchi"),
+                                         selected = c("Salinity"))),
+      #downloadButton("downloadPlot", "Download Plot"),
+      #downloadButton("downloaddat2a", "Download CSV")
+    
+    
+  
+    mainPanel(
+      tabsetPanel(
+        #tabPanel("Hydrology", plotOutput("hyplot")),
+        tabPanel("Figure", plotOutput("plot")),
+        tabPanel("Data Table", dataTableOutput("table"))
+      )
+    )
+  ) 
+)
+
+server <- shinyServer(function(input, output, session) {
+    
+  dataInput <- reactive({
+    dat <- dat %>% 
+      filter(Site == input$site | Site == input$site2,
+             Date >= input$date[1] & Date <= input$date[2]) %>% 
+      select(Site, Date, input$variable) %>% 
+      gather("Variable", "Measurement", input$variable) 
+    dat
+    
+    dis <- dis %>% 
+      filter(Year == input$year1| Year == input$year2) %>% 
+      select(Year, Date, Discharge, input$selection) %>% 
+      gather("Variable", "Measurement", input$selection) 
+    dis
+    
+  })
+  
+  
+  plotInput <- reactive({
+    
+    dis <- dis %>% 
+      filter(Year == input$year1| Year == input$year2) %>% 
+      select(Year, Date, Discharge, input$selection) %>% 
+      gather("Variable", "Measurement", input$selection) 
+      dis
+      
+    if ( input$selection == "box"){ 
+
+      ggplot(data=dis, aes(x= Month, y=Discharge/1000)) + 
+        geom_boxplot(position = 'identity') +
+        theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),axis.text.x = element_text(angle = 90, hjust = 1)) +
+        labs(x="Month", y="River Discharge (1,000 cfs)") +
+        facet_wrap(~Year, ncol=8)
+    }
+  
+    if ( input$selection == "linear"){  
+      ggplot(data=dis, aes(x= Date, y=Discharge/1000)) + 
+        geom_line() + 
+        scale_x_datetime(
+          breaks = date_breaks("1 month") ,
+          labels = date_format("%b")) +
+        facet_wrap(~year(Date), ncol=8, scale = "free_x") +
+        theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),axis.text.x = element_text(angle = 90, hjust = 1)) +
+        labs(x="Month", y="River Discharge (1,000 cfs)") 
+      }
+
+    if ( input$selection == "hist"){
+      ggplot(data=dis, aes(dis$Discharge/1000)) + 
+        labs(x="Discharge (1,000 cfs)", y="Percentage of frequency", title="Suwannee River Discharge") +  
+        geom_histogram(aes(y = ((..count..)/sum(..count..)*10000))) +
+        theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),axis.text.x = element_text(angle = 90, hjust = 1)) +
+        scale_y_continuous(limits = c(0,100)) +
+        scale_x_continuous(breaks = c(0,5,10,15,20,25,30,35,40,45,50)) +
+        facet_wrap(~Year, ncol=10)
+    }
+ 
+    
+    if  (input$year2 == 0) { NULL }
+  
+  })
+    
+    
+  plotInput <- reactive({
+    dat <- dat %>% 
+      filter(Site == input$site | Site == input$site2,
+             Date >= input$date[1] & Date <= input$date[2]) %>% 
+      select(Site, Date, input$variable) %>% 
+      gather("Variable", "Measurement", input$variable) 
+    
+    ggplot(dat, aes(x = Date, y = Measurement)) +
+      geom_point() +
+      scale_x_datetime(
+        breaks = date_breaks("month") ,
+        labels = date_format("%m/%Y")) +
+      theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid")) +
+      facet_wrap(~ Variable + Site,  scales = "free_y")
+    
+    
+    if (input$site2 == 0) {
+          ggplot(dat, aes(x = Date, y = Measurement)) +
+          geom_point() +
+          scale_x_datetime(
+            breaks = date_breaks("month") ,
+            labels = date_format("%m/%Y")) +
+        theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
+              axis.text.x=element_text(angle=90,hjust=1,vjust=0.5), text = element_text(size=12)) +
+              facet_wrap(~ Variable + Site, ncol = 1, scales = "free_y") +
+              ylab("")
+      
+         } else {
+            ggplot(dat, aes(x = Date, y = Measurement)) +
+            geom_point() +
+            scale_x_datetime(
+               breaks = date_breaks("month") ,
+               labels = date_format("%m/%Y")) +
+            theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, 
+            linetype="solid"),axis.text.x=element_text(angle=90,hjust=1,vjust=0.5), 
+            text = element_text(size=12)) +
+            facet_wrap(~ Variable + Site, ncol = 2, scales = "free_y") +
+            ylab("")
+         }
+    
+    })
+  
+
+
+  #output$mymap <- renderLeaflet({
+    #leaflet() %>% addProviderTiles("OpenStreetMap.HOT", options = providerTileOptions(noWrap = TRUE))%>%
+      #setView(-83.10, 29.25, 13) %>%
+      #addMarkers(
+        #lng = -83.115749973803759, lat = 29.266459979116917,
+      #  label = "Site 1",
+      #  labelOptions = labelOptions(noHide = T,  direction = "right"))%>%
+  #  addMarkers(
+   #     lng = -83.095912020653486, lat = 29.24560303799808,
+  #      label = "Site 2",
+   #     labelOptions = labelOptions(noHide = T,  direction = "right"))%>%
+  #    addMarkers(
+  ##      lng = -83.090120041742921, lat = 29.231049958616495,
+  #      label = "Site 3",
+  #      labelOptions = labelOptions(noHide = T,  direction = "bottom"))%>%
+  #  addMarkers(
+  #      lng = -83.092115018516779, lat = 29.230171032249928,
+  #      label = "Site 4",
+  #      labelOptions = labelOptions(noHide = T,  direction = "left"))%>%
+  #  addMarkers(
+  #      lng = -83.101499984040856, lat = 29.246092038229108,
+  #      label = "Site 5",
+  #      labelOptions = labelOptions(noHide = T,  direction = "left"))%>%
+  #    addMarkers(
+  #      lng = -83.118119034916162, lat = 29.265770986676216,
+  #      label = "Site 6",
+  #      labelOptions = labelOptions(noHide = T,  direction = "left"))%>%
+  #    addMarkers(
+  #      lng = -83.098221989348531, lat = 29.267726987600327,
+  #      label = "Site 7",
+  #      labelOptions = labelOptions(noHide = T,  direction = "right"))%>%
+  #    addMarkers(
+  #      lng = -83.080270970240235, lat = 29.257425041869283,
+  #      label = "Site 8",
+  #      labelOptions = labelOptions(noHide = T,  direction = "right"))%>%
+  ##    addMarkers(
+  #      lng = -83.082710020244122, lat = 29.232152011245489,
+  #      label = "Site 9",
+  #      labelOptions = labelOptions(noHide = T,  direction = "right"))#
+
+ 
+
+  output$table <- renderDataTable({
+    dataInput()
+  })
+  
+  output$plot <-renderPlot({
+    plotInput()
+  })
+  
+
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste("oyster-data", ".csv", sep="")
+    },
+    content = function(file) {
+      write.csv(dat2Input(), file)
+    })
+  
+  output$downloadPlot <- downloadHandler(
+    filename = function() {
+      paste("oyster-plot", ".png", sep="")
+    },
+    content = function(file) {
+      ggsave(file, plotInput(), device = "png")
+    })
+})
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+
+```
+
