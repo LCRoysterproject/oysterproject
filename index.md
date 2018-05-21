@@ -63,6 +63,7 @@ height="675"></iframe>
 
 <br /> 
 <br /> 
+Continous and discrete data for the nine sites can be compared in the Shiny App below.
 <iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
 height="675"></iframe>
 
@@ -70,7 +71,6 @@ height="675"></iframe>
 
 [**Salinity and temperature figures**](http://rpubs.com/oysterproject/allsalplots) are available for all nine site locations.  
 
-Site data can be compared in the [**Shiny App**](https://oysterprojectck.shinyapps.io/mels-shiny/).  
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off sensor containers, (right) perparing water quality samples for Lakewatch UF]  
