@@ -41,9 +41,7 @@ Oyster samples are collected randomly near and around Lone Cabbage Reef. Surveys
 <img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
 
-## **Oyster Bed Surveys and Proposed Reef**
-
-Lone Cabbage Oyster Bed surveys, for select yeas, can be viewed on the [**Leaftlet Map**](http://rpubs.com/oysterproject/map).  
+## **Proposed Reef**
 
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation.  
 
