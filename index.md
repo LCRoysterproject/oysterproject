@@ -48,7 +48,7 @@ FWC landings in Florida data can be found here: [**FWC Landings**](http://myfwc.
 Below is the Shiny App of Landings data from the State of Florida, Apalachicola, and Suwannee counties.
 
 <iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
-height="400"></iframe>
+height="450"></iframe>
 <br />
 ## **Water Quality Monitoring**
 
