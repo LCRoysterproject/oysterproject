@@ -41,6 +41,15 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 
+## **Landings Data**
+
+FWC landings in Florida data can be found here: [**FWC Landings**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). This information is used to "generate statistics on the types of species and quantities landed". 
+<br />
+Below is the Shiny App of Landings data from the State of Florida, Apalachicola, and Suwannee counties.
+
+<iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
+height="400"></iframe>
+<br />
 ## **Water Quality Monitoring**
 
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
