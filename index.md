@@ -3,7 +3,8 @@ output:
   md_document:
     variant: markdown
 ---
-#**Table of Contents**
+# **Table of Contents**
+
 - [**Project**](#project)
 - [**Data Collection**]
   * [**Oyster Sampling Efforts**](#oyster-sampling-efforts)
