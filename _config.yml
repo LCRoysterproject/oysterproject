@@ -2,3 +2,6 @@ theme: jekyll-theme-cayman
 use_directory_urls: https://lcroysterproject.github.io/oysterproject/
 title: Lone Cabbage Reef Restoration Project
 navbar-toggle: true
+use_logo: true
+logo: "pic/ifas.png"
+logo: "pic/wec.jpg"
