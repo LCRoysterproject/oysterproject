@@ -59,7 +59,7 @@ FWC landings in Florida data can be found here: [**FWC Landings**](http://myfwc.
 Below is the Shiny App of Landings data from the State of Florida, Apalachicola, and Suwannee counties.
 <br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
-height="450"></iframe>
+height="475"></iframe>
 <br />
 
 ## **River Discharge**
@@ -69,7 +69,7 @@ Water discharge data are provided by package waterData. River discharge data are
 Below is the Shiny App for the Suwannee River Discharge data. 
 <br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
-height="450"></iframe>
+height="475"></iframe>
 <br />
 
 ## **Water Quality Monitoring**
