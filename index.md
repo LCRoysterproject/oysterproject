@@ -2,10 +2,8 @@
 output: 
   md_document:
     variant: markdown
+    {:toc}
 ---
-{:toc}
-
-
 
 <br /> 
  
