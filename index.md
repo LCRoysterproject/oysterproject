@@ -37,13 +37,15 @@ Oyster samples are collected randomly near and around Lone Cabbage Reef. Surveys
 
 ### **Quadrat Sampling**
 
+Quadrat sampling, in random sites, are used to analyze live/dead oyster counts. 
 <img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
 
 ## **Proposed Reef**
-
-Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation.  
-
+This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
+<br />
+Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and finished in the north end.  
+<br />
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 
 ## **Landings Data**
