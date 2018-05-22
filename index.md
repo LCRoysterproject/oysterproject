@@ -4,14 +4,14 @@ output:
     variant: markdown
 ---
 - [**Project**](#project)
-- [**Data Collection**](#Data-Collection)
-  * [**Oyster Sampling Efforts**](#--oyster-sampling-efforts--)
-    + [**Transect Sampling**](#--transect-sampling--)
-    + [**Quadrat Sampling**](#--quadrat-sampling--)
-  * [**Proposed Reef**](#--proposed-reef--)
-  * [**Landings Data**](#--landings-data--)
-  * [**Water Quality Monitoring**](#--water-quality-monitoring--)
-  * [**Benthic Sampling**](#--benthic-sampling--)
+- [**Data Collection**](#data-collection)
+  * [**Oyster Sampling Efforts**](#oyster-sampling-efforts)
+    + [**Transect Sampling**](#transect-sampling)
+    + [**Quadrat Sampling**](#quadrat-sampling)
+  * [**Proposed Reef**](#proposed-reef)
+  * [**Landings Data**](#landings-data)
+  * [**Water Quality Monitoring**](#water-quality-monitoring)
+  * [**Benthic Sampling**](#benthic-sampling)
 
 # **Project**
 
