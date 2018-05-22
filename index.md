@@ -32,12 +32,15 @@ Oyster samples are collected randomly near and around Lone Cabbage Reef. Surveys
 
 ### **Transect Sampling**
 
+Transect sampling,in random sites, are used to analyze live/dead oyster counts and lengths. 
+<br />
 <img align="center" src="pic/20171106_oyster_lcor9.jpg" width="33%"><img align="center" src="pic/20171107_oyster_lcor32.JPG" width="44%">   
 [(left)Transect sampling (Nov 2017), (right) Peter Fredrick, project advisor ] 
 
 ### **Quadrat Sampling**
 
 Quadrat sampling, in random sites, are used to analyze live/dead oyster counts. 
+<br />
 <img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
 
