@@ -57,7 +57,7 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 FWC landings in Florida data can be found here: [**FWC Landings**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). This information is used to "generate statistics on the types of species and quantities landed". 
 <br />
 Below is the Shiny App of Landings data from the State of Florida, Apalachicola, and Suwannee counties.
-
+<br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
 height="450"></iframe>
 <br />
@@ -65,8 +65,12 @@ height="450"></iframe>
 ## **River Discharge**
 
 Water discharge data are provided by package waterData. River discharge data are measured at USGS gauge 02323500 (Wilcox) Florida as mean daily discharge in cubic feet per second (by convention).
-
-
+<br />
+Below is the Shiny App for the Suwannee River Discharge data. 
+<br />
+<iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
+height="450"></iframe>
+<br />
 
 ## **Water Quality Monitoring**
 
