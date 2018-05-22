@@ -6,7 +6,6 @@ output:
 # **Table of Contents**
 
 - [**Project**](#project)
-- [**Data Collection**]
   * [**Oyster Sampling Efforts**](#oyster-sampling-efforts)
     + [**Transect Sampling**](#transect-sampling)
     + [**Quadrat Sampling**](#quadrat-sampling)
