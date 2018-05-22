@@ -11,6 +11,7 @@ output:
     + [**Quadrat Sampling**](#quadrat-sampling)
   * [**Proposed Reef**](#proposed-reef)
   * [**Landings Data**](#landings-data)
+  * [**River Discharge**](#river-discharge)
   * [**Water Quality Monitoring**](#water-quality-monitoring)
   * [**Benthic Sampling**](#benthic-sampling)
 
@@ -60,6 +61,13 @@ Below is the Shiny App of Landings data from the State of Florida, Apalachicola,
 <iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
 height="450"></iframe>
 <br />
+
+## **River Discharge**
+
+Water discharge data are provided by package waterData. River discharge data are measured at USGS gauge 02323500 (Wilcox) Florida as mean daily discharge in cubic feet per second (by convention).
+
+
+
 ## **Water Quality Monitoring**
 
 Continous data are collected in nine sites with Star-Oddi and Diver sensors. The sites are located around the Lone Cabbage Reef in Cedar Key, FL. Discete measurements are also collected at these sites. Sensors are secured to the ocean bottom, and record continously every hour on the hour.     
