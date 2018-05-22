@@ -3,6 +3,7 @@ output:
   md_document:
     variant: markdown
 ---
+- [**Project**](#--project--)
 - [**Data Collection**](#--data-collection--)
   * [**Oyster Sampling Efforts**](#--oyster-sampling-efforts--)
     + [**Transect Sampling**](#--transect-sampling--)
@@ -11,8 +12,6 @@ output:
   * [**Landings Data**](#--landings-data--)
   * [**Water Quality Monitoring**](#--water-quality-monitoring--)
   * [**Benthic Sampling**](#--benthic-sampling--)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # **Project**
 
