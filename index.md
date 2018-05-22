@@ -3,8 +3,8 @@ output:
   md_document:
     variant: markdown
 ---
-- [**Project**](#--project--)
-- [**Data Collection**](#--data-collection--)
+- [**Project**](#--Project--)
+- [**Data Collection**](#--Data-Collection--)
   * [**Oyster Sampling Efforts**](#--oyster-sampling-efforts--)
     + [**Transect Sampling**](#--transect-sampling--)
     + [**Quadrat Sampling**](#--quadrat-sampling--)
