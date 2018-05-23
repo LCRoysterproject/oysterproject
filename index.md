@@ -69,7 +69,7 @@ Water discharge data are provided by package waterData. River discharge data are
 Below is the Shiny App for the Suwannee River Discharge data. 
 <br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
-height="650"></iframe>
+height="700"></iframe>
 <br />
 
 
