@@ -86,9 +86,6 @@ height="675"></iframe>
 
 <br /> 
 <br /> 
-Continous and discrete data for the nine sites can be compared in the Shiny App below.
-<iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
-height="600"></iframe>
 
 [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
 
