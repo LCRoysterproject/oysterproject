@@ -85,14 +85,11 @@ height="675"></iframe>
 <br /> 
 <br /> 
 
-Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data.
+Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
 <br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
 height="825"></iframe>
-
-
-[**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
-
+<br />
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
 [(left) Steve B, scraping barnacles off sensor containers, (right) perparing water quality samples for Lakewatch UF]  
