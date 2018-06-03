@@ -70,6 +70,11 @@ Below is the Shiny App for the Suwannee River Discharge data.
 <iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
 height="825"></iframe>
 <br />
+Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data.
+<br />
+<iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
+height="825"></iframe>
+
 
 
 ## **Water Quality Monitoring**
