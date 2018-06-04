@@ -79,6 +79,12 @@ We are presenting these data as provisional raw downloads from our instruments f
 <br />
 We have compiled several different base layers of oyster reef distribution to include as layers on this map.  These layers are simply representative layers of oyster reef distribution and do not represent full surveys of available oysters in the area.  Please click on the map icon on the top right of the map to select data layers of interest. The proposed Lone Cabbage Reef restoration layer is also available for viewing.  Each sensor icon on the map represents a different water quality monitoring station. Click on each sensor to view its hourly or discrete water quality data.  
 
+<iframe seamless src="html/intermap.html" width="100%" 
+height="675"></iframe>
+
+<br /> 
+<br /> 
+
 
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
 <br />
