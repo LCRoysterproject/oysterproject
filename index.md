@@ -6,10 +6,10 @@ output:
 # **Table of Contents**
 
 - [**Project**](#project)
+  * [**Reef Construction**](#reef-construction)
   * [**Oyster Sampling Efforts**](#oyster-sampling-efforts)
     + [**Transect Sampling**](#transect-sampling)
     + [**Quadrat Sampling**](#quadrat-sampling)
-  * [**Proposed Reef**](#proposed-reef)
   * [**Landings Data**](#landings-data)
   * [**River Discharge**](#river-discharge)
   * [**Water Quality Monitoring**](#water-quality-monitoring)
@@ -23,6 +23,24 @@ You can read more about the project here :
 [**R.E.E.F**](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
 # **Data Collection**
+
+## **Reef Construction**
+<br /> 
+<br /> 
+
+<iframe seamless src="html/intermap.html" width="100%" 
+height="675"></iframe>
+
+<br /> 
+<br /> 
+
+
+This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
+<br />
+Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
+<br />
+<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
+
 
 ## **Oyster Sampling Efforts**
 
@@ -43,13 +61,6 @@ Quadrat sampling is our primary approach for estimating oyster size structure an
 <br />
 <img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
 [Random quadrat sampling (Jan 2018)] 
-
-## **Proposed Reef**
-This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
-<br />
-Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
-<br />
-<video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 
 ## **Landings Data**
 
