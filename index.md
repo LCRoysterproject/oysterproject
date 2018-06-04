@@ -28,7 +28,7 @@ You can read more about the project here :
 <br /> 
 <br /> 
 
-<iframe seamless src="html/intermap.html" width="100%" 
+<iframe seamless src="html/prop.html" width="100%" 
 height="675"></iframe>
 
 <br /> 
