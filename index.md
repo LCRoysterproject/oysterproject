@@ -25,15 +25,6 @@ You can read more about the project here :
 # **Data Collection**
 
 ## **Reef Construction**
-<br /> 
-<br /> 
-<iframe seamless src="html/prop.html" width="100%" 
-height="675"></iframe>
-
-<br /> 
-<br /> 
-
-
 
 This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
 <br />
