@@ -80,7 +80,7 @@ Below is the Shiny App for the Suwannee River Discharge data.
 height="550"></iframe>
 <br />
 <br />
-<img align="center" src="pic/val_tile.png" width="50%"><img align="center" src="pic/quantile_tile.png width="50%">  
+<img align="center" src="pic/val_tile.png" width="50%"><img align="center" src="pic/quantile_tile.png" width="50%">  
 
 
 ## **Water Quality Monitoring**
