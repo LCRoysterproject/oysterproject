@@ -33,8 +33,6 @@ height="675"></iframe>
 <br /> 
 <br /> 
 
-
-
 This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
 <br />
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
@@ -71,6 +69,8 @@ Below is the Shiny App of Landings data from the State of Florida, Apalachicola,
 <iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
 height="475"></iframe>
 <br />
+<br />
+<img align="center" src="pic/val_tile.jpg" width="50%"><img align="center" src="pic/quantile_tile.jpg" width="50%">  
 
 ## **River Discharge**
 
