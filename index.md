@@ -22,17 +22,7 @@ The goal - keeping estuaries resilient in the face of global change. The primary
 You can read more about the project here : 
 [**R.E.E.F**](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
-# **Data Collection**
-
 ## **Reef Construction**
-
-<br /> 
-<br /> 
-<iframe seamless src="html/prop.html" width="100%" 
-height="675"></iframe>
-
-<br /> 
-<br /> 
 
 
 This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
