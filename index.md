@@ -70,7 +70,7 @@ Below is the Shiny App of Landings data from the State of Florida, Apalachicola,
 height="475"></iframe>
 <br />
 <br />
-<img align="center" src="pic/val_tile.jpg" width="50%"><img align="center" src="pic/quantile_tile.jpg" width="50%">  
+<img align="center" src="pic/val_tile.png" width="50%"><img align="center" src="pic/quantile_tile.png width="50%">  
 
 ## **River Discharge**
 
