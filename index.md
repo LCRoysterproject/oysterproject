@@ -81,7 +81,7 @@ height="550"></iframe>
 
 <br />
 <br />
-<img align="center" src="pic/val_tile.png" width="50%"><img align="center" src="pic/quantile_tile.png" width="50">  
+<img align="center" src="pic/val_tile.png" width="55%"><img align="center" src="pic/quantile_tile.png" width="50%">  
 
 
 
