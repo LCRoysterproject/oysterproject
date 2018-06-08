@@ -25,6 +25,9 @@ You can read more about the project here :
 ## **Reef Construction**
 
 <br /> 
+
+This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. This will be done by placing locally sourced limestone rocks on the footprint of the old oyster reef to create a durable substrate for oyster spat to settle and grow.  The height of the restored reef will be similar to the surrounding natural oyster bars. In years when oyster survival is low we expect for oyster abundance to decline on the reef due to natural mortality - this is expected.  However, the rock core will persist thus helping to promote estuarine conditions by detailing freshwater and the landward (east) side of the reef while also providing suitable substrate for oyster spat to recolonize the reef when conditions improve.
+<br />
 <br /> 
 <iframe seamless src="html/prop.html" width="100%" 
 height="675"></iframe>
@@ -33,8 +36,6 @@ height="675"></iframe>
 <br /> 
 
 
-This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. 
-<br />
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
 <br />
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
@@ -42,7 +43,7 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 
 ## **Oyster Sampling Efforts**
 
-Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (May 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
+Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (June 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
 
 <div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="90%" ></div>
 
@@ -74,12 +75,14 @@ height="475"></iframe>
 
 The Suwannee River is the primary surface water source of freshwater discharge into Suwannee Sound.  We use the waterData package in R to retrieve river discharge data from the USGS gauge 02323500 (Wilcox) gauge.  This gauge is located in the Suwannee River upstream of the tidally influence region of the Suwannee River.  In this graph we are showing mean daily discharge in cubic feet per second (by convention) to represent trends in discharge in the Suwannee River to Suwannee Sound.
 <br />
+
 Below is the Shiny App for the Suwannee River Discharge data. 
 <br />
 <iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
 height="550"></iframe>
 
 <br />
+We are working on a variety of ways to help visualize long-term trends in Suwannee River discharge from the Wilcox gauge.  The graph on the left has year on the vertical axis and month of the year on the horizontal axis.  Each "row" on the graph represents a different year and each column would be a different month.  The colored boxes represent the river discharge for that month and year combination.  You can identify the discharge by looking at the color scale legend.  The graph on the right is a similar graph, but instead of the river discharge we have plotted the discharge quantiles.  The 50% quantile is the median value.  Values between the 25 and 75th quantiles are generally "normal" river discharge levels.  
 <br />
 <img align="center" src="pic/val_tile.png" width="50%"><img align="center" src="pic/quantile_tile.png" width="50%">  
 
@@ -88,6 +91,7 @@ height="550"></iframe>
 ## **Water Quality Monitoring**
 
 We collect key water quality parameters including temperature and conductivity on hourly time stamps at nine different locations near the Lone Cabbage Reef restoration site.  At a sub-set of these sites, we also collect discrete measurements of other variables including color, TN, and TP as part of ongoing coastal water quality monitoring efforts.  
+
 We are presenting these data as provisional raw downloads from our instruments for visualization purposes only.  These data are subject to revision following QA/QC procedures.  We use measured temperature and conductivity to estimate salinity at each of our 9 stations following UNESCO standards.  
 <br />
 We have compiled several different base layers of oyster reef distribution to include as layers on this map.  These layers are simply representative layers of oyster reef distribution and do not represent full surveys of available oysters in the area.  Please click on the map icon on the top right of the map to select data layers of interest. The proposed Lone Cabbage Reef restoration layer is also available for viewing.  Each sensor icon on the map represents a different water quality monitoring station. Click on each sensor to view its hourly or discrete water quality data.  
