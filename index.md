@@ -20,7 +20,7 @@ output:
 The goal - keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of oyster reefs in a way that is resilient both to sea level rise, and to changes in river discharge. This project is predicted to have both ecosystem benefits in terms of enhancing shoreline proection, promoting estuarine conditions, and providing fish and wildlife habitat as well as local effects by providing sites for oyster spat to settle and grow.  Both objectives are of interest to local communities as well as management agencies.
 
 You can read more about the project here : 
-[**R.E.E.F**](http://www.wec.ufl.edu/oysterproject/restoration.php)
+[**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
 ## **Reef Construction**
 
