@@ -65,10 +65,9 @@ Quadrat sampling is our primary approach for estimating oyster size structure an
 
 FWC commercial landings in Florida data can be found here: [**FWC Landings**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). We have included landings information here as a visualization of trends in oyster landings, oyster fishing trips, and oyster CPUE from key oyster fishing areas in the State of Florida. 
 <br />
-Below is the Shiny App of Landings data from the State of Florida, Apalachicola, and Suwannee counties.
+Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee counties.
 <br />
-<iframe seamless src="https://oysterprojectck.shinyapps.io/landing/" width="100%" 
-height="475"></iframe>
+[**Landing Shiny App**](https://oysterprojectck.shinyapps.io/landing/)
 
 
 ## **River Discharge**
@@ -78,8 +77,8 @@ The Suwannee River is the primary surface water source of freshwater discharge i
 
 Below is the Shiny App for the Suwannee River Discharge data. 
 <br />
-<iframe seamless src="https://oysterprojectck.shinyapps.io/river_dishcarge/" width="100%" 
-height="550"></iframe>
+[**River Discharge Shiny App**](https://oysterprojectck.shinyapps.io/river_dishcarge/)
+
 
 <br />
 We are working on a variety of ways to help visualize long-term trends in Suwannee River discharge from the Wilcox gauge.  The graph on the left has year on the vertical axis and month of the year on the horizontal axis.  Each "row" on the graph represents a different year and each column would be a different month.  The colored boxes represent the river discharge for that month and year combination.  You can identify the discharge by looking at the color scale legend.  The graph on the right is a similar graph, but instead of the river discharge we have plotted the discharge quantiles.  The 50% quantile is the median value.  Values between the 25 and 75th quantiles are generally "normal" river discharge levels.  
@@ -105,8 +104,7 @@ height="675"></iframe>
 
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
 <br />
-<iframe seamless src="https://oysterprojectck.shinyapps.io/mels-shiny/" width="100%" 
-height="825"></iframe>
+[**Continuous and Discrete Shiny App**](https://oysterprojectck.shinyapps.io/mels-shiny/)
 <br />
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
