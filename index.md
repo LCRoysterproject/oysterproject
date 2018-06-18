@@ -65,11 +65,11 @@ Quadrat sampling is our primary approach for estimating oyster size structure an
 FWC commercial landings in Florida data can be found here: [**FWC Landings**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). We have included landings information here as a visualization of trends in oyster landings, oyster fishing trips, and oyster CPUE from key oyster fishing areas in the State of Florida. 
 <br />
 <br />
-Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee counties.
+Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee counties. Click on the image below to be redirected to the Shiny App webpage. 
 <br />
 <br />
 [<img src="pic/landings_pic.png">](https://oysterprojectck.shinyapps.io/landing/)
-[**Landing Shiny App**](https://oysterprojectck.shinyapps.io/landing/)
+
 
 
 ## **River Discharge**
@@ -77,10 +77,11 @@ Below is the Shiny App of the Landings data from the State of Florida, Apalachic
 The Suwannee River is the primary surface water source of freshwater discharge into Suwannee Sound.  We use the waterData package in R to retrieve river discharge data from the USGS gauge 02323500 (Wilcox) gauge.  This gauge is located in the Suwannee River upstream of the tidally influence region of the Suwannee River.  In this graph we are showing mean daily discharge in cubic feet per second (by convention) to represent trends in discharge in the Suwannee River to Suwannee Sound.
 <br />
 <br />
-Below is the Shiny App for the Suwannee River Discharge data. 
+Below is the Shiny App for the Suwannee River Discharge data.  Click on the image below to be redirected to the Shiny App webpage. 
 <br />
 <br />
-[**River Discharge Shiny App**](https://oysterprojectck.shinyapps.io/river_dishcarge/)
+[<img src="pic/river_discharge_pic.png">](https://oysterprojectck.shinyapps.io/river_dishcarge/)
+
 
 
 <br />
@@ -105,9 +106,12 @@ height="675"></iframe>
 <br /> 
 
 
-Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  
+Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  Click on the image below to be redirected to the Shiny App webpage.  
 <br />
-[**Continuous and Discrete Shiny App**](https://oysterprojectck.shinyapps.io/mels-shiny/)
+<br />
+
+[<img src="pic/sensor_pic.png">](https://oysterprojectck.shinyapps.io/mels-shiny/)
+
 <br />
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
