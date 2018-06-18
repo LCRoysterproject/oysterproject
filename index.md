@@ -26,15 +26,13 @@ You can read more about the project here :
 
 This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. This will be done by placing locally sourced limestone rocks on the footprint of the old oyster reef to create a durable substrate for oyster spat to settle and grow.  The height of the restored reef will be similar to the surrounding natural oyster bars. In years when oyster survival is low oyster abundance on the reef will likely decline due to natural mortality - this is expected.  However, the rock core will persist, thus helping to promote estuarine conditions by detaining freshwater on the landward (east) side of the reef while also providing suitable substrate for oyster spat to recolonize the reef when conditions improve. As you can see, the reef will not be a single continuous reef, but instead we will follow the footprint of the relic reef that was first surveyed in the late 1800's.  This will create a "chain" of smaller reefs.  This is similar to other fringing "outside" oyster reefs along the Big Bend of Florida.  We are currently working with permiting agencies to plan the location of information signs as private aids to navigation in the area.  We have indicated on the map where these signs may be placed.
 <br />
+<br /> 
 Click on the layers tab on the top right of the map and choose different background maps as well as options to choose to show the proposed sites for the reef reconstruction.  Use the zoom feature on the top left of the map to zoom in and out.
 <br /> 
 <iframe seamless src="html/prop.html" width="100%" 
 height="675"></iframe>
-
 <br /> 
 <br /> 
-
-
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
 <br />
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
