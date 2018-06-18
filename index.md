@@ -66,7 +66,7 @@ FWC commercial landings in Florida data can be found here: [**FWC Landings**](ht
 Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee Sound. Click on the image below to be redirected to the Shiny App webpage. 
 <br />
 <br />
-<div style="text-align:center">[<img align="center" src="pic/landings_pic.png">](https://oysterprojectck.shinyapps.io/landing/)
+<div style="text-align:center">(<img align="center" src="pic/landings_pic.png">)(https://oysterprojectck.shinyapps.io/landing/)
 
 
 
