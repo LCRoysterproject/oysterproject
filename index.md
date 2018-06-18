@@ -95,7 +95,7 @@ We collect key water quality parameters including temperature and conductivity o
 
 We are presenting these data as provisional raw downloads from our instruments for visualization purposes only.  These data are subject to revision following QA/QC procedures.  We use measured temperature and conductivity to estimate salinity at each of our 9 stations following UNESCO standards.  
 <br />
-We have compiled several different base layers of oyster reef distribution to include as layers on this map.  These layers are simply representative layers of oyster reef distribution and do not represent full surveys of available oysters in the area.  Please click on the map icon on the top right of the map to select data layers of interest. The proposed Lone Cabbage Reef restoration layer is also available for viewing.  Each sensor icon on the map represents a different water quality monitoring station. Click on each sensor to view its hourly or discrete water quality data.  
+We have compiled several different base layers of oyster reef distribution to include as layers on this map.  These layers are simply representative layers of oyster reef distribution and do not represent full surveys of available oysters in the area.  Please click on the map icon on the top right of the map to select data layers of interest. The proposed Lone Cabbage Reef restoration layer is also available for viewing.  Each sensor icon on the map represents a different water quality monitoring station. Click on each sensor to view its hourly or discrete water quality data. If the sensor icons in the map don't redirect to each sensor' page, make sure the links are not blocked by your browser. 
 
 <iframe seamless src="html/intermap.html" width="100%" 
 height="675"></iframe>
