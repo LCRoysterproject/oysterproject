@@ -78,7 +78,7 @@ The Suwannee River is the primary surface water source of freshwater discharge i
 Below is the Shiny App for the Suwannee River Discharge data.  Click on the image below to be redirected to the Shiny App webpage. 
 <br />
 <br />
-<div style="text-align:center">[<img align="center" src="pic/river_discharge_pic.png">](https://oysterprojectck.shinyapps.io/river_dishcarge/)
+<div style="text-align:center"><img align="center" src="pic/river_discharge_pic.png">(https://oysterprojectck.shinyapps.io/river_dishcarge/)
 
 
 
@@ -108,7 +108,7 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 <br />
 <br />
 
-<div style="text-align:center">[<img align="center" src="pic/sensor_pic.png">](https://oysterprojectck.shinyapps.io/mels-shiny/)
+<div style="text-align:center"><img align="center" src="pic/sensor_pic.png">(https://oysterprojectck.shinyapps.io/mels-shiny/)
 
 <br />
 
