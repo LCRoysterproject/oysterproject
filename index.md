@@ -113,7 +113,7 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 <br />
 <br />
 
-[<img align="center" src="pic/sensor_pic.png">](https://oysterprojectck.shinyapps.io/mels-shiny/)
+[<img align="center" src="pic/sensor_pic.png">]( https://oysterprojectck.shinyapps.io/wq_app/)
 
 <br />
 
