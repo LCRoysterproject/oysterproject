@@ -1,21 +1,21 @@
 ---
-title: "Salinity Figures - Sites 1-9"
+title: "Salinity Site Comparison"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(cowplot)
-library(devtools)
-library(ggpubr)
-library(grid)
-library(gridExtra)
-library(lattice)
-library(marelac)
-library(scales)
-library(waterData)
-library(hydroTSM)
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("ggthemes")
+library("lattice")
+library("lubridate")
+library("marelac")
+library("scales")
+library("tidyverse")
+library("waterData")
 
 ```
 Displayed are the figures for the nine sensor sites, spatially arranged in the order they lay near the Lone Cabbage Reef from North to South and West to East.    
@@ -24,82 +24,17 @@ Water discharge data provided by package `waterData`. River discharge data are m
 Salinity is calculated by conductivity and temperature measurements.    
 
 
-```{r importdata, include=FALSE, eval=TRUE}
-#
-LC_WQ1 <- read.csv("data/LC_WQ1_All_Days_R.csv", header= T)
-LC_WQ2 <- read.csv("data/LC_WQ2_All_Days_R.csv", header= T)
-LC_WQ3 <- read.csv("data/LC_WQ3_All_Days_R.csv", header= T)
-LC_WQ4 <- read.csv("data/LC_WQ4_All_Days_R.csv", header= T)
-LC_WQ5 <- read.csv("data/LC_WQ5_All_Days_R.csv", header= T)
-LC_WQ6 <- read.csv("data/LC_WQ6_All_Days_R.csv", header= T)
-LC_WQ7 <- read.csv("data/LC_WQ7_All_Days_R.csv", header= T)
-LC_WQ8 <- read.csv("data/LC_WQ8_All_Days_R.csv", header= T)
-LC_WQ9 <- read.csv("data/LC_WQ9_All_Days_R.csv", header= T)
-```
+```{r importdata, include=FALSE}
 
-```{r columns_1and3, include=FALSE}
-#Naming columns, using the Diver sensors, collects date, pressure, temp, conductivity
-colnames(LC_WQ1) <- c("DateTime_Serial", "Pressure", "Temperature", "Conductivity")
-colnames(LC_WQ3) <- c("DateTime_Serial", "Pressure", "Temperature", "Conductivity")
-
-```
-
-```{r renamecolumns, include=FALSE}
-#Renaming columns 
-colnames(LC_WQ2) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ4) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ5) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ6) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ7) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ8) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-colnames(LC_WQ9) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-
-```
-
-```{r datechange, include=FALSE, warning= FALSE, message=FALSE, results="hide", eval=TRUE}
-
-#Changing the format of the dates to be able to plot against time
-LC_WQ1$newDate <- as.POSIXct(as.Date(LC_WQ1$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ2$newDate <- as.POSIXct(as.Date(LC_WQ2$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ3$newDate <- as.POSIXct(as.Date(LC_WQ3$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ4$newDate <- as.POSIXct(as.Date(LC_WQ4$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ5$newDate <- as.POSIXct(as.Date(LC_WQ5$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ6$newDate <- as.POSIXct(as.Date(LC_WQ6$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ7$newDate <- as.POSIXct(as.Date(LC_WQ7$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ8$newDate <- as.POSIXct(as.Date(LC_WQ8$DateTime_Serial,origin= "1899-12-30"))
-LC_WQ9$newDate <- as.POSIXct(as.Date(LC_WQ9$DateTime_Serial,origin= "1899-12-30"))
-
-```
-
-```{r salcal, warning= FALSE,  message=FALSE, results="hide", include=FALSE}
-
-library(marelac)
-
-standard= 42.914
-
-LC_WQ1$Salinity <- convert_RtoS(LC_WQ1$Conductivity/standard, 
-                                t= LC_WQ1$Temperature, p= 0)
-LC_WQ2$Salinity <- convert_RtoS(LC_WQ2$Conductivity/standard, 
-                                t= LC_WQ2$Temperature, p=0)
-LC_WQ3$Salinity <- convert_RtoS(LC_WQ3$Conductivity/standard, 
-                                t= LC_WQ3$Temperature, p= 0)
-LC_WQ4$Salinity <- convert_RtoS(LC_WQ4$Conductivity/standard, 
-                                t= LC_WQ4$Temperature, p=0)
-LC_WQ5$Salinity <- convert_RtoS(LC_WQ5$Conductivity/standard, 
-                                t= LC_WQ5$Temperature, p=0)
-LC_WQ6$Salinity <- convert_RtoS(LC_WQ6$Conductivity/standard, 
-                                t= LC_WQ6$Temperature, p=0)
-LC_WQ7$Salinity <- convert_RtoS(LC_WQ7$Conductivity/standard, 
-                                t= LC_WQ7$Temperature, p=0)
-LC_WQ8$Salinity <- convert_RtoS(LC_WQ8$Conductivity/standard, 
-                                t= LC_WQ8$Temperature, p=0)
-LC_WQ9$Salinity <- convert_RtoS(LC_WQ9$Conductivity/standard, 
-                                t= LC_WQ9$Temperature, p=0)
+wq <- read.csv("data/wq.csv", header= T)
+wq$Date<- as.POSIXct(wq$Date, tz="EST",usetz=TRUE)
+wq<-wq %>% 
+  filter(!(Site == 0))
 
 ```
 
 
-```{r riverdisharge, warning= FALSE,  message=FALSE, results="hide" , include=FALSE}
+```{r dis, warning= FALSE,  message=FALSE, results="hide" , include=FALSE}
 
 #Station to analyze, can be changed to another station
 station = '02323500'   
@@ -116,259 +51,48 @@ dis$month   = as.numeric(strftime(dis$dates,format="%m"))
 
 ```
 
-```{r rddate, warning= FALSE,  message=FALSE, results="hide", include=FALSE}
+
+```{r discol, warning= FALSE,  message=FALSE, results="hide", include=FALSE}
 
 #Naming columns, using the Diver sensors, collects date, pressure, temp, conductivity
-colnames(dis) <- c("StaID", "Values", "Date", "QualCode", "Year", "Month")
+colnames(dis) <- c("StaID", "Values", "oldDate", "QualCode", "Year", "Month")
 head(dis)
 
 #Changing the format of the dates to be able to plot against time
-dis$newDate <- as.POSIXct(as.Date(dis$Date,origin= "1899-12-30"))
+dis$Date <- as.POSIXct(as.Date(dis$oldDate,origin= "1899-12-30"))
 
 ```
 
 
-```{r allplots, warning= FALSE,  message=FALSE,include=FALSE}
+```{r wq, warning= FALSE,  message=FALSE,include=FALSE}
 
-Var1 <- #saving the plot under a name, in this case it is "Var1"
-  ggplot(data= LC_WQ1, aes(x= newDate)) + #add the data file name, and describe the aesthetics using aes(x=, y=), we specify the y-axis in later script
-  ggtitle("Site 1") + #creating a title for the plot
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") + #changing the labels for the x and y- axis
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) + #the ribbon creates a shadow area for the river discharge, and the y values are a fraction of the actual data, which will be corrected when we add our secondary axis
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") + #plotting points for the y-axis of Temperature
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") + #plotting points for the y-axis of Salinity
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) + #creating a secondary y-axis for the river discharge that is portional to the fraction of the river discharge we calculated before
+wq$facet = factor(wq$Site, levels = c("6", "1", "7", "5", "2", "8","4", "3", "9"))
+  
+
+wqplot<-ggplot(data=wq, aes(x=Date))+
+    labs(x= "Date", y= "Temp(C) & Salinity (ppt)", fill ="")+
+  geom_ribbon(data= dis, aes(y=Values/1000, ymin=0, ymax=Values/1000, fill= "River Discharge"), color= "cornflowerblue", alpha=0.5) +
+    geom_point(aes(y= Temperature, fill= "Temperature"),color= "red")+
+    geom_point(aes(y= Salinity, fill= "Salinity"),color= "black")+
+  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) + 
   scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) + #the end date will need to be changed for every new sensor servicing, the dates are in YYYY-MM-DD, the date breaks are by 'week' but can be monthly or daily
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+      as.POSIXct("2018-07-30"))) +
+  scale_fill_manual(values = c("cornflowerblue", "black", "red"),guide = guide_legend(show = TRUE)) +
+  theme(legend.position=("top"),
+    panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
         axis.text=element_text(size=20),
         axis.title=element_text(size=20,face="bold"),
         plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70) #the theme is specifically formatted to be saved as a large .tiff image, this can be edited to a different size graph
-
-Var2 <-
-  ggplot(data= LC_WQ2, aes(x= newDate)) +
-  ggtitle("Site 2") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var3 <-
-  ggplot(data= LC_WQ3, aes(x= newDate)) +
-  ggtitle("Site 3") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var4 <-
-  ggplot(data= LC_WQ4, aes(x= newDate)) +
-  ggtitle("Site 4") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var5 <-
-  ggplot(data= LC_WQ5, aes(x= newDate)) +
-  ggtitle("Site 5") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var6 <-
-  ggplot(data= LC_WQ6, aes(x= newDate)) +
-  ggtitle("Site 6") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var7 <-
-  ggplot(data= LC_WQ7, aes(x= newDate)) +
-  ggtitle("Site 7") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var8 <-
-  ggplot(data= LC_WQ8, aes(x= newDate)) +
-  ggtitle("Site 8") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
-Var9 <-
-  ggplot(data= LC_WQ9, aes(x= newDate)) +
-  ggtitle("Site 9") +
-  labs(x= "Date", y= "Temp(C) & Salinity (ppt)") +
-  geom_ribbon(data= dis, aes(x= newDate, y=Values/1000, ymin=0, ymax=Values/1000, fill= "blue"), fill= "cornflowerblue", alpha=0.5) +
-  geom_point(aes(y= Temperature, colour= "Temperature"), color= "red") +
-  geom_point(aes(y= Salinity, colour= "Salinity"), color= "#000000") +
-  scale_y_continuous(sec.axis = sec_axis(~.*1000, name = "River Discharge (cfs)"), limits=c(0,40)) +
-  scale_x_datetime(
-    breaks = date_breaks("2 weeks") ,
-    labels = date_format("%m/%d"),
-    expand = c(0, 0),
-    limits = c(
-      as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-04-10"))) +
-  theme(panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
-        axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        plot.title =element_text(size=30, face='bold'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        aspect.ratio = 0.70)
-
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+    facet_wrap(~facet)
 ```
 
-```{r legendplot, warning= FALSE,  message=FALSE, include=FALSE}
-
-#Creating a "false" plot with a correct legend
-
-library(cowplot)
-
-legend <- 
-  ggplot(data= LC_WQ1,aes(x= newDate)) +
-  geom_point(aes(y= Salinity, fill= "Salinity (ppt)  "), color= "#999999") +
-  geom_point(aes(y= Temperature, fill= "Temperature (C)   "), color= "#000000") +
-  geom_point(data= dis, aes(x= newDate, y=Values/1000, fill= "River Discharge (cfs)  "), color="cornflowerblue", size=2, show.legend = TRUE, pch=15, alpha=0.4) +
-  guides(fill= guide_legend(show= TRUE, title="", override.aes= list(colour= c("cornflowerblue", "#000000", "red"), size=15))) +
-  scale_y_continuous(sec.axis = sec_axis(~.*600, name = "River Discharge (cfs)  "), limits=c(0,40)) +
-  theme(legend.position = "bottom", legend.text=element_text(size=35))
-
-#creating a legend, to "grob" later in the final `ggdraw`
-legend_b <- get_legend(legend + theme(legend.position="bottom"))
+```{r wqplot, warning= FALSE, fig.width=12,fig.height=9, echo=FALSE}
+wqplot
 ```
 
-
-```{r ggdrawplot, warning= FALSE,  message=FALSE, include=FALSE}
-
-varall<-
-  ggdraw() +
-  draw_plot(Var3, x=0.34, y=0, width=0.3, height=0.30 ) +
-  draw_plot(Var2, x=0.34, y=0.30, width=0.3, height=0.30 ) +
-  draw_plot(Var1, x=0.34, y=0.60, width=0.3, height=0.30 ) +
-  draw_plot(Var4, x=0, y=0, width=0.3, height=0.30 ) +
-  draw_plot(Var5, x=0, y=0.3, width=0.3, height=0.30 ) +
-  draw_plot(Var6, x=0, y=0.6, width=0.3, height=0.30 ) +
-  draw_plot(Var9, x=0.67, y=0, width=0.3, height=0.30 ) +
-  draw_plot(Var8, x=0.67, y=0.3, width=0.3, height=0.30 ) +
-  draw_plot(Var7, x=0.67, y=0.6, width=0.3, height=0.30 ) +
-  draw_grob(legend_b, 0.9/2.5, 0.75, 2/9, 0.4, scale=0.5) 
-
-
-```
-
-```{r finalplot, echo=FALSE, fig.width=35,fig.height=25, dpi= 200, warning= FALSE,  message=FALSE}
-varall
-
-```

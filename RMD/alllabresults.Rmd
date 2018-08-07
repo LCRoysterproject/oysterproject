@@ -1,20 +1,22 @@
 ---
-title: "Discrete Lab Results - Sites 1-6 "
+title: "Discrete Lakewatch Results "
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(grid)
-library(gridExtra)
-library(lubridate)
-library(lattice)
-library(marelac)
-library(scales)
-library(zoo)
-library(waterData)
-library(hydroTSM)
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("ggthemes")
+library("lattice")
+library("lubridate")
+library("marelac")
+library("scales")
+library("tidyverse")
+library("waterData")
+
 
 ```
 
@@ -24,390 +26,205 @@ Only Sites 1-6 have discrete measurements.
 
 
 ```{r dataresults, include=FALSE, eval=TRUE}
-#
-labresults <- read.csv("data/2017_lakewatch_labresults.csv", header= T)
-```
 
-```{r columns, include=FALSE}
+lab <- read.csv("data/discrete_measurement.csv", header= T)
 
-colnames(labresults) <- c("County", "Name", "Date", "Month", "Day","Year","Station", "Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Secchi 2", "Color", "SpecificConductancemicro", "SpecificConductancemilli")
-```
+colnames(lab) <- c("Site", "Date", "Time_org", "Time_UTC", "Sun_code", "Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Color", "DO", "Temperature","Conductivity", "Salinity", "Depth", "Sensor_Type")
 
+lab$Secchi<- (lab$Secchi/ 3.28)
 
-```{r asdate, include=FALSE}
-labresults$newDate <- as.Date(labresults$Date, origin= "1899-12-30")
+lab<- lab %>%
+  filter(Sensor_Type == "lakewatch")
 
-labresults$newDate <- as.Date(labresults$Date, "%m/%d/%Y")
-```
+lab$Date <- as.POSIXct(as.Date(lab$Date,origin= "1899-12-30"))
 
-```{r conduct, include=FALSE}
-
-labresults$allconduct<-NA
-
-labresults$allconduct<-paste(labresults$SpecificConductancemilli,labresults$SpecificConductancemicro)
-
-labresults$allconduct<-as.numeric(gsub('NA','',labresults$allconduct))
-
-labresults$Secchi<- (labresults$Secchi/ 3.28)
+lab$facet = factor(lab$Site, levels = c("6", "1", "5", "2","4", "3"))
 
 ```
 
 
-```{r subset, include=FALSE }
-site1<-subset(labresults,Station=="1")
-site2<-subset(labresults,Station=="2")
-site3<-subset(labresults,Station=="3")
-site4<-subset(labresults,Station=="4")
-site5<-subset(labresults,Station=="5")
-site6<-subset(labresults,Station=="6")
-```
+```{r dis, warning= FALSE,  message=FALSE, results="hide" , include=FALSE}
 
-```{r riverdischarge, include=FALSE, warning=FALSE, message=FALSE,}
-# River Disharge
-
-#station to analyze
+#Station to analyze, can be changed to another station
 station = '02323500'   
-#get site name to use in plot titles and such
+
+#Get site name to use in plot titles and such
 stinfo  = siteInfo(station)
 
-#read entire time series
-dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1950-01-01")
+#Read entire time series, might take several minutes
+dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1950-01-01") 
 
-#get some date components
+#Getting some date components
 dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
 dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
 
-#make dataset from epochs, 
-disE  = dis[dis$dates>='1950-01-01' & dis$dates<='2017-10-01',]  
+```
 
-#get monthly sum, mean, sd, and var
-#discharge
-disE.mo  = aggregate(val~month+year,data=disE,FUN = function(x) c(mean(x,na.rm=T),sd(x,na.rm=T),var(x,na.rm=T),sum(x)))
-disE.mo  = do.call('data.frame',disE.mo)
-names(disE.mo)[3:6] = c('avg','sd','var','sumflow') 
-disE.mo$yrmo = disE.mo$year+(disE.mo$month-0.5)/12       
-
-
-#get yearly mean, sd, and var
-#discharge
-disE.yr  = aggregate(val~year,data=disE,FUN = function(x) c(mean(x,na.rm=T),sd(x,na.rm=T),var(x,na.rm=T)))
-disE.yr  = do.call('data.frame',disE.yr)
-names(disE.yr)[2:4] = c('avg','sd','var')                      
-
-
-#make some time series objects
-disE.zoo    = zoo(disE$val,disE$dates)  
-
-disE.mo.ts  = ts(disE.mo$avg,start=c(1950,1),end=c(2017,10),frequency=12)
-disE.mo.sum.ts  = ts(disE.mo$sumflow,start=c(1950,1),end=c(2017,10),frequency=12)
-disE.yr.ts  = ts(disE.yr$avg,start=1950,end=2017,frequency=1)
+```{r discol, warning= FALSE,  message=FALSE, results="hide", include=FALSE}
 
 #Naming columns, using the Diver sensors, collects date, pressure, temp, conductivity
-colnames(dis) <- c("StaID", "Values", "Date", "QualCode", "Year", "Month")
+colnames(dis) <- c("StaID", "Discharge", "oldDate", "QualCode", "Year", "Month")
+head(dis)
 
 #Changing the format of the dates to be able to plot against time
-dis$newDate <- as.Date(dis$Date,origin= "1899-12-30")
-
+dis$Date <- as.POSIXct(as.Date(dis$oldDate,origin= "1899-12-30"))
 
 ```
-
-```{r xy, include= FALSE}
-xx <- c(dis$newDate, rev(dis$newDate))
-yy <- c(rep(0, nrow(dis)), rev(dis$Values))
-```
-
-##Phosphorus
-
 
 ```{r phos, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2)) #this code specifies for 3 rows and 2 columns
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col= "cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black') 
-#the `plot` commands requires x and y-axis variables which are dates and phosphorus respectively, `pch` changes the shape of the point, `ylab` is the y-axis label, `xlab` is the x-axis label, `main` will specify the main plot title, `ylim` will create a min and max for the main y-axis, `format` will convert the date into a numeric format to be mm-yy, `las` rotates the x-axis ticks and labels to be vertical, `cex` changes the size of the points
-par(new=TRUE) #this adds a secondary y-axis to the plot
-plot(site6$newDate, site6$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 6 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2) #this new plot adds the river discharge with no axes to the already existing plot, the `xlim` is regulated by date, since the river discharge data starts in the 1960s until 2017, `type=l` makes the data plotted in a line, the `col` makes a blue transparent line which is in transparency 20% 
-#polygon(xx,yy,col="cornflowerblue", border=NA) #the `polygon` function recalls the `xx` and `yy` that was created #this is the secondary axis which has a different limit than the primary axis, normally it is around 35,000 but can range up to 55,000 in previous years
-mtext("River Discharge ( cfs)", side = 4,cex=0.6) #the code adds text for the secondary y-axis 
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 1", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge (cfs)", side = 4,cex=0.6)
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = 
-c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 5", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 2 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 4 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Site 3 ", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
+  
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Phosphorus") +
+  ylab ("Phosphorus(�g/L)") +
+  geom_line(data= dis, aes(y=Discharge/160), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Phosphorus), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*160, name = "River Discharge (cfs)"), limits=c(0,125)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30"))) +
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
 ```
-
-##Nitrogen
-
-
+<br>
+<br>
 ```{r nitrogen, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2))
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$newDate, site6$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 6", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 1", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 5", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 2", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 4", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Site 3", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Nitrogen")+
+  ylab ("Nitrogen(�g/L)") +
+  geom_line(data= dis, aes(y=Discharge/13), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Nitrogen), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*13, name = "River Discharge (cfs)"), limits=c(0,1500)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30")))+
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
 ```
-
-##Chlorophyll
-```{r chloro, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2))
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$newDate, site6$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 6 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 1 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 5 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 2 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 4 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Site 3 ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
+<br>
+<br>
+```{r chlorophyll, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Chlorophyll")+
+  ylab ("Chlorophyll(�g/L)") +
+  geom_line(data= dis, aes(y=Discharge/250), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Chlorophyll), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*250, name = "River Discharge (cfs)"), limits=c(0,80)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30"))) +
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
 ```
-
-##Secchi
-
-
-```{r secchi, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2))
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$newDate, site6$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 6", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 1", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 5", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 2", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 4", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Site 3", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-```
-
-##Color
+<br>
+<br>
 ```{r color, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2))
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$newDate, site6$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 6", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 1", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 5", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 2", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 4", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Site 3", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Color") +
+  ylab ("Color(Pt-Co Units)") +
+  geom_line(data= dis, aes(y=Discharge/160), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Color), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*160, name = "River Discharge (cfs)"), limits=c(0,125)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30"))) +
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
 ```
-
-##Conductivity
-
-
-```{r condplot, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
-par(mfrow=c(3,2))
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$newDate, site6$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 6", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site1$newDate, site1$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 1", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site5$newDate, site5$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 5", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site2$newDate, site2$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 2", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site4$newDate, site4$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 4", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-
-plot(x=dis$newDate, y=dis$Values, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.Date("2017-01-01"),as.Date("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site3$newDate, site3$allconduct, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Site 3", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
+<br>
+<br>
+```{r secchi, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Secchi") +
+  ylab ("Secchi (ft)") +
+  geom_line(data= dis, aes(y=Discharge/10000), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Secchi), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*10000, name = "River Discharge (cfs)"), limits=c(0,2)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30"))) +
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
+```
+<br>
+<br>
+```{r cond, warning=FALSE, echo=FALSE, message=FALSE,fig.width=10,fig.height=9}
+ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Conductivity") +
+  ylab ("Conductivity (mS/cm)") +
+  geom_line(data= dis, aes(y=Discharge/500), color= "cornflowerblue", size=2, alpha=0.8) +
+  geom_point(aes(y= Conductivity), size=3) +
+  scale_y_continuous(sec.axis = sec_axis(~.*500, name = "River Discharge (cfs)"), limits=c(0,40)) + 
+  scale_x_datetime(
+    breaks = date_breaks("4 weeks") ,
+    labels = date_format("%Y/%m"),
+    expand = c(0, 0),
+    limits = c(
+      as.POSIXct("2017-08-10"),
+      as.POSIXct("2018-05-30"))) +
+  theme_bw()+
+  theme(legend.position=("top"),
+        panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+        panel.border = element_rect(color = "black", size = 1, fill = NA, linetype="solid"),
+        axis.text=element_text(size=20),
+        axis.title=element_text(size=20,face="bold"),
+        plot.title =element_text(size=30, face='bold'),
+        axis.text.x = element_text(angle = 90, hjust = 1)) +
+  facet_wrap(~facet, ncol= 2)
 ```
 
 

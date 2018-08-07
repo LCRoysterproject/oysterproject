@@ -5,24 +5,20 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-library(cowplot)
-library(ggplot2)
-library(ggpubr)
-library(grid)
-library(gridExtra)
-library(lattice)
-library(marelac)
-library(plotly)
-library(scales)
-library(rnoaa)
-library(plyr)
-library(ncdf4)
-library(lubridate)
-library(dplyr)
-library(data.table)
-library(colorspace)
-library(waterData)
-library(hydroTSM)
+library("cowplot")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("ggthemes")
+library("lattice")
+library("lubridate")
+library("marelac")
+library("ncdf4")
+library("rnoaa")
+library("plotly")
+library("scales")
+library("tidyverse")
+library("waterData")
 ```
 
 #Site 6
@@ -35,90 +31,17 @@ Wind speed data are provided by package `rnoaa`.
 There are discrete measurements for this site.  All discrete measurements were processed by Lakewatch UF.                  
 This figure is available for zoomability.     
 
-```{r r_site6, include= FALSE}
-#####Site 6 Analysis with Star Oddi
-LC_WQ6 <- read.csv("data/LC_WQ6_All_Days_R.csv", header= T)
-#
-#Naming columns, using the Star Oddi software, records different measurements than the Star Oddi, date, temperature, salinity, conducitivity, sound/velocity
-colnames(LC_WQ6) <- c("DateTime_Serial", "Temperature", "Salinity", "Conductivity", "Sound/Velocity")
-head(LC_WQ6)
 
-#Changing the format of the dates to plot
-LC_WQ6$Date <- as.POSIXct(as.Date(LC_WQ6$DateTime_Serial,origin= "1899-12-30"))
+```{r r_site, include= FALSE}
+##### Site 1 Analysis with Diver sensor
 
-#Star-Oddi time is off by 8 hours 
-LC_WQ6$Date<- LC_WQ6$Date - 8*60*60
-
-#Calculating salinity, using package `marelac` for this conversion, even though the Diver sensor salinity, we want to standardize the salinity by calculating it with the temperature and conductivity
-standard= 42.914
-LC_WQ6$Salinity <- convert_RtoS(LC_WQ6$Conductivity/standard, 
-                                t= LC_WQ6$Temperature, p=0)
+wq <- read.csv("data/wq.csv", header= T)
+wq$Date<- as.POSIXct(wq$Date, tz="EST",usetz=TRUE)
+wq<-wq %>% 
+  filter((Site == 6))
 
 ```
 
-```{r r_RD, include=FALSE}
-#station to analyze
-station = '02323500'   
-
-#get site name to use in plot titles and such
-stinfo  = siteInfo(station)
-
-#read entire time series
-dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1950-01-01") 
-#ok looks like temp code is wrong for this station, maybe rainfall is available?
-
-#get some date components
-dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
-dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
-
-```
-
-```{r labresults, include=FALSE, eval=TRUE}
-labresults <- read.csv("data/2017_lakewatch_labresults.csv", header= T)
-
-#Creating new column names
-colnames(labresults) <- c("County", "Name", "oldDate", "Month", "Day","Year","Station", "Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Secchi 2", "Color", "SpecificConductancemicro", "SpecificConductancemilli")
-
-labresults$Date <- as.POSIXct(as.Date(labresults$oldDate, origin= "1899-12-30"))
-
-labresults$Date <- as.POSIXct(as.Date(labresults$oldDate, "%m/%d/%Y"))
-
-#create new column for the micro and milli siemens in Specific Conductance
-#1 millisiemens [mS] = 1000 microsiemens [??S, uS]
-
-labresults$SpecificConductancemilli<- (labresults$SpecificConductancemilli / 100)
-
-labresults$Conductivity<-NA
-
-labresults$Conductivity<-paste(labresults$SpecificConductancemilli,labresults$SpecificConductancemicro)
-
-labresults$Conductivity<-as.numeric(gsub('NA','',labresults$Conductivity))
-
-labresults$Secchi<- (labresults$Secchi/ 3.28)
-
-
-#Subsetting the data into 
-site1<-subset(labresults,Station=="1")
-site2<-subset(labresults,Station=="2")
-site3<-subset(labresults,Station=="3")
-site4<-subset(labresults,Station=="4")
-site5<-subset(labresults,Station=="5")
-site6<-subset(labresults,Station=="6")
-
-```
-
-```{r RD_newdate, include= FALSE}
-#### River Discharge, this data was gathered from the River Discharge R file, and retrieved that way, the information is in the Rhistory for this analysis
-head(dis)
-
-#Naming columns, using the Diver sensors, collects date, pressure, temp, conductivity
-colnames(dis) <- c("StaID", "Discharge", "oldDate", "QualCode", "Year", "Month")
-head(dis)
-
-#Changing the format of the dates to be able to plot against time
-dis$Date <- as.POSIXct(as.Date(dis$oldDate,origin= "1899-12-30"))
-
-```
 
 ```{r winddata, include= FALSE }
 wind17<-buoy(dataset='cwind',buoyid='CDRF1', datatype='c', year=2017)
@@ -137,201 +60,201 @@ windcomb<- rbind(winddatatable17,winddatatable18)
 ```
 
 
-```{r r_var6, include= FALSE}
+```{r labresults, include=FALSE, eval=TRUE}
+lab <- read.csv("data/discrete_measurement.csv", header= T)
 
-phos6 <-
-  ggplot(data= site6, aes(x= Date)) +
+colnames(lab) <- c("Site", "Date", "Time_org", "Time_UTC", "Sun_code", "Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Color", "DO", "Temperature","Conductivity", "Salinity", "Depth", "Sensor_Type")
+
+lab$Secchi<- (lab$Secchi/ 3.28)
+
+lab<- lab %>%
+  filter(Sensor_Type == "lakewatch")
+
+lab$Date <- as.POSIXct(as.Date(lab$Date,origin= "1899-12-30"))
+
+lab<-lab %>% 
+  filter((Site == 6))%>%
+  select(Site, Date, Phosphorus, Nitrogen, Chlorophyll, Secchi, Color, Conductivity)
+
+keycol <- "Variable"
+valuecol <- "Measurement"
+gathercols <- c("Phosphorus", "Nitrogen", "Chlorophyll", "Secchi", "Color", "Conductivity")
+
+lab2<-gather_(lab, keycol, valuecol, gathercols)
+
+```
+
+```{r dis, warning= FALSE,  message=FALSE, results="hide" , include=FALSE}
+
+#Station to analyze, can be changed to another station
+station = '02323500'   
+
+#Get site name to use in plot titles and such
+stinfo  = siteInfo(station)
+
+#Read entire time series, might take several minutes
+dis   = importDVs(staid=station,code='00060',stat='00003', sdate= "1950-01-01") 
+
+#Getting some date components
+dis$year    = as.numeric(strftime(dis$dates,format="%Y"))
+dis$month   = as.numeric(strftime(dis$dates,format="%m")) 
+
+```
+
+
+```{r discol, warning= FALSE,  message=FALSE, results="hide", include=FALSE}
+
+#Naming columns, using the Diver sensors, collects date, pressure, temp, conductivity
+colnames(dis) <- c("StaID", "Discharge", "oldDate", "QualCode", "Year", "Month")
+head(dis)
+
+#Changing the format of the dates to be able to plot against time
+dis$Date <- as.POSIXct(as.Date(dis$oldDate,origin= "1899-12-30"))
+
+```
+
+```{r r_plots, include= FALSE}
+
+phos <-
+  ggplot(data= lab, aes(x= Date)) +
   ggtitle("Phosphorus") +
-  labs(x= "Date", y= "Phosphorus (µg/L)& Discharge/160") +
+  labs(x= "Date", y= "Phosphorus (�g/L)") +
   geom_line(data= dis, aes(y=Discharge/160), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Phosphorus),color= "black", size=3) +
-  scale_y_continuous(limits=c(0,125)) +
+  scale_y_continuous(sec.axis = sec_axis(~.*160,name = "River Discharge (cfs)"),limits=c(0,125)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+ 
+      as.POSIXct("2018-04-30")))+ 
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
 
-nitro6 <-
-  ggplot(data= site6, aes(x= Date)) +
+nitro <-
+  ggplot(data= lab, aes(x= Date)) +
   ggtitle("Nitrogen") +
-  labs(x= "Date", y= "Nitrogen (µg/L)& Discharge/13") +
+  labs(x= "Date", y= "Nitrogen (�g/L)") +
   geom_line(data= dis, aes(y=Discharge/13), color= "cornflowerblue", size=1) +
-  geom_point(aes(y=Nitrogen), color= "black", size=3) +
-  scale_y_continuous(limits=c(0,1500)) +
+  geom_point(aes(y=Nitrogen),color= "black", size=3) +
+   scale_y_continuous(sec.axis = sec_axis(~.*13,name = "River Discharge (cfs)"),limits=c(0,1500)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+ 
+      as.POSIXct("2018-04-30")))+ 
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
 
-chloro6 <-
-ggplot(data= site6, aes(x= Date)) +
+chloro <-
+ggplot(data= lab, aes(x= Date)) +
   ggtitle("Chlorophyll") +
-  labs(x= "Date", y= "Chlorophyll (µg/L)& Discharge/250") +
+  labs(x= "Date", y= "Chlorophyll (�g/L)") +
   geom_line(data= dis, aes(y=Discharge/250), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Chlorophyll),color= "black", size=3) +
-  scale_y_continuous(limits=c(0,80)) +
+  scale_y_continuous(sec.axis = sec_axis(~.*250,name = "River Discharge (cfs)"),limits=c(0,80)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+ 
+      as.POSIXct("2018-04-30")))+ 
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
 
 
-secchi6 <-
-  ggplot(data= site6, aes(x= Date)) +
+secchi <-
+  ggplot(data= lab, aes(x= Date)) +
   ggtitle("Secchi") +
-  labs(x= "Date", y= "Secchi (ft)& Discharge/4000") +
-  geom_line(data= dis, aes(y=Discharge/4000), color= "cornflowerblue", size=1) +
+  labs(x= "Date", y= "Secchi (ft)") +
+  geom_line(data= dis, aes(y=Discharge/10000), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Secchi),color= "black", size=3) +
-  scale_y_continuous(limits=c(0,5)) +
+   scale_y_continuous(sec.axis = sec_axis(~.*10000,name = "River Discharge (cfs)"),limits=c(0,2)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+ 
+      as.POSIXct("2018-04-30")))+ 
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
 
-color6 <-
-  ggplot(data= site6, aes(x= Date)) +
+color <-
+  ggplot(data= lab, aes(x= Date)) +
   ggtitle("Color") +
-  labs(x= "Date", y= "Color(Pt-Co Units)& Discharge/160") +
+  labs(x= "Date", y= "Color(Pt-Co Units)") +
   geom_line(data= dis, aes(y=Discharge/160), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Color),color= "black", size=3) +
-  scale_y_continuous(limits=c(0,125)) +
+  scale_y_continuous(sec.axis = sec_axis(~.*160,name = "River Discharge (cfs)"),limits=c(0,125)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+
+      as.POSIXct("2018-04-30")))+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
 
-cond6 <-
-  ggplot(data= site6, aes(x= Date)) +
-  ggtitle("Specific Conductance") +
-  labs(x= "Date", y= "Conductivity (mS/cm)& Discharge/40") +
+cond <-
+  ggplot(data= lab, aes(x= Date)) +
+  ggtitle("Conductivity") +
+  labs(x= "Date", y= "Conductivity (mS/cm)") +
   geom_line(data= dis, aes(y=Discharge/500), color= "cornflowerblue", size=1) +
   geom_point(aes(y=Conductivity),color= "black", size=3) +
-  scale_y_continuous(limits=c(0,40)) +
+   scale_y_continuous(sec.axis = sec_axis(~.*500,name = "River Discharge (cfs)"),limits=c(0,40)) +
   scale_x_datetime(
-    breaks = date_breaks("month") ,
-    labels = date_format("%m/%y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2016-12-25"),
-      as.POSIXct("2017-12-30")))+ 
+      as.POSIXct("2018-04-30")))+ 
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=8,face="bold"),
         axis.text.x = element_text(size=6))
   
 
-var6 <-
+var <-
   ggplot(data= windcomb, aes(x=Date)) +
-  labs(x= "Date", y= "Temp(C),Salinity(ppt),Discharge (1,000 cfs),Wind Speed (ms/c)") +
+  labs(x= "Date", y= "") +
+  ggtitle("Temp(C),Salinity(ppt),Discharge(1,000 cfs),Mean Wind Speed (ms/c)") +
   stat_summary(mapping= aes(y=Wind_Speed), fun.y="mean", geom="line", color= "gray34", size=2) +
   geom_line(data= dis, aes(y=Discharge/1000), color= "cornflowerblue", size=2) +
-  geom_point(data= LC_WQ6, aes(y= Temperature), color= "red", size=.5) +
-  geom_point(data= LC_WQ6,aes(y= Salinity), color= "black", size=.5) +
+  geom_point(data= wq, aes(y= Temperature), color= "red", size=.5) +
+  geom_point(data= wq,aes(y= Salinity), color= "black", size=.5) +
   guides(fill= guide_legend(show= TRUE, title="Measurement", override.aes= list(colour= c("cornflowerblue", "black", "red"), size=5))) +
   scale_y_continuous(limits=c(0,40)) +
   scale_x_datetime(
-    breaks = date_breaks("4 weeks") ,
-    labels = date_format("%m/%Y"),
+    breaks = date_breaks("8 weeks") ,
+    labels = date_format("%y/%m"),
     expand = c(0, 0),
     limits = c(
       as.POSIXct("2017-08-10"),
-      as.POSIXct("2018-05-05"))) +
+      as.POSIXct("2018-07-30"))) +
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.title=element_text(size=12,face="bold"),
         axis.text.x = element_text(size=8))
 
 
 
-var6<- ggplotly(var6)
-#cond6<- ggplotly(cond6)
-#color6<- ggplotly(color6)
-#secchi6<- ggplotly(secchi6)
-#chloro6<- ggplotly(chloro6)
-#nitro6<- ggplotly(nitro6)
-#phos6<- ggplotly(phos6)
+var<- ggplotly(var)
 ```
 
-```{r finalplot, echo=FALSE, fig.width=8,fig.height=6, warning= FALSE,  message=FALSE}
-
-var6
+```{r plotly_plot, echo=FALSE, fig.width=8,fig.height=6, warning= FALSE,  message=FALSE}
+var
 ```
 
-
-```{r condplot, echo=FALSE, warning= FALSE,  message=FALSE, fig.width=12,fig.height=10,}
-
-par(mfrow=c(3,2)) 
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Phosphorus, pch=19, ylab="Phosphorus (µg/L)", xlab="Date", main="Phosphorus", ylim=c(0,125),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Nitrogen, pch=19, ylab="Nitrogen (µg/L)", xlab="Date", main="Nitrogen", ylim=c(0,1300),format="%m-%Y",las=1, cex=2)
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Chlorophyll, pch=19, ylab="Chlorophyll (µg/L)", xlab="Date", main="Chlorophyll ", ylim=c(0,65),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Secchi, pch=19, ylab="Secchi (m)", xlab="Date", main="Secchi", ylim=c(0,2),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Color, pch=19, ylab="Color (Pt-Co Units)", xlab="Date", main="Color", ylim=c(0,110),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-plot(x=dis$Date, y=dis$Discharge, ylab="", lwd= 4, xlab= "Date", main= "",ylim=c(0,40000), axes=FALSE,xlim = c(as.POSIXct("2017-01-01"),as.POSIXct("2017-12-31")), type="l",col="cornflowerblue")
-#polygon(xx,yy,col="cornflowerblue", border=NA)
-axis(4, at=pretty(c(0,40000)), col='black')
-par(new=TRUE)
-plot(site6$Date, site6$Conductivity, pch=19, ylab="Conductivity (mS/cm))", xlab="Date", main="Conductivity", ylim=c(0,40),format="%m-%Y",las=1, cex=2)
-mtext("River Discharge ( cfs)", side = 4,cex=0.6)
-
-
+```{r lab _results, echo=FALSE, fig.width=8,fig.height=6, warning= FALSE,  message=FALSE}
+plot_grid(phos, nitro,color,cond,secchi, chloro, ncol=2)
 ```
-
