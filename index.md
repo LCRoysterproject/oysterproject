@@ -52,7 +52,7 @@ Transect sampling is a key approach to categorizing oyster populations. Transect
 <br />
 [(top)Transect sampling (Nov 2017), (bottom) Steve L transect sampling (Dec 2018)] 
 <br />
-<img align="center" src="pic/inshore.JPG" width="60%">  
+<img align="center" src="pic/inshore.jpg" width="60%">  
 <br />
 
 ### **QUADRAT SAMPLING**
