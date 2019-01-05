@@ -3,7 +3,7 @@ output:
   md_document:
     variant: markdown
 ---
-# **Table of Contents**
+# **PAGE NAVIGATION**
 
 - [**Project**](#project)
   * [**Reef Construction**](#reef-construction)
@@ -22,7 +22,6 @@ output:
 You can read more about the project here : 
 [**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)
 
-<br>
 You can check out more photos at **#oysterprojectck**.
 <br />
 ## **REEF CONSTRUCTION**
@@ -34,7 +33,6 @@ The map below displays the navigation markers on the Lone Cabbage Reef.
 <br /> 
 <div style="text-align:center"><img align="center" src="pic/markers.jpg" width="75%" ></div>
 
-<br /> 
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
 <br />
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
@@ -50,13 +48,12 @@ Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-
 
 Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (Jan 2019). Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
-<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="33%"><img align="center" src="pic/20171107_oyster_lcor32.JPG" width="44%">   
-[(left)Transect sampling (Nov 2017), (right) Peter Fredrick, project advisor ] 
+<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="60%">
+<br />
+<img align="center" src="pic/reel.jpg" width="33%"><img align="center" src="pic/inshore.JPG" width="60%">  
+[(top)Transect sampling (Nov 2017), (bottom) Transect sampling (Dec 2018)] 
 <br />
 
-<img align="center" src="pic/reel.jpg" width="33%"><img align="center" src="pic/offshore.JPG" width="44%">   
-[(both images)Transect sampling (Dec 2018)] 
-<br />
 ### **QUADRAT SAMPLING**
 
 Quadrat sampling is our primary approach for estimating oyster size structure and proportion of oysters alive or dead. 
