@@ -29,7 +29,7 @@ You can check out more photos at **#oysterprojectck**.
 This project will restore about 32 acres (nearly three linear miles) of oyster reef along the historic Lone Cabbage reef complex. This will be done by placing locally sourced limestone rocks on the footprint of the old oyster reef to create a durable substrate for oyster spat to settle and grow.  The height of the restored reef will be similar to the surrounding natural oyster bars. In years when oyster survival is low oyster abundance on the reef will likely decline due to natural mortality - this is expected.  However, the rock core will persist, thus helping to promote estuarine conditions by detaining freshwater on the landward (east) side of the reef while also providing suitable substrate for oyster spat to recolonize the reef when conditions improve. As you can see, the reef will not be a single continuous reef, but instead we will follow the footprint of the relic reef that was first surveyed in the late 1800's.  This will create a "chain" of smaller reefs.  This is similar to other fringing "outside" oyster reefs along the Big Bend of Florida.  We are currently working with permiting agencies to plan the location of information signs as private aids to navigation in the area.  We have indicated on the map where these signs may be placed.
 <br />
 <br /> 
-The map below displays the navigation markers on the Lone Cabbage Reef. 
+The map below displays the navigation markers on Lone Cabbage Reef. 
 <br /> 
 <div style="text-align:center"><img align="center" src="pic/markers.jpg" width="75%" ></div>
 
@@ -59,8 +59,10 @@ Transect sampling is a key approach to categorizing oyster populations. Transect
 
 Quadrat sampling is our primary approach for estimating oyster size structure and proportion of oysters alive or dead. 
 <br />
-<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="50%"><img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="50%">   
-[Random quadrat sampling (Jan 2018)] 
+<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="75%">
+<br />
+<img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="75%">   
+[(both images) Random quadrat sampling (Jan 2018)] 
 <br />
 ## **LANDINGS DATA**
 
