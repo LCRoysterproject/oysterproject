@@ -34,7 +34,7 @@ The map below displays the navigation markers on the Lone Cabbage Reef.
 <div style="text-align:center"><img align="center" src="pic/markers.jpg" width="75%" ></div>
 
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
-<br />
+
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 <br />
 
@@ -48,10 +48,11 @@ Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-
 
 Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (Jan 2019). Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
-<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="60%">
+<img align="center" src="pic/20171106_oyster_lcor9.jpg" width="45%">
 <br />
-<img align="center" src="pic/reel.jpg" width="33%"><img align="center" src="pic/inshore.JPG" width="60%">  
 [(top)Transect sampling (Nov 2017), (bottom) Steve L transect sampling (Dec 2018)] 
+<br />
+<img align="center" src="pic/inshore.JPG" width="60%">  
 <br />
 
 ### **QUADRAT SAMPLING**
