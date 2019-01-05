@@ -51,7 +51,7 @@ Transect sampling is a key approach to categorizing oyster populations. Transect
 <img align="center" src="pic/20171106_oyster_lcor9.jpg" width="60%">
 <br />
 <img align="center" src="pic/reel.jpg" width="33%"><img align="center" src="pic/inshore.JPG" width="60%">  
-[(top)Transect sampling (Nov 2017), (bottom) Transect sampling (Dec 2018)] 
+[(top)Transect sampling (Nov 2017), (bottom) Steve L transect sampling (Dec 2018)] 
 <br />
 
 ### **QUADRAT SAMPLING**
@@ -76,7 +76,7 @@ Below is the Shiny App of the Landings data from the State of Florida, Apalachic
 The Suwannee River is the primary surface water source of freshwater discharge into Suwannee Sound.  We use the waterData package in R to retrieve river discharge data from the USGS gauge 02323500 (Wilcox) gauge.  This gauge is located in the Suwannee River upstream of the tidally influence region of the Suwannee River.  In this graph we are showing mean daily discharge in cubic feet per second (by convention) to represent trends in discharge in the Suwannee River to Suwannee Sound.
 <br />
 <br />
-Below is the Shiny App for the Qauntile Suwannee River Discharge data.  Click on the image below to be redirected to the Shiny App webpage. 
+Below is the Shiny App for the Qauntile Suwannee River Discharge data.  **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
 [<img align="center" src="pic/quantile.png">](https://oysterprojectck.shinyapps.io/river_quantile/)
@@ -95,23 +95,15 @@ We are presenting these data as provisional raw downloads from our instruments f
 <br />
 We have compiled several different base layers of oyster reef distribution to include as layers on this map.  These layers are simply representative layers of oyster reef distribution and do not represent full surveys of available oysters in the area.  Please click on the map icon on the top right of the map to select data layers of interest. The proposed Lone Cabbage Reef restoration layer is also available for viewing.  Each sensor icon on the map represents a different water quality monitoring station. Click on each sensor to view its hourly or discrete water quality data. 
 <br /> 
-<br /> 
 
-
-If the sensor icons in the map don't redirect to each sensor' page, make sure the links are not blocked by your browser. 
+**If the sensor icons in the map don't redirect to each sensor' page, make sure the links are not blocked by your browser.** 
 
 <iframe seamless src="html/intermap.html" width="100%" 
 height="675"></iframe>
-
 <br /> 
-<br /> 
-
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  Click on the image below to be redirected to the Shiny App webpage.  
 <br />
-<br />
-
 [<img align="center" src="pic/wq.png">]( https://oysterprojectck.shinyapps.io/wq_app/)
-
 <br />
 
 <img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
@@ -119,17 +111,16 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 
 <div style="text-align:center"><img align="center" src="pic/20180511_11.jpg" width="55%"></div>
 <div style="text-align:center">[Lab Technician Mel M retrieving sensor data from water quality sites] </div>
-
 <br />
+
 ## **BENTHIC SAMPLING**
 
-Benthic samples are collected at the nine water quality sites, and are currently being processed (August 2018).      
+Benthic samples are collected at the nine water quality sites, and are currently being processed (Aug 2018).      
 
 <img align="center" src="pic/stevemicro.jpg" width="45%"><img align="center" src="pic/benthic.jpg" width="45%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
 
 <br /> 
- 
 <img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="125" height="125" src="pic/wec.jpg"> <br />  
 <br /> 
 <br /> 
