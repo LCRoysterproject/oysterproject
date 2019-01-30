@@ -48,9 +48,9 @@ Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-
 
 Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (Jan 2019). Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
-<img align="center" src="pic/lc_transect_drone1.jpg" width="80%">
+<img align="center" src="pic/lc_transect_drone1.jpg" width="100%">
 <br />
-<img align="center" src="pic/lc_transect_drone.jpg" width="80%">  
+<img align="center" src="pic/lc_transect_drone.jpg" width="100%">  
 [Transect sampling (Jan 2019)] 
 <br />
 
