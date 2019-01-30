@@ -107,6 +107,8 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 [<img align="center" src="pic/wq.png" width="100%">]( https://oysterprojectck.shinyapps.io/wq_app/)
 <br />
 <br />
+<br />
+<br />
 <img align="center" src="pic/20180511_6.jpg" width="49%"><img align="center" src="pic/20180430_14.jpg" width="49%">  
 [(left) Steve B, scraping barnacles off sensor containers, (right) perparing water quality samples for Lakewatch UF]  
 
