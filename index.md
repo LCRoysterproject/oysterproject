@@ -70,7 +70,7 @@ FWC commercial landings in Florida data can be found here: [**FWC LANDINGS**](ht
 Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee Sound. **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
-[<img align="center" src="pic/landings.png" width="100%">](https://oysterprojectck.shinyapps.io/landing/)
+[<img align="center" src="pic/landings.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/landing/)
 <br />
 ## **RIVER DISCHARGE**
 <br />
@@ -80,7 +80,7 @@ The Suwannee River is the primary surface water source of freshwater discharge i
 Below is the Shiny App for the Qauntile Suwannee River Discharge data.  **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
-[<img align="center" src="pic/quantile.png" width="100%">](https://oysterprojectck.shinyapps.io/river_quantile/)
+[<img align="center" src="pic/quantile.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/river_quantile/)
 
 <br />
 We are working on a variety of ways to help visualize long-term trends in Suwannee River discharge from the Wilcox gauge.  The graph on the left has year on the vertical axis and month of the year on the horizontal axis.  Each "row" on the graph represents a different year and each column would be a different month.  The colored boxes represent the river discharge for that month and year combination.  You can identify the discharge by looking at the color scale legend.  The graph on the right is a similar graph, but instead of the river discharge we have plotted the discharge quantiles.  The 50% quantile is the median value.  Values between the 25 and 75th quantiles are generally "normal" river discharge levels.  
@@ -104,7 +104,7 @@ height="675"></iframe>
 <br /> 
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  **Click on the image below to be redirected to the Shiny App webpage**.  
 <br />
-[<img align="center" src="pic/wq.png" width="100%">]( https://oysterprojectck.shinyapps.io/wq_app/)
+[<img align="center" src="pic/wq.png" width="100%" height="600" >]( https://oysterprojectck.shinyapps.io/wq_app/)
 <br />
 <br />
 <br />
@@ -118,8 +118,8 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 
 ## **BENTHIC SAMPLING**
 <br />
-Benthic samples are collected at the nine water quality sites, and are currently being processed (Jan 2019). Data for these surveys are currently being analyzed.      
-
+Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Jan 2019).  
+<br />
 <img align="center" src="pic/stevemicro.jpg" width="49%"><img align="center" src="pic/benthic.jpg" width="49%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
 
