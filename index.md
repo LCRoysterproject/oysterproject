@@ -85,7 +85,7 @@ Below is the Shiny App for the Qauntile Suwannee River Discharge data.  **Click 
 <br />
 We are working on a variety of ways to help visualize long-term trends in Suwannee River discharge from the Wilcox gauge.  The graph on the left has year on the vertical axis and month of the year on the horizontal axis.  Each "row" on the graph represents a different year and each column would be a different month.  The colored boxes represent the river discharge for that month and year combination.  You can identify the discharge by looking at the color scale legend.  The graph on the right is a similar graph, but instead of the river discharge we have plotted the discharge quantiles.  The 50% quantile is the median value.  Values between the 25 and 75th quantiles are generally "normal" river discharge levels.  
 <br />
-<img align="center" src="pic/val_tile.png" width="50%" height="600"><img align="center" src="pic/quantile_tile.png" width="50%">  
+<img align="center" src="pic/val_tile.png" width="50%" height="450"><img align="center" src="pic/quantile_tile.png" width="50%" height="450">  
 <br />
 
 ## **WATER QUALITY MONITORING**
