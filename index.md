@@ -51,17 +51,16 @@ Transect sampling is a key approach to categorizing oyster populations. Transect
 <img align="center" src="pic/lc_transect_drone1.jpg" width="100%">
 <br />
 <img align="center" src="pic/lc_transect_drone.jpg" width="100%">  
-[Transect sampling (Jan 2019)] 
+[(both images) Transect sampling (Jan 2019)] 
 <br />
 
 ### **QUADRAT SAMPLING**
 
 Quadrat sampling is our primary approach for estimating oyster size structure and proportion of oysters alive or dead. 
 <br />
-<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="75%">
+<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="100%">
 <br />
-<img align="center" src="pic/20180130_111537_LT4_SITE_NW.jpg" width="75%">   
-[(both images) Random quadrat sampling (Jan 2018)] 
+[Random quadrat sampling (Jan 2018)] 
 <br />
 ## **LANDINGS DATA**
 
