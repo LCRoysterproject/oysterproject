@@ -102,7 +102,7 @@ We have compiled several different base layers of oyster reef distribution to in
 <iframe seamless src="html/intermap.html" width="100%" 
 height="675"></iframe>
 <br /> 
-Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  Click on the image below to be redirected to the Shiny App webpage.  
+Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  **Click on the image below to be redirected to the Shiny App webpage**.  
 <br />
 [<img align="center" src="pic/wq.png" width="100%">]( https://oysterprojectck.shinyapps.io/wq_app/)
 <br />
