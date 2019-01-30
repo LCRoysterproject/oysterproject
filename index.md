@@ -31,7 +31,7 @@ This project will restore about 32 acres (nearly three linear miles) of oyster r
 <br /> 
 The map below displays the navigation markers on Lone Cabbage Reef. 
 <br /> 
-<div style="text-align:center"><img align="center" src="pic/markers.jpg" width="75%" ></div>
+<div style="text-align:center"><img align="center" src="pic/markers.jpg" width="90%" ></div>
 
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
 
@@ -42,7 +42,7 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 <br />
 Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (June 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
 
-<div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="90%" ></div>
+<div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="100%" ></div>
 <br />
 ### **TRANSECT SAMPLING**
 <br />
@@ -107,10 +107,10 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 [<img align="center" src="pic/wq.png" width="100%">]( https://oysterprojectck.shinyapps.io/wq_app/)
 <br />
 <br />
-<img align="center" src="pic/20180511_6.jpg" width="45%"><img align="center" src="pic/20180430_14.jpg" width="45%">  
+<img align="center" src="pic/20180511_6.jpg" width="49%"><img align="center" src="pic/20180430_14.jpg" width="49%">  
 [(left) Steve B, scraping barnacles off sensor containers, (right) perparing water quality samples for Lakewatch UF]  
 
-<div style="text-align:center"><img align="center" src="pic/20180511_11.jpg" width="55%"></div>
+<div style="text-align:center"><img align="center" src="pic/20180511_11.jpg" width="65%"></div>
 <div style="text-align:center">[Lab Technician Mel M retrieving sensor data from water quality sites] </div>
 <br />
 
