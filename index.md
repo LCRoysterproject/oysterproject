@@ -77,7 +77,9 @@ Below is the Shiny App of the Landings data from the State of Florida, Apalachic
 The Suwannee River is the primary surface water source of freshwater discharge into Suwannee Sound.  We use the waterData package in R to retrieve river discharge data from the USGS gauge 02323500 (Wilcox) gauge.  This gauge is located in the Suwannee River upstream of the tidally influence region of the Suwannee River.  In this graph we are showing mean daily discharge in cubic feet per second (by convention) to represent trends in discharge in the Suwannee River to Suwannee Sound.
 <br />
 <br />
-Below is the Shiny App for the Qauntile Suwannee River Discharge data.  **Click on the image below to be redirected to the Shiny App webpage**. 
+Below is the Shiny App for the Qauntile Suwannee River Discharge data.  
+<br />
+**Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
 [<img align="center" src="pic/quantile.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/river_quantile/)
