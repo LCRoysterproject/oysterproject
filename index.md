@@ -98,6 +98,7 @@ We are presenting these data as provisional raw downloads from our instruments f
 
 [<img align="center" src="pic/leaftlet_pic.png" width="100%" height="600">](http://rpubs.com/oysterproject/map)
 <br /> 
+<br /> 
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Salinity and temperature**](http://rpubs.com/oysterproject/allsalplots) and [**discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.  **Click on the image below to be redirected to the Shiny App webpage**.  
 <br />
 [<img align="center" src="pic/wq.png" width="100%" height="600" >]( https://oysterprojectck.shinyapps.io/wq_app/)
