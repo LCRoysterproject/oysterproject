@@ -67,7 +67,9 @@ Quadrat sampling is our primary approach for estimating oyster size structure an
 FWC commercial landings in Florida data can be found here: [**FWC LANDINGS**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). We have included landings information here as a visualization of trends in oyster landings, oyster fishing trips, and oyster CPUE from key oyster fishing areas in the State of Florida. 
 <br />
 <br />
-Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee Sound. **Click on the image below to be redirected to the Shiny App webpage**. 
+Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee Sound.  
+<br />
+**Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
 [<img align="center" src="pic/landings.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/landing/)
