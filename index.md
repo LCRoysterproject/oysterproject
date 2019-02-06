@@ -34,7 +34,7 @@ The map below displays the navigation markers on Lone Cabbage Reef.
 <div style="text-align:center"><img align="center" src="pic/markers.jpg" width="90%" ></div>
 
 Click below to start the video for the Proposed Lone Cabbage Oyster Reef animation. The animation starts from the south end of the reef, and represents what the restored oyster reef will look like as if you are "flying" from the south to the north.  The actual top of the reef will be located at the same elevation as nearby wild oyster bars.  
-
+<br />
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 <br />
 <br />
