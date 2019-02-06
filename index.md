@@ -37,7 +37,11 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 
 <video src="pic/reefani.mp4" poster="pic/lc_ pads_3d_2nd.JPG" width="700" height="500" controls preload></video>
 <br />
-
+<br />
+<br />
+<img align="center" src="pic/reef_elements.jpg" width="100%">
+[Aerial view of constructed reef elements, photo credit: Carlton Ward Jr / FloridaWild] 
+<br />
 ## **OYSTER SAMPLING EFFORTS**
 <br />
 Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (June 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
