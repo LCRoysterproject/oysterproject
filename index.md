@@ -40,7 +40,7 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 <br />
 <br />
 <img align="center" src="pic/reef_elements.jpg" width="100%">
-[Aerial view of constructed reef elements, photo credit: Carlton Ward Jr / FloridaWild] 
+[Aerial view of constructed reef elements, Photo Credit: Carlton Ward Jr / FloridaWild] 
 <br />
 ## **OYSTER SAMPLING EFFORTS**
 <br />
@@ -55,7 +55,7 @@ Transect sampling is a key approach to categorizing oyster populations. Transect
 <img align="center" src="pic/transects_drone.jpg" width="100%">
 <br />
 <img align="center" src="pic/lc_transect_drone.jpg" width="100%">  
-[(both images) Transect sampling (Jan 2019)] 
+[(both images) Transect sampling (Jan 2019), (image below) Photo Credit: Kwan K] 
 <br />
 
 ### **QUADRAT SAMPLING**
