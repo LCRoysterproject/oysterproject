@@ -104,7 +104,7 @@ We are presenting these data as provisional raw downloads from our instruments f
 <br />
 **Click on the image below to be redirected to Rpubs for the Interactive Leaflet Map**  
 <br /> 
-
+[<img align="center" src="pic/leaftlet_pic.png" width="100%" height="600">](http://rpubs.com/oysterproject/map)
 <br /> 
 <br /> 
 Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.    
