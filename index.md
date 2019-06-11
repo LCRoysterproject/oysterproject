@@ -50,7 +50,7 @@ Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-
 <br />
 ### **TRANSECT SAMPLING**
 <br />
-Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (Jan 2019). Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
+Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (June 2019). Winter sampling has concluded and now Summer sampling is ongoing. Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
 <img align="center" src="pic/transects_drone.jpg" width="100%">
 <br />
@@ -125,7 +125,7 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 
 ## **BENTHIC SAMPLING**
 <br />
-Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Jan 2019).  
+Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (June 2019).  
 <br />
 <img align="center" src="pic/stevemicro.jpg" width="49%"><img align="center" src="pic/benthic.jpg" width="49%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
