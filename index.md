@@ -23,7 +23,7 @@ You can read more about the project here :
 [**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)
   
  Post-doc Position Information:     
- Read more about the position [**Here**](pic/postdoc_description_NFWF.pdf)
+ Read more about the position [**HERE**](pic/postdoc_description_NFWF.pdf)
     
  You can check out more photos at **#oysterprojectck**.
     
