@@ -21,8 +21,12 @@ output:
 
 You can read more about the project here : 
 [**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)
-
-You can check out more photos at **#oysterprojectck**.
+  
+ You can check out more photos at **#oysterprojectck**.
+    
+ Post-doc Position Information 
+ Read more about the position [here](pic/postdoc_description_NFWF.pdf)
+ 
 <br />
 ## **REEF CONSTRUCTION**
 <br />
