@@ -24,8 +24,8 @@ You can read more about the project here :
   
  You can check out more photos at **#oysterprojectck**.
     
- Post-doc Position Information 
- Read more about the position [here](pic/postdoc_description_NFWF.pdf)
+ Post-doc Position Information:     
+ Read more about the position [**Here**](pic/postdoc_description_NFWF.pdf)
  
 <br />
 ## **REEF CONSTRUCTION**
