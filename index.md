@@ -131,7 +131,7 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 <br />
 Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Feb 2020).  
 <br />
-<img align="left" width="300" height="100" src="pic/20180605_161301.jpg">
+<img align="center" width="49% src="pic/20180605_161301.jpg">
 [(top) Sample collected in the field] 
 <br />
 <br />
