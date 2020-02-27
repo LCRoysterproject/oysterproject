@@ -45,13 +45,13 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 <br />
 ## **OYSTER SAMPLING EFFORTS**
 <br />
-Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (June 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
+Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (February 2020) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
 
 <div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="100%" ></div>
 <br />
 ### **TRANSECT SAMPLING**
 <br />
-Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (June 2019). Winter sampling has concluded and now Summer sampling is ongoing. Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
+Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (February 2020). Winter sampling has concluded and now Summer sampling will continue is a few months. Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
 <img align="center" src="pic/transects_drone.jpg" width="100%">
 <br />
