@@ -24,8 +24,7 @@ You can read more about the project here :
      
  You can check out more photos at **#oysterprojectck**.  
   
-Research Coordinator Open Position Information:     
-Read more about the position [**HERE**](pic/research_coord.docx)  
+Read more about our open Research Coordinator II position [**HERE**](pic/research_coord.docx)    
     
 <br />
 ## **REEF CONSTRUCTION**
