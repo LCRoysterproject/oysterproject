@@ -23,6 +23,9 @@ You can read more about the project here :
 [**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)  
      
  You can check out more photos at **#oysterprojectck**.  
+  
+Research Coordinator Open Position Information:     
+Read more about the position [**HERE**](pic/research_coord.docx)  
     
 <br />
 ## **REEF CONSTRUCTION**
