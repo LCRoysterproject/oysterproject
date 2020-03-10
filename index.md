@@ -24,7 +24,7 @@ You can read more about the project here :
      
  You can check out more photos at **#oysterprojectck**.  
   
-Read and apply for our Research Coordinator II position [**HERE**](https://explore.jobs.ufl.edu/cw/en-us/job/513819/research-coordinator-ii)    
+Learn about and apply for our Research Coordinator II position [**HERE**](https://explore.jobs.ufl.edu/cw/en-us/job/513819/research-coordinator-ii)    
     
 <br />
 ## **REEF CONSTRUCTION**
