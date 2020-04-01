@@ -20,9 +20,12 @@ output:
 **The goal -** keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of oyster reefs in a way that is resilient both to sea level rise, and to changes in river discharge. This project is predicted to have both ecosystem benefits in terms of enhancing shoreline protection, promoting estuarine conditions, and providing fish and wildlife habitat as well as local effects by providing sites for oyster spat to settle and grow.  Both objectives are of interest to local communities as well as management agencies.
 
 You can read more about the project here : 
-[**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)
-
-You can check out more photos at **#oysterprojectck**.
+[**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)  
+     
+ You can check out more photos at **#oysterprojectck**.  
+  
+Learn about and apply for our Research Coordinator II position [**HERE**](https://explore.jobs.ufl.edu/cw/en-us/job/513819/research-coordinator-ii)    
+    
 <br />
 ## **REEF CONSTRUCTION**
 <br />
@@ -44,18 +47,21 @@ Click below to start the video for the Proposed Lone Cabbage Oyster Reef animati
 <br />
 ## **OYSTER SAMPLING EFFORTS**
 <br />
-Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (June 2018) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
+Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-transects at multiple locations in Suwannee Sound.  These locations are determined based on the distance of the sites from the mainland (localities = inshore, nearshore, and offshore oyster bars) and then replicate samples are taken at individual oyster bars within each locality.  In general we measure size structure, density, and the ratio of live:dead oysters. Data for these surveys are currently being analyzed (February 2020) and will provide a snapshot of oyster density on different reefs prior to construction. Below is a map of the sample areas.
 
 <div style="text-align:center"><img align="center" src="pic/SampleHistory_2017_18.jpg" width="100%" ></div>
 <br />
 ### **TRANSECT SAMPLING**
 <br />
-Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (Jan 2019). Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
+Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (February 2020). Winter sampling has concluded and now Summer sampling will continue is a few months. Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
+<br />
+<img align="center" src="pic/20191214_BTI5_3.JPG" width="100%">
 <br />
 <img align="center" src="pic/transects_drone.jpg" width="100%">
 <br />
 <img align="center" src="pic/lc_transect_drone.jpg" width="100%">  
 [(both images) Transect sampling (Jan 2019), (image below) Photo Credit: Kwan K] 
+
 <br />
 
 ### **QUADRAT SAMPLING**
@@ -88,7 +94,7 @@ Below is the Shiny App for the Qauntile Suwannee River Discharge data.
 **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
-[<img align="center" src="pic/quantile.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/river_quantile/)
+[<img align="center" src="pic/quantile.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/display_quantile_app/)
 
 <br />
 We are working on a variety of ways to help visualize long-term trends in Suwannee River discharge from the Wilcox gauge.  The graph on the left has year on the vertical axis and month of the year on the horizontal axis.  Each "row" on the graph represents a different year and each column would be a different month.  The colored boxes represent the river discharge for that month and year combination.  You can identify the discharge by looking at the color scale legend.  The graph on the right is a similar graph, but instead of the river discharge we have plotted the discharge quantiles.  The 50% quantile is the median value.  Values between the 25 and 75th quantiles are generally "normal" river discharge levels.  
@@ -125,7 +131,8 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 
 ## **BENTHIC SAMPLING**
 <br />
-Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Jan 2019).  
+Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Feb 2020).  
+<br />
 <br />
 <img align="center" src="pic/stevemicro.jpg" width="49%"><img align="center" src="pic/benthic.jpg" width="49%">   
 [(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
