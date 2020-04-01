@@ -1,1 +1,1 @@
-This is the `photo` folder.
+This is the `pic` folder.
