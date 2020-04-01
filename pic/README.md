@@ -1,1 +1,1 @@
-This is the `pic` folder.
+This is the `pic` folder. This folder contains all of the pictures, images, and graphs used for the LCR GitHub Pages. These images are often rotated on the website, so many are listed which are not currently in use.  
