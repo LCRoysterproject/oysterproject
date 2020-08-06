@@ -22,9 +22,7 @@ output:
 You can read more about the project here : 
 [**Oyster Restoration Project**](http://www.wec.ufl.edu/oysterproject/restoration.php)  
      
- You can check out more photos at **#oysterprojectck**.  
-  
-Learn about and apply for our Research Coordinator II position [**HERE**](https://explore.jobs.ufl.edu/cw/en-us/job/513819/research-coordinator-ii)    
+ You can check out more photos at **#oysterprojectck**.   
     
 <br />
 ## **REEF CONSTRUCTION**
