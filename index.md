@@ -6,7 +6,7 @@ output:
 
 
 <iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="1000"></iframe>
-
+[**Click here to be redirected to Shiny App website**] ( https://oysterprojectck.shinyapps.io/wq_app/)
 
 # **PAGE NAVIGATION**
 
