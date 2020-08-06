@@ -5,17 +5,7 @@ output:
 ---
 
 
-<iframe src="https://oysterprojectck.shinyapps.io/wq_app/"></iframe>
-
-
-
-
-
-
-
-
-
-
+<iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="600"></iframe>
 
 
 # **PAGE NAVIGATION**
