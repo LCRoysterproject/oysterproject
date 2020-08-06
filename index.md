@@ -3,11 +3,6 @@ output:
   md_document:
     variant: markdown
 ---
-
-
-<iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="800"></iframe>
-[**Click here to be redirected to Shiny App website**](https://oysterprojectck.shinyapps.io/wq_app/)
-
 # **PAGE NAVIGATION**
 
 - [**Project**](#project)
@@ -16,7 +11,10 @@ output:
     + [**Transect Sampling**](#transect-sampling)
   * [**Landings Data**](#landings-data)
   * [**River Discharge**](#river-discharge)
-  * [**Water Quality Monitoring**](#water-quality-monitoring)
+  * [**Water Quality Monitoring**](#water-quality-monitoring)  
+
+<iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="800"></iframe>
+[**Click here to be redirected to Shiny App website**](https://oysterprojectck.shinyapps.io/wq_app/)
 
 
 # **PROJECT**
