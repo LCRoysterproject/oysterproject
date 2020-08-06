@@ -95,15 +95,6 @@ We are working on a variety of ways to help visualize long-term trends in Suwann
 <br />
 We collect key water quality parameters including temperature and conductivity on hourly time stamps at nine different locations near the Lone Cabbage Reef restoration site.  At a sub-set of these sites, we also collect discrete measurements of other variables including color, TN, and TP as part of ongoing coastal water quality monitoring efforts.  
 
-We are presenting these data as provisional raw downloads from our instruments for visualization purposes only.  These data are subject to revision following QA/QC procedures.  We use measured temperature and conductivity to estimate salinity at each of our 9 stations following UNESCO standards.  
-<br />
-**Click on the image below to be redirected to Rpubs for the Interactive Leaflet Map**  
-<br /> 
-[<img align="center" src="pic/leaftlet_pic.png" width="100%" height="600">](http://rpubs.com/oysterproject/map)
-<br /> 
-<br /> 
-Below is a comparison Shiny App for the continuous sensor data, and discrete YSI and Lakewatch data. [**Discrete lab results static figures**](http://rpubs.com/oysterproject/alllabresults) ,processed by Lakewatch UF, are available for all nine site locations.    
-<br />
 **Click on the image below to be redirected to the Shiny App webpage**.  
 <br />
 [<img align="center" src="pic/wq.png" width="100%" height="600" >]( https://oysterprojectck.shinyapps.io/wq_app/)
@@ -118,15 +109,6 @@ Below is a comparison Shiny App for the continuous sensor data, and discrete YSI
 <div style="text-align:center">[Lab Technician Mel M retrieving sensor data from water quality sites] </div>
 <br />
 
-## **BENTHIC SAMPLING**
-<br />
-Benthic samples are collected at the nine water quality sites, and are currently being processed and analyzed (Feb 2020).  
-<br />
-<br />
-<img align="center" src="pic/stevemicro.jpg" width="49%"><img align="center" src="pic/benthic.jpg" width="49%">   
-[(left) Undergraduate Technician Steve L processing benthic samples,(right) microscope view of benthic sample]   
-
-<br /> 
 <img align="left" width="300" height="100" src="pic/ifas.png"><img align="right" width="125" height="125" src="pic/weclogo_orig.png"> 
 <br /> 
 <br /> 
