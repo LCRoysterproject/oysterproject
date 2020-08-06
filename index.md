@@ -53,23 +53,14 @@ Oyster surveys are conducted on intertidal oyster reefs using quadrats and line-
 <br />
 Transect sampling is a key approach to categorizing oyster populations. Transect sampling is currently ongoing (February 2020). Winter sampling has concluded and now Summer sampling will continue is a few months. Groups of 5-8 students/volunteers count oysters in randomized transects, which are located on, inshore, and offshore of Lone Cabbage Reef.  
 <br />
-<img align="center" src="pic/20191214_BTI5_3.JPG" width="100%">
-<br />
+
 <img align="center" src="pic/transects_drone.jpg" width="100%">
 <br />
 <img align="center" src="pic/lc_transect_drone.jpg" width="100%">  
-[(both images) Transect sampling (Jan 2019), (image below) Photo Credit: Kwan K] 
+[(top images) Transect sampling (Jan 2019), (bottom image) Photo Credit: Kwan K] 
 
 <br />
 
-### **QUADRAT SAMPLING**
-<br />
-Quadrat sampling is our primary approach for estimating oyster size structure and proportion of oysters alive or dead. 
-<br />
-<img align="center" src="pic/20180130_084431_BT22_QUAD.jpg" width="100%">
-<br />
-[Random quadrat sampling (Jan 2018)] 
-<br />
 ## **LANDINGS DATA**
 
 FWC commercial landings in Florida data can be found here: [**FWC LANDINGS**](http://myfwc.com/research/saltwater/fishstats/commercial-fisheries/landings-in-florida/). We have included landings information here as a visualization of trends in oyster landings, oyster fishing trips, and oyster CPUE from key oyster fishing areas in the State of Florida. 
