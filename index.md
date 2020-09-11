@@ -60,7 +60,7 @@ FWC commercial landings in Florida data can be found here: [**FWC LANDINGS**](ht
 <br />
 Below is the Shiny App of the Landings data from the State of Florida, Apalachicola, and Suwannee Sound.  
 <br />
-**Click on the image below to be redirected to the Shiny App webpage**. 
+# **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
 [<img align="center" src="pic/landings_plot.jpeg" width="100%" height="600">](https://oysterprojectck.shinyapps.io/landing/)
@@ -72,7 +72,7 @@ The Suwannee River is the primary surface water source of freshwater discharge i
 <br />
 Below is the Shiny App for the Qauntile Suwannee River Discharge data.  
 <br />
-**Click on the image below to be redirected to the Shiny App webpage**. 
+# **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
 [<img align="center" src="pic/quantile.png" width="100%" height="500">](https://oysterprojectck.shinyapps.io/display_quantile_app/)
