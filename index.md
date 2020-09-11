@@ -4,7 +4,7 @@ output:
     variant: markdown
 ---
 [**Click here to be redirected to LCR Project Shiny App website**](https://oysterprojectck.shinyapps.io/wq_app/)
-<iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="800"></iframe>
+<iframe src="https://oysterprojectck.shinyapps.io/wq_lcr_shiny_app/" width="600" height="800"></iframe>
 
 # **PROJECT**
 
