@@ -73,7 +73,7 @@ Below is the Shiny App of the Landings data from the State of Florida, Apalachic
 **Click on the image below to be redirected to the Shiny App webpage**. 
 <br />
 <br />
-[<img align="center" src="pic/landings_plot.png" width="100%" height="600">](https://oysterprojectck.shinyapps.io/landing/)
+[<img align="center" src="pic/landings_plot.jpeg" width="100%" height="600">](https://oysterprojectck.shinyapps.io/landing/)
 <br />
 ## **RIVER DISCHARGE**
 <br />
