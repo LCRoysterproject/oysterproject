@@ -97,12 +97,6 @@ We are working on a variety of ways to help visualize long-term trends in Suwann
 <br />
 We collect key water quality parameters including temperature and conductivity on hourly time stamps at nine different locations near the Lone Cabbage Reef restoration site.  At a sub-set of these sites, we also collect discrete measurements of other variables including color, TN, and TP as part of ongoing coastal water quality monitoring efforts.  
 
-**Click on the image below to be redirected to the Shiny App webpage**.  
-<br />
-[<img align="center" src="pic/wq.png" width="100%" height="600" >]( https://oysterprojectck.shinyapps.io/wq_app/)
-<br />
-<br />
-<br />
 <br />
 <img align="center" src="pic/20180511_6.jpg" width="49%"><img align="center" src="pic/20180430_14.jpg" width="49%">  
 [(left) Steve B, scraping barnacles off sensor containers, (right) perparing water quality samples for Lakewatch UF]  
