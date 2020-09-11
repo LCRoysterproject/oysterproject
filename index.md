@@ -6,17 +6,6 @@ output:
 [**Click here to be redirected to LCR Project Shiny App website**](https://oysterprojectck.shinyapps.io/wq_app/)
 <iframe src="https://oysterprojectck.shinyapps.io/wq_app/" width="600" height="800"></iframe>
 
-
-# **PAGE NAVIGATION**
-
-- [**Project**](#project)
-  * [**Reef Construction**](#reef-construction)
-  * [**Oyster Sampling Efforts**](#oyster-sampling-efforts)
-    + [**Transect Sampling**](#transect-sampling)
-  * [**Landings Data**](#landings-data)
-  * [**River Discharge**](#river-discharge)
-  * [**Water Quality Monitoring**](#water-quality-monitoring)  
-
 # **PROJECT**
 
 **The goal -** keeping estuaries resilient in the face of global change. The primary goal of this project is to restore degraded chains of oyster reefs in a way that is resilient both to sea level rise, and to changes in river discharge. This project is predicted to have both ecosystem benefits in terms of enhancing shoreline protection, promoting estuarine conditions, and providing fish and wildlife habitat as well as local effects by providing sites for oyster spat to settle and grow.  Both objectives are of interest to local communities as well as management agencies.
